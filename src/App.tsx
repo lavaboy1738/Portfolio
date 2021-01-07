@@ -1,10 +1,11 @@
 import React from 'react';
 import './App.scss';
+import {Cursor} from "./components/cursor";
 
 function App() {
   return (
     <div className="App">
-      hello portfolio
+      <Cursor/>
     </div>
   );
 }
