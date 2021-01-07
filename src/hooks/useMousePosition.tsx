@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react"
 
 export const useMousePosition = () => {
-  let [mousePosition, setMousePosition] = useState({ x: 0, y: 0 })
+  let [mousePosition, setMousePosition] = useState({ x: -100, y: -100 })
   useEffect(() => {
     const handlePosition = (e: MouseEvent) => {
       setMousePosition({ x: e.pageX, y: e.pageY })
