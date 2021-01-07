@@ -18,31 +18,36 @@ const NavStyles = styled.div`
         svg{
             width: 100%;
             height: 100%;
+            pointer-events: none;
+        }
+    }
+
+    .works, .about{
+        transition: 0.3s all ease;
+        transform: rotate(90deg);
+        transform-origin: 0% 0%;
+        right: -1vw;
+        font-size: ${navFontSize};
+        :hover{
+            transition: 0.3s all ease;
         }
     }
 
     .works{
         top: 2vw;
-        right: -1vw;
-        transform: rotate(90deg);
-        transform-origin: 0% 0%;
-        font-size: ${navFontSize};
     }
 
     .about{
         bottom: 5vw;
-        right: -1vw;
-        transform: rotate(90deg);
-        transform-origin: 0% 0%;
-        font-size: ${navFontSize};
     }
+
 
 `
 
 const Nav = ()=>{
     return(
         <NavStyles>
-            <Link className="logo" to="/">
+            <Link className="logo nav-button" to="/">
                 <svg width="100" height="87" viewBox="0 0 100 87" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M67.494 14.7075L75.9853 6.12184e-06L0 0L37.9926 65.8052L46.0622 51.8284L24.6304 14.7075H67.494Z" fill="#0F0E0E"/>
                 <path d="M64.0369 21.1739L50.8778 43.9662L37.7186 21.1739L64.0369 21.1739Z" fill="#0F0E0E"/>
