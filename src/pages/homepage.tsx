@@ -8,7 +8,7 @@ const HomepageStyles = styled.div`
 const Homepage = ()=>{
     return (
         <HomepageStyles>
-
+            home
         </HomepageStyles>
     )
 }

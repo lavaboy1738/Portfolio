@@ -18,6 +18,11 @@ const GlobalStyles = createGlobalStyle`
         background-color: var(--burlywood)
     }
 
+    a{
+        color: inherit;
+        text-decoration: none;
+    }
+
 `
 
 export {GlobalStyles}
