@@ -6,7 +6,7 @@ export const useMousePosition = () => {
 
   useEffect(() => {
     const handlePosition = (e: MouseEvent) => {
-      setMousePosition({ x: e.pageX, y: e.pageY })
+      setMousePosition({ x: e.clientX, y: e.clientY })
       if((e.target as HTMLElement).tagName==="A"){
           setHoverNav(true);
       }else{

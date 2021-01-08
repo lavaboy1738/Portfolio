@@ -1,8 +1,9 @@
 import React from "react";
 import styled from "styled-components";
 import {useMousePosition} from "../hooks/useMousePosition";
+import {motion} from "framer-motion";
 
-const CursorStyles = styled.div`
+const CursorStyles = styled(motion.div)`
     pointer-events: none;
     position: absolute;
     left: 0;
@@ -12,15 +13,7 @@ const CursorStyles = styled.div`
     padding: 1.5vw;
     border-radius: 100%;
     border: 0.1vw solid var(--black);
-    transform: translate(-50%, -50%);
-    transition: all 0.3s linear;
-    opacity: 0.6;
     z-index: 10;
-    &.on-focus {
-        border: 0.1vw solid var(--black);
-        padding: 3vw;
-        opacity: 1;
-    }
 `
 
 const PointerStyles =styled.div`
@@ -31,7 +24,7 @@ const PointerStyles =styled.div`
     width: 0.3vw;
     height: 0.3vw;
     border-radius: 100%;
-    background-color: black;
+    background-color: var(--black);
     transform: translate(-50%, -50%);
     z-index: 10;
     &.on-focus {
@@ -46,11 +39,13 @@ const Cursor = ()=>{
     return (
         <>
         <CursorStyles
-        style={{
-            top: y,
-            left: x
+        animate={{
+            x: `calc(${x}px - 50%)`,
+            y: `calc(${y}px - 50%)`,
+            scale: hoverNav? 1.8: 1,
+            opacity: hoverNav? 1 : 0.7,
         }}
-        className={hoverNav? "on-focus" : ""}
+        transition= {{ease: "linear"}}
         />
         <PointerStyles 
         className={hoverNav? "on-focus" : ""}
