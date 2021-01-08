@@ -6,6 +6,7 @@ const GlobalStyles = createGlobalStyle`
     :root{
         --black: #0f0e0e;
         --burlywood: #f6c9a0;
+        --grey: #866c55;
     }
 
     *{
@@ -15,7 +16,14 @@ const GlobalStyles = createGlobalStyle`
         font-family: Jakarta;
     }
     html{
-        background-color: var(--burlywood)
+        background-color: var(--burlywood);
+        cursor: none;
+        overflow: hidden;
+    }
+
+    p{
+        word-spacing: 0.2vw;
+        line-height: 140%;
     }
 
     a{

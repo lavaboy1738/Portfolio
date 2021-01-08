@@ -1,6 +1,5 @@
 import React from "react";
 import styled from "styled-components";
-import {motion} from "framer-motion";
 import {useMousePosition} from "../hooks/useMousePosition";
 
 const CursorStyles = styled.div`
@@ -10,14 +9,17 @@ const CursorStyles = styled.div`
     top: 0;
     width: 0.36vw;
     height: 0.36vw;
-    padding: 1.2vw;
+    padding: 1.5vw;
     border-radius: 100%;
-    border: 1px solid var(--black);
+    border: 0.1vw solid var(--black);
     transform: translate(-50%, -50%);
     transition: all 0.3s ease-out;
+    opacity: 0.6;
+    z-index: 10;
     &.on-focus {
-        border: 1px solid var(--black);
-        padding: 2.4vw;
+        border: 0.1vw solid var(--black);
+        padding: 3vw;
+        opacity: 1;
     }
 `
 
@@ -26,11 +28,12 @@ const PointerStyles =styled.div`
     position: absolute;
     left: 0;
     top: 0;
-    width: 0.36vw;
-    height: 0.36vw;
+    width: 0.3vw;
+    height: 0.3vw;
     border-radius: 100%;
     background-color: black;
     transform: translate(-50%, -50%);
+    z-index: 10;
     &.on-focus {
         background-color: transparent;
     }

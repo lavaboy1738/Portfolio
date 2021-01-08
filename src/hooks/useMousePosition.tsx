@@ -7,7 +7,7 @@ export const useMousePosition = () => {
   useEffect(() => {
     const handlePosition = (e: MouseEvent) => {
       setMousePosition({ x: e.pageX, y: e.pageY })
-      if((e.target as HTMLElement).classList.contains("nav-button")){
+      if((e.target as HTMLElement).tagName==="A"){
           setHoverNav(true);
       }else{
           setHoverNav(false);

@@ -13,8 +13,8 @@ const NavStyles = styled.div`
     .logo{
         top: 2vw;
         left: 2vw;
-        width: 3vw;
-        height: 3vw;
+        width: 3.2vw;
+        height: 3.2vw;
         svg{
             width: 100%;
             height: 100%;
@@ -28,13 +28,14 @@ const NavStyles = styled.div`
         transform-origin: 0% 0%;
         right: -1vw;
         font-size: ${navFontSize};
+        font-weight: 200;
         :hover{
             transition: 0.3s all ease;
         }
     }
 
     .works{
-        top: 2vw;
+        top: 2.2vw;
     }
 
     .about{
@@ -45,6 +46,7 @@ const NavStyles = styled.div`
 `
 
 const Nav = ()=>{
+
     return(
         <NavStyles>
             <Link className="logo nav-button" to="/">
