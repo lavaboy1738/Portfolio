@@ -13,7 +13,7 @@ const CursorStyles = styled.div`
     border-radius: 100%;
     border: 0.1vw solid var(--black);
     transform: translate(-50%, -50%);
-    transition: all 0.3s ease-out;
+    transition: all 0.3s linear;
     opacity: 0.6;
     z-index: 10;
     &.on-focus {

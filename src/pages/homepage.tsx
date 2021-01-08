@@ -57,7 +57,7 @@ const HomepageStyles = styled.div`
                 margin-bottom: 2vw;
                 span{
                     text-decoration: line-through;
-                    opacity: 0.6;
+                    color: var(--grey);
                 }
             }
             a{
@@ -90,8 +90,8 @@ const Homepage = ()=>{
                     <h3>Hi there, my name is,</h3>
                     <h1>Ronnie Feng.</h1>
                     <h2>I build things for the web.</h2>
-                    <p>I'm an interactive developer based in <span> Boston, MA </span>&nbsp;Toronto, ON specializing in 
-                    designing and crafting memorable experiences in the digital landscape. Front-End addicted, full-stack capable.</p>
+                    <p>I'm an interactive developer based in <span>&nbsp;Boston, MA </span>&nbsp;Toronto, ON specializing in 
+                    designing and crafting memorable experiences in the digital landscape. Front-End addicted, Fullstack capable.</p>
                     <Link to="/works">See My Works <span>&rarr;</span></Link>
                 </div>
             </div>

@@ -15,6 +15,11 @@ const GlobalStyles = createGlobalStyle`
         box-sizing: border-box;
         font-family: Jakarta;
     }
+
+    h1, h2, h3, h4, h5, p, a{
+        color: var(--black);
+    }
+
     html{
         background-color: var(--burlywood);
         cursor: none;
