@@ -27,6 +27,7 @@ const GlobalStyles = createGlobalStyle`
     }
 
     p{
+        font-size: 1.2vw;
         word-spacing: 0.2vw;
         line-height: 140%;
     }

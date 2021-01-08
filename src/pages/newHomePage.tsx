@@ -12,6 +12,8 @@ height: 100vh;
 display: flex;
 flex-wrap: wrap;
 padding-right: 3vw;
+align-content: space-between;
+
 .top{
     width: 100%;
     height: 40%;
@@ -49,7 +51,6 @@ padding-right: 3vw;
         .dot{
             width: 1.8vw;
             height: 1.8vw;
-            border-radius: 100%;
             background-color: var(--black);
             transform: translateY(15%);
         }
@@ -57,40 +58,55 @@ padding-right: 3vw;
 }
 .bottom{
     width: 100%;
-    height: 60%;
+    height: 55%;
     display: flex;
     flex-wrap: nowrap;
     &-pic{
         height: 100%;
-        width: 60vh;
+        width: 55vh;
     }
     &-description{
         margin-left: 2vw;
         width: 20%;
+        height: 100%;
+        display: flex;
+        align-items: flex-end;
+        p{
+            position: relative;
+            bottom: -0.3vw;
+        }
     }
     &-name{
         flex-grow: 1;
         text-align: right;
-        h1{
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-end;
+        .wrapper{
+            h1{
             font-weight: 800;
             font-size: 11vw;
             letter-spacing: -0.5vw;
-        }
-        h2{
-            font-weight: 200;
-            font-size: 2vw;
-            word-spacing: 0.5vw;
-            letter-spacing: -0.1vw;
-        }
-        .last{
-            margin-top: -3vw;
-            margin-bottom: 1vw;
-            -webkit-text-fill-color: var(--burlywood);
-            -webkit-text-stroke: 0.14vw var(--black);
-        }
-        .locations{
-            span{
-                text-decoration: line-through;
+            }
+            h2{
+                font-weight: 200;
+                font-size: 2vw;
+                word-spacing: 0.5vw;
+                letter-spacing: -0.1vw;
+            }
+            .last{
+                margin-top: -3vw;
+                margin-bottom: 1vw;
+                -webkit-text-fill-color: var(--burlywood);
+                -webkit-text-stroke: 0.14vw var(--black);
+            }
+            .locations{
+                position: relative;
+                bottom: -0.4vw;
+                span{
+                    text-decoration: line-through;
+                    opacity: 0.6;
+                }
             }
         }
     }
@@ -111,26 +127,28 @@ const NewHomePage = ()=>{
 
     return (
         <NewHomePageStyles>
-            <div className="top">
-                <div className="top-contact">
-                    <a href="mailto: ronnie@ronniefeng.com">Reach Me</a>
+            <div className="bottom">
+                <div className="bottom-pic" ref={profile}></div>
+                <div className="bottom-description">
+                    <p>An interactive developer striving to craft memorable experiences on the digital canvas. Front-End addicted, Fullstack capable.</p>
                 </div>
+                <div className="bottom-name">
+                    <div className="wrapper">
+                        <h1 className="first">Ronnie</h1>
+                        <h1 className="last">Feng</h1>
+                        <h2 className="locations">Based in <span>&nbsp;Boston&nbsp;</span> Toronto</h2>
+                    </div>
+                </div>
+            </div>
+            <div className="top">
                 <div className="top-nav">
                     <Link to="/about">About Me</Link>
                     <div className="dot"></div>
                     <Link to="/about">Works</Link>
                     <div className="dot"></div>
                 </div>
-            </div>
-            <div className="bottom">
-                <div className="bottom-pic" ref={profile}></div>
-                <div className="bottom-description">
-                    <p>An interactive developer striving to craft memorable experiences on the digital landscape.</p>
-                </div>
-                <div className="bottom-name">
-                    <h1 className="first">Ronnie</h1>
-                    <h1 className="last">Feng</h1>
-                    <h2 className="locations">Based in <span>&nbsp;Boston&nbsp;</span> Toronto</h2>
+                <div className="top-contact">
+                    <a href="mailto: ronnie@ronniefeng.com">Reach Me</a>
                 </div>
             </div>
         </NewHomePageStyles>
