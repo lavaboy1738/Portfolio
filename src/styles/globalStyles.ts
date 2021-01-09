@@ -44,6 +44,13 @@ const GlobalStyles = createGlobalStyle`
     a{
         color: inherit;
         text-decoration: none;
+        font-weight: 800;
+        text-transform: uppercase;
+        mix-blend-mode: difference;
+        &:hover{
+            -webkit-text-fill-color: var(--burlywood);
+            -webkit-text-stroke: 0.14vw var(--black);
+        }
     }
 
 `

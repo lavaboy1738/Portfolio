@@ -20,14 +20,12 @@ align-content: space-between;
     &-contact{
         text-align: right;
         a{
-            font-weight: 800;
             font-size: 10vw;
-            text-transform: uppercase;
             -webkit-text-fill-color: var(--burlywood);
-            -webkit-text-stroke: 0.1vw var(--black);
+            -webkit-text-stroke: 0.14vw var(--black);
             &:hover{
                 -webkit-text-fill-color: var(--black);
-                -webkit-text-stroke: 0.1vw var(--burlywood);
+                -webkit-text-stroke: 0.14vw var(--burlywood);
             }
         }
     }
@@ -43,10 +41,6 @@ align-content: space-between;
         padding-right: 0.2vw;
         a{
             margin: 0 3vw;
-            &:hover{
-                -webkit-text-fill-color: var(--burlywood);
-                -webkit-text-stroke: 0.1vw var(--black);
-            }
         }
         .dot{
             width: 1.8vw;
@@ -95,7 +89,7 @@ align-content: space-between;
                 margin-top: -3vw;
                 margin-bottom: 1vw;
                 -webkit-text-fill-color: var(--burlywood);
-                -webkit-text-stroke: 0.1vw var(--black);
+                -webkit-text-stroke: 0.14vw var(--black);
             }
             .locations{
                 position: relative;

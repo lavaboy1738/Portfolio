@@ -12,7 +12,7 @@ import JakartaLightWoff from "../fonts/PlusJakartaSans-Light.woff";
 import JakartaLightWoff2 from  "../fonts/PlusJakartaSans-Light.woff2";
 import JakartaExtraLightWoff from "../fonts/PlusJakartaSans-ExtraLight.woff";
 import JakartaExtraLightWoff2 from "../fonts/PlusJakartaSans-ExtraLight.woff2";
-import Monument from "../fonts/MonumentExtended-Regular.otf";
+import Monument from "../fonts/MonumentExtended-Bold.otf";
 
 const jakartaNormalWeights = {
     100: [JakartaExtraLightWoff, JakartaExtraLightWoff2],

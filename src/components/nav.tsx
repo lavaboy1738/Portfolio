@@ -15,6 +15,7 @@ const NavStyles = styled.div`
         left: 2vw;
         width: 3.2vw;
         height: 3.2vw;
+        mix-blend-mode: normal;
         svg{
             width: 100%;
             height: 100%;
@@ -26,11 +27,10 @@ const NavStyles = styled.div`
         transition: 0.3s all ease;
         transform: rotate(90deg);
         transform-origin: 0% 0%;
-        right: -1vw;
+        right: -3vw;
         font-size: ${navFontSize};
-        font-weight: 200;
         :hover{
-            transition: 0.3s all ease;
+            -webkit-text-stroke: 0.1vw var(--black);
         }
     }
 
@@ -39,7 +39,7 @@ const NavStyles = styled.div`
     }
 
     .about{
-        bottom: 5vw;
+        bottom: 6.5vw;
     }
 
 
