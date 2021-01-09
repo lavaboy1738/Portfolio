@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import {Nav} from "../components/nav";
 
 const AboutStyles = styled.div`
 
@@ -7,9 +8,12 @@ const AboutStyles = styled.div`
 
 const About = ()=>{
     return (
-        <AboutStyles>
-            about
-        </AboutStyles>
+        <>
+            <Nav/>
+            <AboutStyles>
+                about
+            </AboutStyles>
+        </>
     )
 }
 

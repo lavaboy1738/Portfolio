@@ -7,7 +7,7 @@ const navFontSize = "1.2vw";
 const NavStyles = styled.div`
     .logo, .works, .about{
         position: fixed;
-        z-index: 1;
+        z-index: 11;
     }
 
     .logo{

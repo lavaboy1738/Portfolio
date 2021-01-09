@@ -12,6 +12,7 @@ import JakartaLightWoff from "../fonts/PlusJakartaSans-Light.woff";
 import JakartaLightWoff2 from  "../fonts/PlusJakartaSans-Light.woff2";
 import JakartaExtraLightWoff from "../fonts/PlusJakartaSans-ExtraLight.woff";
 import JakartaExtraLightWoff2 from "../fonts/PlusJakartaSans-ExtraLight.woff2";
+import Monument from "../fonts/MonumentExtended-Regular.otf";
 
 const jakartaNormalWeights = {
     100: [JakartaExtraLightWoff, JakartaExtraLightWoff2],
@@ -42,6 +43,13 @@ for(const [key, weights] of Object.entries(jakartaNormalWeights)) {
 
 const Fonts = css`
     ${styles}
+    @font-face {
+        font-family: "Monument";
+        src: url(${Monument});
+        font-weight: 400;
+        font-style: normal;
+        font-display: auto;
+    }
 `
 
 export {Fonts};

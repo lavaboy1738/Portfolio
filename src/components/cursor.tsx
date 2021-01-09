@@ -13,6 +13,7 @@ const CursorStyles = styled(motion.div)`
     padding: 1.5vw;
     border-radius: 100%;
     border: 0.1vw solid var(--black);
+    mix-blend-mode: difference;
     z-index: 10;
 `
 
@@ -21,8 +22,8 @@ const PointerStyles =styled.div`
     position: absolute;
     left: 0;
     top: 0;
-    width: 0.3vw;
-    height: 0.3vw;
+    width: 0.2vw;
+    height: 0.2vw;
     border-radius: 100%;
     background-color: var(--black);
     transform: translate(-50%, -50%);
@@ -44,8 +45,9 @@ const Cursor = ()=>{
             y: `calc(${y}px - 50%)`,
             scale: hoverNav? 1.8: 1,
             opacity: hoverNav? 1 : 0.7,
+            backgroundColor: hoverNav? "#f6c9a0" : "transparent"
         }}
-        transition= {{ease: "linear"}}
+        transition= {{ease: "linear", duration: 0.2}}
         />
         <PointerStyles 
         className={hoverNav? "on-focus" : ""}

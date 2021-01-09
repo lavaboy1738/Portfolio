@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import {Nav} from "../components/nav";
 
 const WorksStyles = styled.div`
 
@@ -7,9 +8,12 @@ const WorksStyles = styled.div`
 
 const Works = ()=>{
     return (
-        <WorksStyles>
-            works
-        </WorksStyles>
+        <>
+            <Nav/>
+            <WorksStyles>
+                works
+            </WorksStyles>
+        </>
     )
 }
 

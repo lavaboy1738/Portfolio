@@ -13,20 +13,29 @@ const GlobalStyles = createGlobalStyle`
         margin: 0;
         padding: 0;
         box-sizing: border-box;
-        font-family: Jakarta;
     }
 
     h1, h2, h3, h4, h5, p, a{
         color: var(--black);
     }
 
+    h1, h2, h3, h4, a{
+        font-family: Monument;
+    }
+
     html{
-        background-color: var(--burlywood);
-        cursor: none;
         overflow: hidden;
     }
 
+    body{
+        background-color: var(--burlywood);
+        cursor: none;
+        isolation: isolate;
+    }
+
     p{
+        font-family: Jakarta;
+        font-weight: 200;
         font-size: 1.2vw;
         word-spacing: 0.2vw;
         line-height: 140%;
