@@ -1,9 +1,9 @@
-import React, { useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import styled from "styled-components";
 import {Link} from "react-router-dom";
 import {useMousePosition} from "../hooks/useMousePosition";
 import {WorksListItem} from "../data/worksList";
-import { title } from "process";
+import {motion} from "framer-motion";
 
 const WorksItemStyles = styled.li`
     width: 100%;
@@ -16,6 +16,7 @@ const WorksItemStyles = styled.li`
             align-items: flex-end;
             pointer-events: none;
             .title{
+                margin: 0 1vw;
                 h2{
                     font-size:3.5vw;
                     overflow: hidden;
@@ -24,11 +25,9 @@ const WorksItemStyles = styled.li`
             .thumbnail{
                 overflow: hidden;
                 position: absolute;
-                border: 1px solid red;
                 height: 100%;
                 width: 7vw;
                 bottom: 1vw;
-                left: 50%;
                 .mask{
 
                 }
@@ -42,13 +41,14 @@ const WorksItemStyles = styled.li`
             }
             .floating-image{
                 pointer-events: none;
-                width: 20vh;
+                height: 15vw;
+                width: auto;
                 position: absolute;
                 z-index: 10;
                 overflow: hidden;
-                opacity: 0.1;
+                opacity: 0;
                 img{
-                    width: 100%;
+                    height: 100%;
                     display: block;
                 }
             }
@@ -100,13 +100,23 @@ type Prop = {
 }
 
 const WorksItem = (props: Prop)=>{
-    const {title, src, leftFlex, rightFlex, thumbnailOffset} = props.data;
-    const {hoverNav} = useMousePosition();
+    const {title, src, leftFlex, rightFlex, thumbnailOffset, offsetX, offsetY} = props.data;
+    const {x,y} = useMousePosition();
     const [listPosition, setListPosition] = useState({ top: 0, left: 0})
-    const listRef = useRef(null);
+    const [hovered, setHovered] = useState(false);
+    const listRef = useRef<HTMLLIElement>(null);
+
+    useEffect(()=>{
+        if(listRef.current){
+            setListPosition({
+                top: listRef.current.getBoundingClientRect().top,
+                left: listRef.current.getBoundingClientRect().left
+            })
+        }
+    }, [hovered] )
 
     return(
-        <WorksItemStyles ref={listRef}>
+        <WorksItemStyles ref={listRef} onMouseEnter={()=>setHovered(true)} onMouseLeave={()=>setHovered(false)}>
             <Link to="/">
                 <div className="wrapper">
                     <div className={`line left flex-${leftFlex}`}>
@@ -121,9 +131,17 @@ const WorksItem = (props: Prop)=>{
                         <img src={src} alt=""/>
                         <div className="mask"></div>
                     </div>
-                    <div className="floating-image">
+                    <motion.div 
+                    initial={{opacity: 0}}
+                    animate={{
+                        opacity: hovered? 1 : 0,
+                        x: `calc(${x-listPosition.left}px - ${offsetX}vw)`,
+                        y: `calc(${y-listPosition.top}px - ${offsetY}vw)`
+                    }}
+                    transition={{ease: "linear", duration: 0.2}}
+                    className="floating-image">
                         <img src={src} alt=""/>
-                    </div>
+                    </motion.div>
                     <div className={`line right flex-${rightFlex}`}>
                         <div className="mask right"></div>
                     </div>
