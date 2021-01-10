@@ -2,9 +2,9 @@ import React, { useEffect, useRef } from "react";
 import styled from "styled-components";
 import {Link} from "react-router-dom";
 import hoverEffect from "hover-effect";
-import Ronnie from "../assets/images/profile.jpg";
-import Ronnie2 from "../assets/images/profile2.jpeg";
-import DisplacementImg from "../assets/images/heightMap.png";
+import Ronnie from "../assets/images/homepage/profile.jpg";
+import Ronnie2 from "../assets/images/homepage/profile2.jpeg";
+import DisplacementImg from "../assets/images/homepage/heightMap.png";
 
 const NewHomePageStyles = styled.div`
 width: 100vw;

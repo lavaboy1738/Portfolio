@@ -23,6 +23,10 @@ const GlobalStyles = createGlobalStyle`
         font-family: Monument;
     }
 
+    li{
+        list-style: none;
+    }
+
     html{
         overflow: hidden;
     }
@@ -47,7 +51,11 @@ const GlobalStyles = createGlobalStyle`
         font-weight: 800;
         text-transform: uppercase;
         mix-blend-mode: difference;
+        transition: 0.3s all ease-out;
+        /* -webkit-text-fill-color: var(--black);
+        -webkit-text-stroke: 0.14vw var(--burlywood); */
         &:hover{
+            transition: 0.3s all ease-out;
             -webkit-text-fill-color: var(--burlywood);
             -webkit-text-stroke: 0.14vw var(--black);
         }
