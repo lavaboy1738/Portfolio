@@ -3,6 +3,7 @@ import styled from "styled-components";
 import {Nav} from "../components/nav";
 import {Locomotive} from "../styles/locomotive";
 import LocomotiveScroll from "locomotive-scroll";
+import { useLocation } from "react-router-dom";
 
 const ProjectStyles  = styled.div`
 padding: 6vw 5vw;
@@ -17,17 +18,17 @@ padding-right: 6vw;
 
 const Project = ()=>{
     const scrollRef = useRef<HTMLDivElement>(null);
+    const location = useLocation();
 
     useEffect(()=>{
-        async function getLocomotive() {
-            const Locomotive = (await import("locomotive-scroll")).default;
-            const scroll = new Locomotive({
-              el: scrollRef.current,
-              smooth: true,
-            });
+        const scroll = new LocomotiveScroll({
+            el: scrollRef.current,
+            smooth: true,
+        })
+        return ()=>{
+            if(scroll) scroll.destroy();
         }
-        getLocomotive();
-    }, [])
+    }, [location])
 
     return (
         <>

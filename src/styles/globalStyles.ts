@@ -30,6 +30,10 @@ const GlobalStyles = createGlobalStyle`
         list-style: none;
     }
 
+    html{
+        overflow: hidden;
+    }
+
 
     body{
         background-color: var(--burlywood);
