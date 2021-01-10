@@ -141,9 +141,9 @@ const NewHomePage = ()=>{
             </div>
             <div className="top">
                 <div className="top-nav">
-                    <Link to="/about">About <span>Me</span></Link>
-                    <div className="dot"></div>
                     <Link to="/works">Works</Link>
+                    <div className="dot"></div>
+                    <Link to="/about">About <span>Me</span></Link>
                     <div className="dot"></div>
                 </div>
                 <div className="top-contact">

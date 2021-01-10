@@ -1,8 +1,11 @@
 import {createGlobalStyle} from "styled-components";
 import {Fonts} from "./fonts";
+import {Locomotive} from "./locomotive";
 
 const GlobalStyles = createGlobalStyle`
     ${Fonts};
+    ${Locomotive};
+
     :root{
         --black: #0f0e0e;
         --burlywood: #f6c9a0;
@@ -27,9 +30,6 @@ const GlobalStyles = createGlobalStyle`
         list-style: none;
     }
 
-    html{
-        overflow: hidden;
-    }
 
     body{
         background-color: var(--burlywood);

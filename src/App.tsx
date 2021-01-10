@@ -8,6 +8,7 @@ import {Works} from "./pages/works";
 import {About} from "./pages/about";
 import {NotFound} from "./pages/NotFound";
 import {NewHomePage} from "./pages/newHomePage";
+import {Project} from "./pages/project";
 
 function App() {
   return (
@@ -20,6 +21,9 @@ function App() {
         </Route>
         <Route path="/works" exact>
           <Works/>
+        </Route>
+        <Route path="/works/project" exact>
+          <Project/>
         </Route>
         <Route path="/About" exact>
           <About/>

@@ -117,7 +117,7 @@ const WorksItem = (props: Prop)=>{
 
     return(
         <WorksItemStyles ref={listRef} onMouseEnter={()=>setHovered(true)} onMouseLeave={()=>setHovered(false)}>
-            <Link to="/">
+            <Link to="/works/project">
                 <div className="wrapper">
                     <div className={`line left flex-${leftFlex}`}>
                         <div className="mask"></div>
