@@ -59,7 +59,7 @@ const WorksItemStyles = styled.li`
                 position: relative;
                 display: flex;
                 align-items: center;
-                bottom: 1vw;
+                bottom: 1.1vw;
                 &.flex-0{
                     flex: 0;
                     &::after{

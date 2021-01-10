@@ -12,11 +12,16 @@ height: 100vh;
 display: flex;
 flex-wrap: wrap;
 padding-right: 3vw;
-align-content: space-between;
+align-items: space-between;
 
 .top{
     width: 100%;
     height: 40%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: space-around;
+    justify-content: flex-end;
     &-contact{
         text-align: right;
         a{
@@ -41,6 +46,9 @@ align-content: space-between;
         padding-right: 0.2vw;
         a{
             margin: 0 3vw;
+            span{
+                pointer-events: none;
+            }
         }
         .dot{
             width: 1.8vw;
@@ -133,7 +141,7 @@ const NewHomePage = ()=>{
             </div>
             <div className="top">
                 <div className="top-nav">
-                    <Link to="/about">About Me</Link>
+                    <Link to="/about">About <span>Me</span></Link>
                     <div className="dot"></div>
                     <Link to="/works">Works</Link>
                     <div className="dot"></div>

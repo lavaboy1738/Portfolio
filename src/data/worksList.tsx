@@ -25,8 +25,8 @@ export const WorksList: WorksListItem[] = [
         leftFlex: 0,
         rightFlex: 1,
         thumbnailOffset: "60%",
-        offsetX: 20,
-        offsetY: -5,
+        offsetX: 30,
+        offsetY: -10,
     },
     {
         id: "Agency",
@@ -45,8 +45,8 @@ export const WorksList: WorksListItem[] = [
         leftFlex: 1,
         rightFlex: 3,
         thumbnailOffset: "70%",
-        offsetX: 20,
-        offsetY: -2,
+        offsetX: -10,
+        offsetY: 5,
     },
     {
         id: "Portfolio",
@@ -55,8 +55,8 @@ export const WorksList: WorksListItem[] = [
         leftFlex: 1,
         rightFlex: 0,
         thumbnailOffset: "30%",
-        offsetX: 40,
-        offsetY: -2,
+        offsetX: 30,
+        offsetY: 10,
     },
     {
         id: "LGN",
@@ -65,7 +65,7 @@ export const WorksList: WorksListItem[] = [
         leftFlex: 1,
         rightFlex: 3,
         thumbnailOffset: "50%",
-        offsetX: -10,
+        offsetX: 30,
         offsetY: -2,
     },
     {
@@ -76,7 +76,7 @@ export const WorksList: WorksListItem[] = [
         rightFlex: 1,
         thumbnailOffset: "15%",
         offsetX: -5,
-        offsetY: -2,
+        offsetY: 10,
     },
     {
         id: "Lava-UI",
@@ -85,7 +85,7 @@ export const WorksList: WorksListItem[] = [
         leftFlex: 1,
         rightFlex: 2,
         thumbnailOffset: "60%",
-        offsetX: 10,
-        offsetY: 10,
+        offsetX: 30,
+        offsetY: 5,
     }
 ]
