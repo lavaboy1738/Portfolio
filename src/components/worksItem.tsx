@@ -49,6 +49,7 @@ const WorksItemStyles = styled.li`
                 opacity: 0;
                 img{
                     height: 100%;
+                    width: auto;
                     display: block;
                 }
             }

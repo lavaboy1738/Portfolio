@@ -11,5 +11,7 @@ export const ProjectData = [
         mobileFirst: true,
         githubLink: "",
         liveLink: "",
+        previous: "",
+        next: ""
     }
 ]

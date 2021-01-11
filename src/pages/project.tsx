@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import styled from "styled-components";
 import {Nav} from "../components/nav";
+import {Link} from "react-router-dom";
 import LocomotiveScroll from "locomotive-scroll";
 import { useLocation } from "react-router-dom";
 import Xpensityv2lg1 from "../assets/images/projects/xpensityv2-lg-1.png";
@@ -73,7 +74,7 @@ padding-right: 6vw;
 .triple-phone{
     display: flex;
     flex-wrap: nowrap;
-    margin: 20vh 10vw;
+    margin: 15vh 10vw;
     justify-content: space-around;
     .image-wrapper{
         width: 28%;
@@ -93,7 +94,7 @@ padding-right: 6vw;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    margin: 20vh 0;
+    margin: 15vh 0;
     &-main{
         width: 50%;
     }
@@ -106,13 +107,19 @@ padding-right: 6vw;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    margin: 20vh 0;
+    margin: 15vh 0;
     &-main{
         width: 50%;
     }
     &-side{
         width: 30%;
     }
+}
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    font-size: 3vw;
 }
 
 `
@@ -203,6 +210,10 @@ const Project = ()=>{
                 <div data-scroll data-scroll-speed="0.5" className="tablet-main">
                     <img src={tabletMain} alt=""/>
                 </div>
+            </div>
+            <div data-scroll-section className="footer">
+                <Link to="/works">Previous</Link>
+                <Link to="/works">Next</Link>
             </div>
         </ProjectStyles>
         </>
