@@ -15,7 +15,7 @@ const NavStyles = styled.div`
         left: 2vw;
         width: 3.2vw;
         height: 3.2vw;
-        mix-blend-mode: normal;
+        mix-blend-mode:normal;
         svg{
             width: 100%;
             height: 100%;

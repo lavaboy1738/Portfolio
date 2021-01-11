@@ -4,7 +4,7 @@ import {Link} from "react-router-dom";
 
 const HomepageStyles = styled.div`
     width: 100vw;
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     overflow: hidden;
     .indicator{

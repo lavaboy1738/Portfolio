@@ -23,6 +23,7 @@ const jakartaNormalWeights = {
     800: [JakartaExtraBoldWoff, JakartaExtraBoldWoff2]
 }
 
+
 let styles = "";
 
 for(const [key, weights] of Object.entries(jakartaNormalWeights)) {

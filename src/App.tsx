@@ -11,8 +11,10 @@ import {NewHomePage} from "./pages/newHomePage";
 import {Project} from "./pages/project";
 
 function App() {
+  const height = window.innerHeight;
+
   return (
-    <div className="App">
+    <div className="App" style={{height: `${height}px`}}>
       <GlobalStyles/>
       <Cursor/>
       <Switch>

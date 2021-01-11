@@ -32,6 +32,7 @@ const GlobalStyles = createGlobalStyle`
 
     html{
         overflow: hidden;
+        min-height: -webkit-fill-available;
     }
 
 
@@ -39,6 +40,8 @@ const GlobalStyles = createGlobalStyle`
         background-color: var(--burlywood);
         cursor: none;
         isolation: isolate;
+        min-height: 100vh;
+        min-height: -webkit-fill-available;
     }
 
     p{

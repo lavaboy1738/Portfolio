@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import {Nav} from "../components/nav";
 import {WorksItem} from "../components/worksItem";
-import {WorksList, WorksListItem} from "../data/worksList";
+import {WorksList} from "../data/worksList";
 
 const WorksStyles = styled.div`
     width: 100vw;
