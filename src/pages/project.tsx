@@ -120,6 +120,21 @@ padding-right: 6vw;
     display: flex;
     justify-content: space-between;
     font-size: 3vw;
+    &-next{
+        span{
+            position: relative;
+            top: -5%;
+            right: 5%;
+            transition: 0.3s all ease-out;
+            pointer-events: none;
+        }
+        &:hover{
+            span{
+                right: -5%;
+                transition: 0.3s all ease-out;
+            }
+        }
+    }
 }
 
 `
@@ -212,8 +227,8 @@ const Project = ()=>{
                 </div>
             </div>
             <div data-scroll-section className="footer">
-                <Link to="/works">Previous</Link>
-                <Link to="/works">Next</Link>
+                <Link to="/works" className="footer-next">next <span>&rsaquo;</span></Link>
+                <Link to="/works"></Link>
             </div>
         </ProjectStyles>
         </>
