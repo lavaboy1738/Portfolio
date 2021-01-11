@@ -6,6 +6,10 @@ import { useLocation } from "react-router-dom";
 import Xpensityv2lg1 from "../assets/images/projects/xpensityv2-lg-1.png";
 import Xpensityv2lg2 from "../assets/images/projects/xpensityv2-lg-2.png";
 import Xpensityv2lg3 from "../assets/images/projects/xpensityv2-lg-3.png";
+import laptopMain from "../assets/images/projects/agency/agencyLaptopMain.png";
+import laptopSide from "../assets/images/projects/agency/agencyLaptopSide.png";
+import tabletMain from "../assets/images/projects/xpensityV2/tabletMain.png";
+import tabletSide from "../assets/images/projects/xpensityV2/tabletSide.png";
 
 const ProjectStyles  = styled.div`
 padding: 6vw 5vw;
@@ -59,8 +63,7 @@ padding-right: 6vw;
     }
 }
 .secondary{
-    padding: 10vh 10vw;
-    padding-bottom: 20vh;
+    margin: 20vh 10vw;
     &-content{
         h2{
             font-size: 2vw;
@@ -70,7 +73,7 @@ padding-right: 6vw;
 .triple-phone{
     display: flex;
     flex-wrap: nowrap;
-    padding: 0 10vw;
+    margin: 20vh 10vw;
     justify-content: space-around;
     .image-wrapper{
         width: 28%;
@@ -87,7 +90,29 @@ padding-right: 6vw;
     }
 }
 .desktop{
-    height: 100vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 20vh 0;
+    &-main{
+        width: 50%;
+    }
+    &-side{
+        width: 30%;
+    }
+}
+
+.tablet{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 20vh 0;
+    &-main{
+        width: 50%;
+    }
+    &-side{
+        width: 30%;
+    }
 }
 
 `
@@ -163,8 +188,22 @@ const Project = ()=>{
                     <img src={Xpensityv2lg2} alt=""/>
                 </div>
             </div>
-            <div data-scroll-section className="desktop"></div>
-            <div className="tablet"></div>
+            <div data-scroll-section className="desktop">
+                <div data-scroll data-scroll-speed="0.5" className="desktop-main">
+                    <img src={laptopMain} alt=""/>
+                </div>
+                <div data-scroll data-scroll-speed="4" className="desktop-side">
+                    <img src={laptopSide} alt=""/>
+                </div>
+            </div>
+            <div data-scroll-section className="tablet">
+                <div data-scroll data-scroll-speed="4" className="tablet-side">
+                    <img src={tabletSide} alt=""/>
+                </div>
+                <div data-scroll data-scroll-speed="0.5" className="tablet-main">
+                    <img src={tabletMain} alt=""/>
+                </div>
+            </div>
         </ProjectStyles>
         </>
     )

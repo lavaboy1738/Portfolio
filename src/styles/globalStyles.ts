@@ -30,6 +30,11 @@ const GlobalStyles = createGlobalStyle`
         list-style: none;
     }
 
+    img{
+        width: 100%;
+        display: block;
+    }
+
     html{
         overflow: hidden;
         min-height: -webkit-fill-available;
