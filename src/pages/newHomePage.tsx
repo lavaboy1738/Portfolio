@@ -41,11 +41,11 @@ align-items: space-between;
         justify-content: flex-end;
         align-items: center;
         flex-wrap: nowrap;
-        padding-right: 0.2vw;
+        margin-right: -3vw;
+        padding-right: 0.15vw;
         a{
-            margin: 0 3vw;
-            font-size: 6vw;
-            word-spacing: 1.2vw;
+            margin-right: 3vw;
+            font-size: 6.5vw;
             line-height: 5vw;
             height: 5vw;
             span{
@@ -54,6 +54,7 @@ align-items: space-between;
         }
         .dot{
             width: 1.8vw;
+            margin-right: 3vw;
             height: 1.8vw;
             background-color: var(--black);
         }
@@ -66,7 +67,7 @@ align-items: space-between;
     flex-wrap: nowrap;
     &-pic{
         height: 100%;
-        width: 24vw;
+        width: 24%;
     }
     &-description{
         margin-left: 2vw;
@@ -84,10 +85,9 @@ align-items: space-between;
         text-align: right;
         display: flex;
         align-items: flex-start;
-        justify-content: space-between;
+        justify-content: flex-end;
         .wrapper{
             h1{
-                font-weight: 800;
                 font-size: 11vw;
             }
             h2{
@@ -142,8 +142,7 @@ const NewHomePage = ()=>{
                 <div className="top-nav">
                     <Link to="/works">Works</Link>
                     <div className="dot"></div>
-                    <Link to="/about">About <span>Me</span>
-                    </Link>
+                    <Link to="/about">About <span>Me</span></Link>
                     <div className="dot"></div>
                 </div>
                 <div className="top-contact">

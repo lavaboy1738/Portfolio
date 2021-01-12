@@ -1,8 +1,8 @@
-import React, { useEffect, useRef } from "react";
+import React from "react";
 import styled from "styled-components";
 import {Nav} from "../components/nav";
-import LocomotiveScroll from "locomotive-scroll";
-import { useLocation, useParams } from "react-router-dom";
+import {useScroll} from "../hooks/useScroll";
+import {useParams } from "react-router-dom";
 import {MainSection} from "../components/projectPage/mainSection";
 import {SecondarySection} from "../components/projectPage/secondarySection";
 import {PhoneSection} from "../components/projectPage/phoneSection";
@@ -28,8 +28,7 @@ type Params = {
 }
 
 const Project = ()=>{
-    const scrollRef = useRef<HTMLDivElement>(null);
-    const location = useLocation();
+    const {scrollRef} = useScroll();
     const {projectID} = useParams<Params>();
     const {getData} = useData();
 
@@ -44,23 +43,6 @@ const Project = ()=>{
         githubLink, 
         liveLink, 
         next} = getData(projectID);
-
-    useEffect(()=>{
-        const scroll = new LocomotiveScroll({
-            el: scrollRef.current,
-            smooth: true,
-            smartphone:{
-                smooth: true,
-            },
-            tablet: {
-                smooth: true
-            }
-        })
-        setTimeout(()=>scroll.update(), 300);
-        return ()=>{
-            if(scroll) scroll.destroy();
-        }
-    }, [location])
 
     return (
         <>

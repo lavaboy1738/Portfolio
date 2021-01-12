@@ -72,7 +72,7 @@ export const WorksList: WorksListItem[] = [
         id: "e-commerce",
         title: "E-Commerce",
         src: ECommerce,
-        leftFlex: 1,
+        leftFlex: 3,
         rightFlex: 0,
         thumbnailOffset: "15%",
         offsetX: 25,
