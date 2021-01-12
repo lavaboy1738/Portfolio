@@ -137,7 +137,7 @@ const Project = ()=>{
     const scrollRef = useRef<HTMLDivElement>(null);
     const location = useLocation();
 
-    const {title, sequence, text, secondary, phoneImgSrc, desktopImgSrc, tabletImgSrc, mobileFirst, githubLink, liveLink, next} = ProjectData[1];
+    const {title, sequence, text, secondary, phoneImgSrc, desktopImgSrc, tabletImgSrc, mobileFirst, githubLink, liveLink, next} = ProjectData[6];
 
     useEffect(()=>{
         const scroll = new LocomotiveScroll({

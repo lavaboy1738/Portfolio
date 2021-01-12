@@ -73,7 +73,7 @@ export const ProjectData: ProjectDataType[] = [
         phoneImgSrc: [AgencyLG1, AgencyLG2, AgencyLG3],
         desktopImgSrc: [AgencyLaptopMain, AgencyLaptopSide],
         tabletImgSrc: [AgencyTabletMain, AgencyTabletSide],
-        mobileFirst: true,
+        mobileFirst: false,
         githubLink: "https://github.com/lavaboy1738/Portfolio",
         liveLink: "https://github.com/lavaboy1738/Portfolio",
         next: "xpensity-v1"
@@ -115,7 +115,7 @@ export const ProjectData: ProjectDataType[] = [
         phoneImgSrc: [LGNLG1, LGNLG2, LGNLG3],
         desktopImgSrc: [LGNLaptopMain, LGNLaptopSide],
         tabletImgSrc: [LGNTabletMain, LGNTabletSide],
-        mobileFirst: true,
+        mobileFirst: false,
         githubLink: "https://github.com/lavaboy1738/LGN",
         liveLink: "https://lgn-react.netlify.app/",
         next: "ecommerce"
@@ -129,7 +129,7 @@ export const ProjectData: ProjectDataType[] = [
         phoneImgSrc: [EConLG1, EConLG2, EConLG3],
         desktopImgSrc: [EConLaptopMain, EConLaptopSide],
         tabletImgSrc: [EConTabletMain, EConTabletSide],
-        mobileFirst: true,
+        mobileFirst: false,
         githubLink: "https://github.com/lavaboy1738/new-england-clothing",
         liveLink: "https://new-england-clothing.netlify.app/",
         next: "lava-ui"
