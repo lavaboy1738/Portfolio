@@ -1,16 +1,16 @@
 import React, { useEffect, useRef } from "react";
 import styled from "styled-components";
 import {Nav} from "../components/nav";
-import {Link} from "react-router-dom";
 import LocomotiveScroll from "locomotive-scroll";
 import { useLocation } from "react-router-dom";
-import {ProjectData, ProjectDataType} from "../data/projectsData";
+import {ProjectDataType} from "../data/projectsData";
 import {MainSection} from "../components/projectPage/mainSection";
 import {SecondarySection} from "../components/projectPage/secondarySection";
 import {PhoneSection} from "../components/projectPage/phoneSection";
 import {DesktopSection} from "../components/projectPage/desktopSection";
 import {TabletSection} from "../components/projectPage/tabletSection";
 import {ProjectFooter} from "../components/projectPage/projectFooter";
+import {useData} from "../hooks/useData";
 
 const ProjectStyles  = styled.div`
 padding: 6vw 5vw;
@@ -27,8 +27,19 @@ padding-right: 6vw;
 const Project = ()=>{
     const scrollRef = useRef<HTMLDivElement>(null);
     const location = useLocation();
-
-    const {title, sequence, text, secondary, phoneImgSrc, desktopImgSrc, tabletImgSrc, mobileFirst, githubLink, liveLink, next} = ProjectData[1];
+    const {getData} = useData();
+    
+    const {title, 
+        sequence, 
+        text, 
+        secondary, 
+        phoneImgSrc, 
+        desktopImgSrc, 
+        tabletImgSrc, 
+        mobileFirst, 
+        githubLink, 
+        liveLink, 
+        next} = getData("portfolio");
 
     useEffect(()=>{
         const scroll = new LocomotiveScroll({
