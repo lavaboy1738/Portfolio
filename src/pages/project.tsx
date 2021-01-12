@@ -112,7 +112,7 @@ padding-right: 6vw;
 
 .footer{
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     font-size: 3vw;
     &-next{
         span{
@@ -137,7 +137,7 @@ const Project = ()=>{
     const scrollRef = useRef<HTMLDivElement>(null);
     const location = useLocation();
 
-    const {title, sequence, text, secondary, phoneImgSrc, desktopImgSrc, tabletImgSrc, mobileFirst, githubLink, liveLink, next} = ProjectData[6];
+    const {title, sequence, text, secondary, phoneImgSrc, desktopImgSrc, tabletImgSrc, mobileFirst, githubLink, liveLink, next} = ProjectData[1];
 
     useEffect(()=>{
         const scroll = new LocomotiveScroll({
@@ -269,8 +269,7 @@ const Project = ()=>{
                 </div>
             }
             <div data-scroll-section className="footer">
-                <Link to="/works/project" className="footer-next">next <span>&rsaquo;</span></Link>
-                <Link to="/works"></Link>
+                <Link to={next} className="footer-next">next <span>&rsaquo;</span></Link>
             </div>
         </ProjectStyles>
         </>
