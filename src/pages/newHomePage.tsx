@@ -16,16 +16,18 @@ align-items: space-between;
 
 .top{
     width: 100%;
-    height: 40%;
+    height: 45%;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    align-content: space-around;
+    align-content: space-evenly;
     justify-content: flex-end;
     &-contact{
         text-align: right;
         a{
-            font-size: 10vw;
+            font-size: 12vw;
+            height: 9vw;
+            line-height: 9vw;
             -webkit-text-fill-color: var(--burlywood);
             -webkit-text-stroke: 0.14vw var(--black);
             &:hover{
@@ -39,13 +41,13 @@ align-items: space-between;
         justify-content: flex-end;
         align-items: center;
         flex-wrap: nowrap;
-        font-weight: 600;
-        font-size: 6vw;
-        text-transform: uppercase;
-        word-spacing: 1.2vw;
         padding-right: 0.2vw;
         a{
             margin: 0 3vw;
+            font-size: 6vw;
+            word-spacing: 1.2vw;
+            line-height: 5vw;
+            height: 5vw;
             span{
                 pointer-events: none;
             }
@@ -140,7 +142,8 @@ const NewHomePage = ()=>{
                 <div className="top-nav">
                     <Link to="/works">Works</Link>
                     <div className="dot"></div>
-                    <Link to="/about">About <span>Me</span></Link>
+                    <Link to="/about">About <span>Me</span>
+                    </Link>
                     <div className="dot"></div>
                 </div>
                 <div className="top-contact">
