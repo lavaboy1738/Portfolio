@@ -118,7 +118,7 @@ export const ProjectData: ProjectDataType[] = [
         mobileFirst: false,
         githubLink: "https://github.com/lavaboy1738/LGN",
         liveLink: "https://lgn-react.netlify.app/",
-        next: "ecommerce"
+        next: "e-commerce"
     },
     {
         id: "e-commerce",

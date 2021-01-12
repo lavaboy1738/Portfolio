@@ -2,8 +2,7 @@ import React, { useEffect, useRef } from "react";
 import styled from "styled-components";
 import {Nav} from "../components/nav";
 import LocomotiveScroll from "locomotive-scroll";
-import { useLocation } from "react-router-dom";
-import {ProjectDataType} from "../data/projectsData";
+import { useLocation, useParams } from "react-router-dom";
 import {MainSection} from "../components/projectPage/mainSection";
 import {SecondarySection} from "../components/projectPage/secondarySection";
 import {PhoneSection} from "../components/projectPage/phoneSection";
@@ -24,11 +23,16 @@ padding-right: 6vw;
 }
 `
 
+type Params = {
+    projectID:string
+}
+
 const Project = ()=>{
     const scrollRef = useRef<HTMLDivElement>(null);
     const location = useLocation();
+    const {projectID} = useParams<Params>();
     const {getData} = useData();
-    
+
     const {title, 
         sequence, 
         text, 
@@ -39,7 +43,7 @@ const Project = ()=>{
         mobileFirst, 
         githubLink, 
         liveLink, 
-        next} = getData("portfolio");
+        next} = getData(projectID);
 
     useEffect(()=>{
         const scroll = new LocomotiveScroll({

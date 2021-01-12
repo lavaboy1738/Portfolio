@@ -19,7 +19,7 @@ export type WorksListItem = {
 
 export const WorksList: WorksListItem[] = [
     {
-        id: "Xpensity-V2",
+        id: "xpensity-v2",
         title: "Xpensity V2",
         src: XpensityV2,
         leftFlex: 0,
@@ -29,7 +29,7 @@ export const WorksList: WorksListItem[] = [
         offsetY: -10,
     },
     {
-        id: "Agency",
+        id: "agency",
         title: "Agency",
         src: Agency,
         leftFlex: 1,
@@ -39,7 +39,7 @@ export const WorksList: WorksListItem[] = [
         offsetY: -2,
     },
     {
-        id: "Xpensity-V1",
+        id: "xpensity-v1",
         title: "Xpensity V1",
         src: XpensityV1,
         leftFlex: 1,
@@ -49,7 +49,7 @@ export const WorksList: WorksListItem[] = [
         offsetY: 5,
     },
     {
-        id: "Portfolio",
+        id: "portfolio",
         title: "Portfolio",
         src: Portfolio,
         leftFlex: 1,
@@ -59,7 +59,7 @@ export const WorksList: WorksListItem[] = [
         offsetY: 10,
     },
     {
-        id: "LGN",
+        id: "lgn",
         title: "LGN",
         src: LGN,
         leftFlex: 1,
@@ -79,7 +79,7 @@ export const WorksList: WorksListItem[] = [
         offsetY: 10,
     },
     {
-        id: "Lava-UI",
+        id: "lava-ui",
         title: "Lava UI",
         src: LavaUI,
         leftFlex: 1,

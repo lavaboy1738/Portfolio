@@ -101,7 +101,7 @@ type Prop = {
 }
 
 const WorksItem = (props: Prop)=>{
-    const {title, src, leftFlex, rightFlex, thumbnailOffset, offsetX, offsetY} = props.data;
+    const {title, src, leftFlex, rightFlex, thumbnailOffset, offsetX, offsetY, id} = props.data;
     const {x,y} = useMousePosition();
     const [listPosition, setListPosition] = useState({ top: 0, left: 0})
     const [hovered, setHovered] = useState(false);
@@ -118,7 +118,7 @@ const WorksItem = (props: Prop)=>{
 
     return(
         <WorksItemStyles ref={listRef} onMouseEnter={()=>setHovered(true)} onMouseLeave={()=>setHovered(false)}>
-            <Link to="/works/project">
+            <Link to={`/works/${id}`}>
                 <div className="wrapper">
                     <div className={`line left flex-${leftFlex}`}>
                         <div className="mask"></div>

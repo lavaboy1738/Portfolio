@@ -11,10 +11,9 @@ import {NewHomePage} from "./pages/newHomePage";
 import {Project} from "./pages/project";
 
 function App() {
-  const height = window.innerHeight;
 
   return (
-    <div className="App" style={{height: `${height}px`}}>
+    <div className="App">
       <GlobalStyles/>
       <Cursor/>
       <Switch>
@@ -24,7 +23,7 @@ function App() {
         <Route path="/works" exact>
           <Works/>
         </Route>
-        <Route path="/works/project" exact>
+        <Route path="/works/:projectID" exact>
           <Project/>
         </Route>
         <Route path="/About" exact>
