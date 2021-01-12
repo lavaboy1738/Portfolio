@@ -6,7 +6,7 @@ const ProjectFooterStyles = styled.div`
     display: flex;
     justify-content: flex-start;
     font-size: 3vw;
-    &-next{
+    .next{
         span{
             position: relative;
             top: -5%;
@@ -31,7 +31,7 @@ const ProjectFooter = (props: Prop)=>{
     const {next} = props;
     return(
         <ProjectFooterStyles data-scroll-section>
-            <Link to={next} className="footer-next">next <span>&rsaquo;</span></Link>
+            <Link to={next} className="next">next <span>&rsaquo;</span></Link>
         </ProjectFooterStyles>
     )
 }

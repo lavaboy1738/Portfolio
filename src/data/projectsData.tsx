@@ -68,7 +68,7 @@ export const ProjectData: ProjectDataType[] = [
         id: "portfolio",
         sequence: 2,
         title: "Portfolio",
-        text: ["I woke up one morning at 4:44 a.m.", "I've been thinking about the portfolio for a while and preparing for this project by building all sorts of small scale projects. I didn't know what colours to use until the idea came to me at 4:44 a.m. that particular morning. I should just use the colour scheme of the album 4:44 by Jay-Z. It'd be perfect. ", "The album was published at a very special time in his career. Jay-Z has finally made it to the billionaire's club. He was no longer a rapper, street hustler, but a business man, a husband, a father. Matured, experienced and wealthy, yet, he still struggles with many problems he has had for years. Fame, success, setbacks, racism, gossips, betrayals, the possibilities that he has cheated on his wife — it's the most loaded and serious discussion that he has delivered. ", "I guess this portfolio is an attempt to recapture the feeling when I appreciated the album for the very first time. It's complicated, but fulfilling. This is the best work I've produced so far, and I drew inspirations from many places I came across along the way. I'll credit them in the about page."],
+        text: ["I woke up one morning at 4:44 a.m.", "I've been thinking about the portfolio for a while and preparing for this project by building all sorts of small scale projects. I didn't know what colours to use until the idea came to me at 4:44 a.m. that particular morning. I should just use the colours from Jay-Z's album 4:44. It'd be perfect. ", "The album was published at a very special time in his career. Jay-Z has finally made it to the billionaire's club. He was no longer a rapper, street hustler, but a business man, a husband, a father. Matured, experienced and wealthy, yet, he still struggles with many problems he has had for years. Fame, success, setbacks, racism, gossips, betrayals, the possibilities that he cheated on his wife — it's the most loaded and serious discussion that he has delivered. ", "I guess this portfolio is an attempt to recapture the feeling when I appreciated the album for the very first time. It's complicated, but fulfilling. This is the best work I've produced so far, and I drew inspirations from many sites I visited along the way. I credited them in the about page."],
         secondary: ["React", "Typescript", "Custom Hooks", "Smooth Scroll", "Framer Motion", "Transitions", "CSS in JS", "UI/UX"],
         phoneImgSrc: [AgencyLG1, AgencyLG2, AgencyLG3],
         desktopImgSrc: [AgencyLaptopMain, AgencyLaptopSide],
@@ -83,7 +83,7 @@ export const ProjectData: ProjectDataType[] = [
         sequence: 3,
         title: "Xpensity-V1",
         text: ["Everyone needs a budgeting tool. Xpensity can help you to get in control of your own daily expenditures. This mobile-first Single Page Application enables the user to record quick transactions on-the-go. With lightning-fast load time, custom category tags and easy access to the number pad, you can record a transaction in seconds.", "The first iteration is built with Vue and state is managed with Vuex. I had the idea of building a personal accounting web app for a long time and this project is a great practice after learning Vue. Data is stored in Local Storage for this version, and I'd love to explore online options in future iterations. Many changes are made in the second iteration after sending this app to a few friends for testing and daily use. ", "Feel free to explore the web app by going to the live link above. Get your phones ready. "],
-        secondary: ["Vue/VueX", "VueRouter", "Typescript", "Scss/Sass", "Webpack", "SPA"],
+        secondary: ["Vue", "Vuex","VueRouter", "Typescript", "Scss/Sass", "Webpack", "UI/UX", "SPA"],
         phoneImgSrc: [XpensityV1LG1, XpensityV1LG2, XpensityV1LG3],
         desktopImgSrc: [],
         tabletImgSrc: [XpensityV1TabletMain, XpensityV1TabletSide],
@@ -146,6 +146,6 @@ export const ProjectData: ProjectDataType[] = [
         mobileFirst: true,
         githubLink: "",
         liveLink: "",
-        next: ""
+        next: "xpensity-v2"
     }
 ]

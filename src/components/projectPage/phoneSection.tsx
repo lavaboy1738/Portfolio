@@ -33,7 +33,7 @@ const PhoneSection = (props: Prop)=>{
                 <img src={phoneImgSrc[0]} alt=""/>
             </div>
             <div data-scroll data-scroll-speed="4" className="image-wrapper">
-                <img src={phoneImgSrc[1]} alt="" className="triple-phone-main"/>
+                <img src={phoneImgSrc[1]} alt="" />
             </div>
             <div data-scroll data-scroll-speed="-2" data-scroll-direction="horizontal" className="image-wrapper">
                 <img src={phoneImgSrc[2]} alt=""/>

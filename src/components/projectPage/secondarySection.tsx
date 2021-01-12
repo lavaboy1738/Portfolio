@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 const SecondarySectionStyles = styled.div`
     margin: 20vh 10vw;
-    &-content{
+    .content{
         h2{
             font-size: 2vw;
         }
@@ -18,7 +18,7 @@ const SecondarySection = (props: Prop)=>{
     const {secondary} = props;
     return(
         <SecondarySectionStyles data-scroll-section >
-            <div className="secondary-content">
+            <div className="content">
                 {
                     secondary.map((text, index)=>{
                         return(

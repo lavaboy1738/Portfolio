@@ -126,7 +126,7 @@ const NewHomePage = ()=>{
             <div className="bottom">
                 <div className="bottom-pic" ref={profile}></div>
                 <div className="bottom-description">
-                    <p>An interactive developer striving to craft memorable experiences on the digital canvas. Front-End addicted, Fullstack capable.</p>
+                    <p>An interactive developer (also occassionally a designer) striving to craft memorable experiences on the digital canvas. Front-End addicted, Fullstack capable.</p>
                 </div>
                 <div className="bottom-name">
                     <div className="wrapper">
