@@ -9,6 +9,7 @@ import HeatMap from "../assets/images/homepage/heightMap.png";
 
 const AboutStyles = styled.div`
     padding: 0 4vw;
+    padding-bottom: 6vw;
     .big-text{
         height:100vh;
         display: flex;
@@ -56,6 +57,7 @@ const AboutStyles = styled.div`
         }
     }
     .main{
+        margin: 20vh 0;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -74,6 +76,60 @@ const AboutStyles = styled.div`
                     text-transform: none;
                     mix-blend-mode: difference;
                 }
+            }
+        }
+    }
+    .split{
+        margin: 5vh 0;
+        h1{
+            text-transform: uppercase;
+            font-size: 3vw;
+        }
+    }
+    .info{
+        margin-bottom: 20vh;
+        display: flex;
+        justify-content: space-between;
+        &-main{
+            width: 45%;
+            p{
+                margin-bottom: 3vw;
+                :last-child{
+                    margin-bottom: 0;
+                }
+            }
+        }
+        &-credits{
+            width: 40%;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            h2{
+                font-size: 2vw;
+                margin: 0.5vw 0;
+                :last-child{
+                    margin-bottom: 0;
+                }
+            }
+            p{
+                margin-bottom: 3vw;
+            }
+        }
+    }
+    .contact{
+        text-align: right;
+        h1{
+            font-size: 6vw;
+            text-transform: uppercase;
+        }
+        a{
+            font-size: 10vw;
+            text-transform: uppercase;
+            -webkit-text-fill-color: var(--burlywood);
+            -webkit-text-stroke: 0.14vw var(--black);
+            &:hover{
+                -webkit-text-fill-color: var(--black);
+                -webkit-text-stroke: 0.14vw var(--burlywood);
             }
         }
     }
@@ -114,11 +170,43 @@ const About = ()=>{
                     <div className="main-text">
                         <p>For whatever reason that brought you to my portfolio, welcome. I hope you enjoyed browsing this site as much as I enjoyed building it. First, please allow me to introduce myself. </p>
                         <p>I'm currently a graduate student at the University of Toronto. Prior to that, I completed my bachelor's degree at Boston University studying communications and American Studies. I worked in advertising for a bit and loved everything about it. I was very fortunate to participate in a few projects that served some notable clients, including <a href="https://www.dunkindonuts.com/en" target="_blank" rel="noreferrer">Dunkin Donuts</a>, <a href="https://www.nhl.com/bruins" target="_blank" rel="noreferrer">Boston Bruins</a>, <a href="https://www.partycity.ca/en.html" target="_blank" rel="noreferrer">Party City</a>, and <a href="https://fostergrant.com/" target="_blank" rel="noreferrer">Foster Grant</a>.</p>
-                        <p>I was introduced to coding in the fall of 2019 when I took a graduate python course at school. Soon after, I made the decision to transition into software development. Web, as a platform, allows me to harness on my experience in advertising and stretch my creative muscles. After about 10 months of grinding and teaching myself, I completed this website. No bootcamp, no CS degree, but the drive to achieve nothing less than excellence. No days off, I'm serious. </p>
+                        <p>I was introduced to coding in the fall of 2019 when I took a graduate python course at school. Soon after, I made the decision to transition into software development. Web, as a platform, allows me to harness on my experience in advertising and stretch my creative muscles. After about 10 months of grinding and teaching myself, I completed this website. No bootcamp, no CS degree, no days off, but the drive to achieve nothing less than excellence.</p>
                         <p>In my spare time, I follow a number of boxers in the lower weight divisions. I've been a fervent fan of boxing for years. Gotta love the sweet science.</p>
                     </div>
                 </div>
-
+                <div data-scroll-section className="split">
+                    <h1 data-scroll>Front-End Addicted</h1>
+                    <h1 data-scroll>Fullstack Capable.</h1>
+                </div>
+                <div data-scroll-section  className="info">
+                    <div className="info-main">
+                        <h2>Languages</h2>
+                        <p>HTML, CSS/Scss/Sass, Javascript, Typescript, Python, SQL</p>
+                        <h2>Frameworks/Libraries/Runtime:</h2>
+                        <p>React.js, Vue.js, Firebase, Framer Motion, GSAP, Styled Components, Node.js</p>
+                        <h2>UI/UX:</h2>
+                        <p>Responsive Design, Prototyping, Wireframing, Figma, Adobe Xd, Interview, Survey, Usability Testing</p>
+                        <h2>Learning:</h2>
+                        <p>Node.js, Gatsby.js</p>
+                        <h2>Education</h2>
+                        <p>Master of Information <br/>Information Systems <br/>University of Toronto Exp. June 2021</p>
+                        <p>Bachelor of Science <br/>Communications, American Studies <br/>Boston University May 2018</p>
+                    </div>
+                    <div className="info-credits">
+                        <h1>Credits</h1>
+                        <p>Although I designed and built this portfolio myself, I have to credit a few places from where I drew my inspirations. </p>
+                        <h2><a href="https://romainavalle.com/" target="_blank" rel="noreferrer">Romain Avalle</a></h2>
+                        <h2><a href="https://loerarchitecten.com/en/" target="_blank" rel="noreferrer">Loer Architecten</a></h2>
+                        <h2><a href="https://www.clockstrikestwelve.com/" target="_blank" rel="noreferrer">ClockStrikesTwelve</a></h2>
+                        <h2><a href="https://pitchfork.com/reviews/albums/jay-z-444/" target="_blank" rel="noreferrer">Jay-Z's 4:44</a></h2>
+                        <h2><a href="https://www.youtube.com/watch?v=xvFZjo5PgG0" target="_blank" rel="noreferrer">Rick Astley</a></h2>
+                        <h2><a href="https://www.loftgarten.co/" target="_blank" rel="noreferrer">Loftgarten</a></h2>
+                    </div>
+                </div>
+                <div data-scroll-section  className="contact">
+                    <h1>Got Some Ideas?</h1>
+                    <a href="mailto: ronnie@ronniefeng.com">Let's Talk.</a>
+                </div>
             </AboutStyles>
         </>
     )

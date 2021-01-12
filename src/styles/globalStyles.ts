@@ -66,6 +66,7 @@ const GlobalStyles = createGlobalStyle`
         &:hover{
             -webkit-text-fill-color: var(--burlywood);
             -webkit-text-stroke: 0.14vw var(--black);
+            cursor: none;
         }
     }
 
