@@ -102,10 +102,7 @@ align-items: space-between;
             .locations{
                 position: relative;
                 top: -1vw;
-                span{
-                    text-decoration: line-through;
-                    opacity: 0.6;
-                }
+                word-spacing: 0.22vw;
             }
         }
     }
@@ -135,7 +132,7 @@ const NewHomePage = ()=>{
                     <div className="wrapper">
                         <h1 className="first">Ronnie</h1>
                         <h1 className="last">Feng</h1>
-                        <h2 className="locations">Based in <span>Boston</span> Toronto</h2>
+                        <h2 className="locations">Based in Toronto, Canada.</h2>
                     </div>
                 </div>
             </div>

@@ -69,7 +69,7 @@ export const WorksList: WorksListItem[] = [
         offsetY: -2,
     },
     {
-        id: "E-Commerce",
+        id: "e-commerce",
         title: "E-Commerce",
         src: ECommerce,
         leftFlex: 3,
