@@ -4,6 +4,7 @@ import {Link} from "react-router-dom";
 import {useMousePosition} from "../hooks/useMousePosition";
 import {WorksListItem} from "../data/worksList";
 import {motion} from "framer-motion";
+import{Animations} from "../animations";
 
 const WorksItemStyles = styled.li`
     width: 100%;
@@ -18,8 +19,10 @@ const WorksItemStyles = styled.li`
             .title{
                 margin: 0 1vw;
                 h2{
-                    font-size:3.5vw;
                     overflow: hidden;
+                    .text{
+                        font-size:3.5vw;
+                    }
                 }
             }
             .thumbnail{
@@ -29,7 +32,12 @@ const WorksItemStyles = styled.li`
                 width: 7vw;
                 bottom: 1.1vw;
                 .mask{
-
+                    width: 100%;
+                    height: 100%;
+                    position: absolute;
+                    top: 0;
+                    z-index: 9;
+                    background-color: var(--burlywood);
                 }
                 img{
                     position: absolute;
@@ -90,7 +98,11 @@ const WorksItemStyles = styled.li`
                     }
                 }
                 .mask{
-
+                    width: 100%;
+                    height: 0.6vw;
+                    z-index: 9;
+                    position: absolute;
+                    background-color: var(--burlywood);
                 }
             }
         }
@@ -106,6 +118,7 @@ const WorksItem = (props: Prop)=>{
     const [listPosition, setListPosition] = useState({ top: 0, left: 0})
     const [hovered, setHovered] = useState(false);
     const listRef = useRef<HTMLLIElement>(null);
+    const{transition, maskAnimation, textReveal} = Animations();
 
     useEffect(()=>{
         if(listRef.current){
@@ -121,17 +134,30 @@ const WorksItem = (props: Prop)=>{
             <Link to={`/works/${id}`}>
                 <div className="wrapper">
                     <div className={`line left flex-${leftFlex}`}>
-                        <div className="mask"></div>
+                        <motion.div 
+                        variants={maskAnimation}
+                        transition={{...transition, duration: 1, times:[0, 0.01, 1]}}
+                        className="mask"></motion.div>
                     </div>
-                    <div className="title">
-                        <h2 className="text">{title}</h2>
-                    </div>
-                    <div className="thumbnail"
+                    <motion.div className="title">
+                        <h2>
+                            <motion.div 
+                            variants={textReveal}
+                            transition={transition}
+                            className="text">
+                            {title}
+                            </motion.div>
+                        </h2>
+                    </motion.div>
+                    <motion.div className="thumbnail"
                     style={{left: thumbnailOffset}}
                     >
                         <img src={src} alt=""/>
-                        <div className="mask"></div>
-                    </div>
+                        <motion.div 
+                        variants={maskAnimation}
+                        transition={{...transition, duration: 1,times:[0, 0.01, 1]}}
+                        className="mask"></motion.div>
+                    </motion.div>
                     <motion.div 
                     initial={{opacity: 0}}
                     animate={{
@@ -143,9 +169,15 @@ const WorksItem = (props: Prop)=>{
                     className="floating-image">
                         <img src={src} alt=""/>
                     </motion.div>
-                    <div className={`line right flex-${rightFlex}`}>
-                        <div className="mask right"></div>
-                    </div>
+                    <motion.div 
+                    variants={maskAnimation}
+                    transition={{...transition, duration: 1, times:[0, 0.01, 1]}}
+                    className={`line right flex-${rightFlex}`}>
+                        <motion.div 
+                        variants={maskAnimation}
+                        transition={{...transition, duration: 1, times:[0, 0.01, 1]}}
+                        className="mask right"></motion.div>
+                    </motion.div>
                 </div>
             </Link>
         </WorksItemStyles>

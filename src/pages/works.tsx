@@ -5,6 +5,7 @@ import {WorksItem} from "../components/worksItem";
 import {WorksList} from "../data/worksList";
 import {motion} from "framer-motion";
 import {Panels} from "../components/panels";
+import {Animations} from "../animations";
 
 const WorksStyles = styled(motion.div)`
     width: 100vw;
@@ -49,6 +50,7 @@ const WorksStyles = styled(motion.div)`
 `
 
 const Works = ()=>{
+    const {parent,textReveal, transition, worksTitleParent} = Animations();
     return (
         <>
             <Nav/>
@@ -59,20 +61,37 @@ const Works = ()=>{
             key="works"
             >
                 <div className="title-wrapper">
-                    <div className="title">
-                        <div className="word-wrapper">
-                            <h1 className="word">Blood,</h1>
-                        </div>
-                        <div className="word-wrapper">
-                            <h1 className="word">Sweat,</h1>
-                        </div>
-                        <div className="word-wrapper">
-                            <h1 className="word">and ideas.</h1>
-                        </div>
-                    </div>
+                    <motion.div 
+                    variants={worksTitleParent}
+                    initial="initial"
+                    animate="animate"
+                    className="title">
+                        <motion.h1 className="word-wrapper">
+                            <motion.div
+                            variants={textReveal}
+                            transition={transition}
+                            className="word">Blood,</motion.div>
+                        </motion.h1>
+                        <motion.h1 className="word-wrapper">
+                            <motion.div
+                            variants={textReveal}
+                            transition={transition}
+                            className="word">Sweat,</motion.div>
+                        </motion.h1>
+                        <motion.h1 className="word-wrapper">
+                            <motion.div
+                            variants={textReveal}
+                            transition={transition}
+                            className="word">and ideas.</motion.div>
+                        </motion.h1>
+                    </motion.div>
                 </div>
                 <div className="content">
-                    <ul className="works-list">
+                    <motion.ul 
+                    variants={parent}
+                    initial="initial"
+                    animate="animate"
+                    className="works-list">
                         {
                             WorksList.map((data)=>{
                                 return(
@@ -80,7 +99,7 @@ const Works = ()=>{
                                 )
                             })
                         }
-                    </ul>
+                    </motion.ul>
                 </div>
             </WorksStyles>
             <Panels/>
