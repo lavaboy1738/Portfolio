@@ -138,9 +138,9 @@ const NewHomePage = ()=>{
     return (
         <>
         <NewHomePageStyles
-        initial={{visibility: "hidden"}}
-        animate={{visibility: "visible"}}
-        exit={{visibility: "hidden", transition:{delay: 2.4}}}
+            initial={{backgroundColor: "#0f0e0e", pointerEvents: "none"}}
+            animate={{backgroundColor: "transparent", pointerEvents: "unset"}}
+            exit={{opacity: [1, 1, 0], transition:{duration: 2.4, times: [0, 0.99, 1]}}}
         key="home"
         >
             <div className="bottom">
@@ -152,7 +152,10 @@ const NewHomePage = ()=>{
                     <div 
                     className="wrapper">
                         <h1 className="first">Ronnie</h1>
-                        <h1 className="last">Feng</h1>
+                        <motion.h1 
+                        initial={{WebkitTextStrokeColor: "#0f0e0e", WebkitTextFillColor: "#0f0e0e"}}
+                        animate={{WebkitTextStrokeColor: "#0f0e0e", WebkitTextFillColor: "#fac9a0"}}
+                        className="last">Feng</motion.h1>
                         <h2 className="locations">Based in Toronto, Canada.</h2>
                     </div>
                 </div>
@@ -165,7 +168,10 @@ const NewHomePage = ()=>{
                     <div className="dot"></div>
                 </div>
                 <div className="top-contact">
-                    <a href="mailto: ronnie@ronniefeng.com">Reach Me</a>
+                    <motion.a 
+                    initial={{WebkitTextStrokeColor: "#0f0e0e", WebkitTextFillColor: "#0f0e0e"}}
+                    animate={{WebkitTextStrokeColor: "#0f0e0e", WebkitTextFillColor: "#fac9a0"}}
+                    href="mailto: ronnie@ronniefeng.com">Reach Me</motion.a>
                 </div>
             </div>
         </NewHomePageStyles>

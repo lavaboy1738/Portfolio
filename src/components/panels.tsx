@@ -30,18 +30,18 @@ pointer-events: none;
 const Panels = ()=>{
     const {transition} = Animations();
     return (
-        <PanelStyles key="panels">
+        <PanelStyles>
             <motion.div 
             initial={{height: 0}}
-            animate={{height: [window.innerHeight, 0], top: [0, window.innerHeight]}}
-            exit={{height: [0,window.innerHeight], top: [0, 0]}}
-            transition={{...transition, duration: 2.5, times: [0, 1]}}
+            animate={{height: [window.innerHeight, window.innerHeight, 0, 0], top: [0,0, window.innerHeight,window.innerHeight]}}
+            exit={{height: [0,0, window.innerHeight, window.innerHeight], top: [0, 0, 0, 0]}}
+            transition={{...transition, duration: 2.5, times: [0, 0,2, 0.8, 1]}}
             className="left"></motion.div>
             <motion.div 
             initial={{height: 0}}
-            animate={{height: [window.innerHeight, 0], top: [0, 0]}}
-            exit={{height: [0, window.innerHeight], top: [window.innerHeight, 0]}}
-            transition={{...transition, duration: 2.5, times: [0, 1]}}
+            animate={{height: [window.innerHeight, window.innerHeight, 0, 0], top: [0, 0, 0, 0]}}
+            exit={{height: [0,0, window.innerHeight, window.innerHeight], top: [window.innerHeight, window.innerHeight,0, 0]}}
+            transition={{...transition, duration: 2.5, times: [0, 0.2, 0.8, 1]}}
             className="right"></motion.div>
         </PanelStyles>
     )

@@ -159,9 +159,9 @@ const About = ()=>{
         <>
             <Nav/>
             <AboutStyles 
-            initial={{visibility: "hidden"}}
-            animate={{visibility: "visible"}}
-            exit={{visibility: "hidden", transition:{delay: 2.4}}}
+            initial={{backgroundColor: "#0f0e0e", pointerEvents: "none"}}
+            animate={{backgroundColor: "transparent", pointerEvents: "unset"}}
+            exit={{opacity: [1, 1, 0], transition:{duration: 2.4, times: [0, 0.99, 1]}}}
             key="about"
             ref={scrollRef} data-scroll-container >
                 <div data-scroll-section className="big-text">
