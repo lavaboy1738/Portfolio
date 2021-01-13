@@ -171,6 +171,7 @@ const NewHomePage = ()=>{
                     <motion.a 
                     initial={{WebkitTextStrokeColor: "#0f0e0e", WebkitTextFillColor: "#0f0e0e"}}
                     animate={{WebkitTextStrokeColor: "#0f0e0e", WebkitTextFillColor: "#fac9a0"}}
+                    whileHover={{WebkitTextStrokeColor:"#fac9a0", WebkitTextFillColor: "#0f0e0e", transition:{duration: 0}}}
                     href="mailto: ronnie@ronniefeng.com">Reach Me</motion.a>
                 </div>
             </div>
