@@ -3,8 +3,10 @@ import styled from "styled-components";
 import {Nav} from "../components/nav";
 import {WorksItem} from "../components/worksItem";
 import {WorksList} from "../data/worksList";
+import {motion} from "framer-motion";
+import {Panels} from "../components/panels";
 
-const WorksStyles = styled.div`
+const WorksStyles = styled(motion.div)`
     width: 100vw;
     height: 100vh;
     padding: 6vw 4vw;
@@ -50,7 +52,12 @@ const Works = ()=>{
     return (
         <>
             <Nav/>
-            <WorksStyles>
+            <WorksStyles
+            initial={{visibility: "hidden"}}
+            animate={{visibility: "visible"}}
+            exit={{visibility: "hidden", transition:{delay: 2.4}}}
+            key="works"
+            >
                 <div className="title-wrapper">
                     <div className="title">
                         <div className="word-wrapper">
@@ -76,6 +83,7 @@ const Works = ()=>{
                     </ul>
                 </div>
             </WorksStyles>
+            <Panels/>
         </>
     )
 }

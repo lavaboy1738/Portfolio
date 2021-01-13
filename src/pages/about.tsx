@@ -6,8 +6,10 @@ import hoverEffect from "hover-effect";
 import Ronnie from "../assets/images/homepage/profile.jpg";
 import Ronnie2 from "../assets/images/homepage/profile2.jpeg";
 import HeatMap from "../assets/images/homepage/heightMap.png";
+import {motion} from "framer-motion";
+import {Panels} from "../components/panels";
 
-const AboutStyles = styled.div`
+const AboutStyles = styled(motion.div)`
     padding: 0 4vw;
     padding-bottom: 6vw;
     .big-text{
@@ -92,6 +94,9 @@ const AboutStyles = styled.div`
         justify-content: space-between;
         &-main{
             width: 45%;
+            h2{
+                font-size: 2vw;
+            }
             p{
                 margin-bottom: 3vw;
                 :last-child{
@@ -104,6 +109,9 @@ const AboutStyles = styled.div`
             display: flex;
             flex-direction: column;
             justify-content: flex-end;
+            h1{
+                font-size: 4vw;
+            }
             h2{
                 font-size: 2vw;
                 margin: 0.5vw 0;
@@ -150,7 +158,12 @@ const About = ()=>{
     return (
         <>
             <Nav/>
-            <AboutStyles ref={scrollRef} data-scroll-container >
+            <AboutStyles 
+            initial={{visibility: "hidden"}}
+            animate={{visibility: "visible"}}
+            exit={{visibility: "hidden", transition:{delay: 2.4}}}
+            key="about"
+            ref={scrollRef} data-scroll-container >
                 <div data-scroll-section className="big-text">
                     <h1>Slicker</h1>
                     <h1>Than Your</h1>
@@ -208,6 +221,7 @@ const About = ()=>{
                     <a href="mailto: ronnie@ronniefeng.com">Let's Talk.</a>
                 </div>
             </AboutStyles>
+            <Panels/>
         </>
     )
 }

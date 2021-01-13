@@ -5,8 +5,10 @@ import hoverEffect from "hover-effect";
 import Ronnie from "../assets/images/homepage/profile.jpg";
 import Ronnie2 from "../assets/images/homepage/profile2.jpeg";
 import DisplacementImg from "../assets/images/homepage/heightMap.png";
+import {motion} from "framer-motion";
+import {Panels} from "../components/panels";
 
-const NewHomePageStyles = styled.div`
+const NewHomePageStyles = styled(motion.div)`
 width: 100vw;
 height: 100vh;
 display: flex;
@@ -28,6 +30,8 @@ align-items: space-between;
             font-size: 12vw;
             height: 9vw;
             line-height: 9vw;
+            position: relative;
+            top: 0.5vw;
             -webkit-text-fill-color: var(--burlywood);
             -webkit-text-stroke: 0.14vw var(--black);
             &:hover{
@@ -102,12 +106,20 @@ align-items: space-between;
                 -webkit-text-stroke: 0.14vw var(--black);
             }
             .locations{
-                position: relative;
                 top: -1vw;
                 word-spacing: 0.22vw;
             }
         }
     }
+}
+.mask{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--black);
+    z-index: 2
 }
 `
 
@@ -124,14 +136,21 @@ const NewHomePage = ()=>{
     });
 
     return (
-        <NewHomePageStyles>
+        <>
+        <NewHomePageStyles
+        initial={{visibility: "hidden"}}
+        animate={{visibility: "visible"}}
+        exit={{visibility: "hidden", transition:{delay: 2.4}}}
+        key="home"
+        >
             <div className="bottom">
                 <div className="bottom-pic" ref={profile}></div>
                 <div className="bottom-description">
                     <p>An interactive developer (also occassionally a designer) striving to craft memorable experiences on the digital canvas. Front-End addicted, Fullstack capable.</p>
                 </div>
                 <div className="bottom-name">
-                    <div className="wrapper">
+                    <div 
+                    className="wrapper">
                         <h1 className="first">Ronnie</h1>
                         <h1 className="last">Feng</h1>
                         <h2 className="locations">Based in Toronto, Canada.</h2>
@@ -150,6 +169,8 @@ const NewHomePage = ()=>{
                 </div>
             </div>
         </NewHomePageStyles>
+        <Panels/>
+        </>
     )
 }
 

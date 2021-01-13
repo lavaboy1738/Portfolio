@@ -10,8 +10,10 @@ import {DesktopSection} from "../components/projectPage/desktopSection";
 import {TabletSection} from "../components/projectPage/tabletSection";
 import {ProjectFooter} from "../components/projectPage/projectFooter";
 import {useData} from "../hooks/useData";
+import{motion} from "framer-motion";
+import {Panels} from "../components/panels";
 
-const ProjectStyles  = styled.div`
+const ProjectStyles  = styled(motion.div)`
 padding: 6vw 5vw;
 padding-right: 6vw;
 .number{
@@ -47,7 +49,12 @@ const Project = ()=>{
     return (
         <>
         <Nav/>
-        <ProjectStyles ref={scrollRef} data-scroll-container>
+        <ProjectStyles 
+        initial={{visibility: "hidden"}}
+        animate={{visibility: "visible"}}
+        exit={{visibility: "hidden", transition:{delay: 2.4}}}
+        key="project"
+        ref={scrollRef} data-scroll-container>
             <h1 data-scroll-section className="number">
                 <span>0</span>
                 <span>{sequence}</span>
@@ -78,6 +85,7 @@ const Project = ()=>{
             }
             <ProjectFooter next={next} />
         </ProjectStyles>
+        <Panels/>
         </>
     )
 }
