@@ -8,6 +8,7 @@ import Ronnie2 from "../assets/images/homepage/profile2.jpeg";
 import HeatMap from "../assets/images/homepage/heightMap.png";
 import {motion} from "framer-motion";
 import {Panels} from "../components/panels";
+import {Animations} from "../animations";
 
 const AboutStyles = styled(motion.div)`
     padding: 0 4vw;
@@ -18,18 +19,21 @@ const AboutStyles = styled(motion.div)`
         flex-wrap: wrap;
         align-content: center;
         margin-bottom: 10vh;
-        h1{
-            text-transform: uppercase;
-            font-size: 11vw;
-            line-height: 9vw;
-            height: 9vw;
+        .container{
             overflow: hidden;
+            width: 100%;
             :nth-child(2){
-                flex-grow: 1;
                 text-align: right;
             }
             :nth-child(3){
-                padding-left: 15vw;
+                    padding-left: 15vw;
+            }
+            h1{
+                text-transform: uppercase;
+                font-size: 11vw;
+                line-height: 10vw;
+                height: 10vw;
+                overflow: hidden;
             }
         }
     }
@@ -68,6 +72,7 @@ const AboutStyles = styled(motion.div)`
             height: 30vw;
             margin-right: 5vw;
             text-align: center;
+            overflow: hidden;
         }
         &-text{
             width: 40%;
@@ -146,6 +151,7 @@ const AboutStyles = styled(motion.div)`
 const About = ()=>{
     const {scrollRef} = useScroll();
     const profileRef = useRef(null);
+
     useEffect(()=>{
         new hoverEffect({
             parent: profileRef.current,
@@ -154,7 +160,9 @@ const About = ()=>{
             image2: Ronnie,
             displacementImage: HeatMap
         })
-});
+    });
+
+    const {transition, textReveal} = Animations();
     return (
         <>
             <Nav/>
@@ -164,11 +172,20 @@ const About = ()=>{
             exit={{opacity: [1, 1, 0], transition:{duration: 1.4, times: [0, 0.99, 1]}}}
             key="about"
             ref={scrollRef} data-scroll-container >
-                <div data-scroll-section className="big-text">
-                    <h1>Slicker</h1>
-                    <h1>Than Your</h1>
-                    <h1>Average</h1>
-                    <h1>Web Dev</h1>
+                <div 
+                data-scroll-section className="big-text">
+                    <div className="container">
+                        <motion.h1 variants={textReveal} initial="initial" animate="animate" transition= {{...transition, delay: 3}}>Slicker</motion.h1>
+                    </div>
+                    <div className="container">
+                        <motion.h1 variants={textReveal} initial="initial" animate="animate" transition= {{...transition, delay: 3.2}}>than your</motion.h1>
+                    </div>
+                    <div className="container">
+                        <motion.h1 variants={textReveal} initial="initial" animate="animate"  transition= {{...transition, delay: 3.4}}>average</motion.h1>
+                    </div>
+                    <div className="container">
+                        <motion.h1 variants={textReveal} initial="initial" animate="animate"  transition= {{...transition, delay: 3.6}}>web dev</motion.h1>
+                    </div>
                 </div>
                 <div data-scroll-section  className="hello">
                     <h1  data-scroll data-scroll-speed="-8" data-scroll-direction="horizontal">Hi, my name is</h1>
@@ -188,8 +205,8 @@ const About = ()=>{
                     </div>
                 </div>
                 <div data-scroll-section className="split">
-                    <h1 data-scroll>Front-End Addicted</h1>
-                    <h1 data-scroll>Fullstack Capable.</h1>
+                    <h1>Front-End Addicted</h1>
+                    <h1>Fullstack Capable.</h1>
                 </div>
                 <div data-scroll-section  className="info">
                     <div className="info-main">

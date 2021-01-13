@@ -41,8 +41,10 @@ const Cursor = ()=>{
         <>
         <CursorStyles
         animate={{
-            x: `calc(${x}px - 50%)`,
-            y: `calc(${y}px - 50%)`,
+            top: y,
+            left: x,
+            x: "-50%",
+            y: "-50%",
             scale: hoverNav? 1.8: 1,
             opacity: hoverNav? 1 : 0.7,
             backgroundColor: hoverNav? "#f6c9a0" : "transparent"

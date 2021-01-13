@@ -63,6 +63,7 @@ const GlobalStyles = createGlobalStyle`
         font-weight: 800;
         text-transform: uppercase;
         mix-blend-mode: difference;
+        outline: none;
         &:hover{
             -webkit-text-fill-color: var(--burlywood);
             -webkit-text-stroke: 0.14vw var(--black);

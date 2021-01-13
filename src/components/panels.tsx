@@ -9,13 +9,13 @@ left: 0;
 top: 0;
 width: 100vw;
 height: 100vh;
-z-index: 10;
+z-index: 11;
 pointer-events: none;
     .left, .right{
         height: 100vh;
         width: 50vw;
         position: absolute;
-        z-index: 11;
+        z-index: 12;
         background-color: var(--black);
     }
 
@@ -32,7 +32,8 @@ pointer-events: none;
         left: 50%;
         transform: translate(-50%, -50%);
         color: var(--burlywood);
-        z-index: 12;
+        font-size:2vw;
+        z-index: 13;
     }
 `
 
@@ -71,12 +72,12 @@ const Panels = ()=>{
             <motion.h2 
             initial={{opacity: 0, display: "block", top: "60%", left: "50%", x:"-50%", y:"-50%"}}
             animate={{
-                top: ["60%", "50%", "50%", "40%", "40%"],
+                top: ["70%", "50%", "50%", "30%", "40%"],
                 left: "50%",
                 x: "-50%",
                 y:"-50%", 
                 opacity: [0, 1, 1, 0, 0], display: ["block", "block", "block", "block","none"],
-                transition: {ease: "easeInOut", duration: 2.1, times: [0, 0.2, 0.8, 0.99, 1]}
+                transition: {...transition, duration: 2.1, times: [0, 0.5, 0.5, 0.99, 1]}
         }}
             exit={{display: "none", opacity: 0, transition:{duration: 0.01}}}
             className="message">{generateMessage()}</motion.h2>

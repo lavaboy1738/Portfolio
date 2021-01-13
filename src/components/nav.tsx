@@ -7,7 +7,7 @@ const navFontSize = "1.2vw";
 const NavStyles = styled.div`
     .logo, .works, .about{
         position: fixed;
-        z-index: 2;
+        z-index: 10;
     }
 
     .logo{
@@ -15,11 +15,12 @@ const NavStyles = styled.div`
         left: 2vw;
         width: 3.2vw;
         height: 3.2vw;
-        mix-blend-mode:normal;
+        mix-blend-mode: normal;
         svg{
             width: 100%;
             height: 100%;
             pointer-events: none;
+            color: var(--black);
         }
     }
 

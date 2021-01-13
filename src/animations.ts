@@ -15,7 +15,11 @@ export const Animations = ()=>{
 
 
     const parent = {
+        initial: {
+            opacity: 1,
+        },
         animate: {
+            opacity:1,
             transition: {
                 staggerChildren: 0.2,
                 delayChildren: 1.5
@@ -25,7 +29,16 @@ export const Animations = ()=>{
 
     const textReveal = {
         initial: {
-            y: "50%",
+            y: "120%",
+        },
+        animate: {
+            y: "0%",
+        }
+    }
+
+    const opacityReveal = {
+        initial: {
+            y: "120%",
             opacity: 0
         },
         animate: {
@@ -38,6 +51,7 @@ export const Animations = ()=>{
         transition,
         maskAnimation,
         parent,
-        textReveal
+        textReveal,
+        opacityReveal
     }
 }

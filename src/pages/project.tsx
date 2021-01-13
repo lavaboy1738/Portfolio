@@ -12,16 +12,28 @@ import {ProjectFooter} from "../components/projectPage/projectFooter";
 import {useData} from "../hooks/useData";
 import{motion} from "framer-motion";
 import {Panels} from "../components/panels";
+import {Animations} from "../animations";
 
 const ProjectStyles  = styled(motion.div)`
 padding: 6vw 5vw;
 padding-right: 6vw;
 .number{
-    font-size: 40vw;
+    display: flex;
+    justify-content: flex-start;
     position: relative;
     left: -26%;
-    margin-bottom: -4vw;
     overflow: hidden;
+    margin: 5vw 0;
+    &-wrapper{
+        overflow: hidden;
+        h1{
+            font-size: 40vw;
+            line-height: 33vw;
+            height: 33vw;
+            position: relative;
+            bottom: -10%;
+        }
+    }
 }
 `
 
@@ -33,6 +45,7 @@ const Project = ()=>{
     const {scrollRef} = useScroll();
     const {projectID} = useParams<Params>();
     const {getData} = useData();
+    const {textReveal, transition} = Animations();
 
     const {title, 
         sequence, 
@@ -55,10 +68,14 @@ const Project = ()=>{
             exit={{opacity: [1, 1, 0], transition:{duration: 1.4, times: [0, 0.99, 1]}}}
         key="project"
         ref={scrollRef} data-scroll-container>
-            <h1 data-scroll-section className="number">
-                <span>0</span>
-                <span>{sequence}</span>
-            </h1>
+            <div data-scroll-section className="number">
+                <div className="number-wrapper">
+                    <motion.h1 variants={textReveal} initial="initial" animate="animate" transition= {{...transition, duration: 2, delay: 3}}>0</motion.h1>
+                </div>
+                <div className="number-wrapper">
+                    <motion.h1 variants={textReveal} initial="initial" animate="animate" transition= {{...transition, duration: 2, delay: 3.2}}>{sequence}</motion.h1>
+                </div>
+            </div>
             <MainSection title={title} texts={text} githubLink = {githubLink} liveLink={liveLink} />
             <SecondarySection secondary={secondary} />
             {
