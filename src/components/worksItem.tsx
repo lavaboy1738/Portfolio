@@ -21,7 +21,7 @@ const WorksItemStyles = styled.li`
                 h2{
                     overflow: hidden;
                     .text{
-                        font-size:3.5vw;
+                        font-size:calc(var(--VW)*3.5);
                     }
                 }
             }

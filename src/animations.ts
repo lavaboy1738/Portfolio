@@ -42,7 +42,7 @@ export const Animations = ()=>{
 
     const textReveal = {
         initial: {
-            y: "150%",
+            y: "200%",
         },
         animate: {
             y: "0%",
