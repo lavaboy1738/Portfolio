@@ -6,6 +6,8 @@ const useScroll = ()=>{
     const scrollRef = useRef<HTMLDivElement>(null);
     const location = useLocation();
     useEffect(()=>{
+        const imagesLoaded = require("imagesloaded");
+        const images = document.querySelectorAll("img");
         const scroll = new LocomotiveScroll({
             el: scrollRef.current,
             smooth: true,
@@ -16,7 +18,9 @@ const useScroll = ()=>{
                 smooth: true
             }
         })
-        setTimeout(()=>scroll.update(), 300);
+        imagesLoaded(images, ()=>{
+            scroll.update();
+        })
         return ()=>{
             if(scroll) scroll.destroy();
         }

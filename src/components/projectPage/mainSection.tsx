@@ -33,7 +33,7 @@ const MainSectionStyles = styled.div`
                 display: inline-block;
                 margin: 0 0.5vw;
                 .bx{
-                    font-size: 3vw;
+                    font-size: calc(var(--VW)*3);
                     pointer-events: none;
                     mix-blend-mode: difference;
                     color: var(--black);

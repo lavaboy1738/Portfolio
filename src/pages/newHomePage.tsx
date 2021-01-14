@@ -71,7 +71,8 @@ align-items: space-between;
     flex-wrap: nowrap;
     &-pic{
         height: 100%;
-        width: 25%;
+        width: 24%;
+        overflow: hidden;
     }
     &-description{
         margin-left: 2vw;

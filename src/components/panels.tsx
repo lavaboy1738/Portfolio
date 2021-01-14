@@ -12,19 +12,20 @@ height: 100vh;
 z-index: 11;
 pointer-events: none;
     .left, .right{
-        height: 100vh;
-        width: 50vw;
+        height: 110vh;
+        width: 60vw;
         position: absolute;
+        top: -5vh;
         z-index: 12;
         background-color: var(--black);
     }
 
     .left{
-        left: 0;
+        left: -10vw;
     }
 
     .right{
-        right: 0;
+        right: -10vw;
     }
     .message{
         position: absolute;
