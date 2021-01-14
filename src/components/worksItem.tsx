@@ -39,6 +39,14 @@ const WorksItemStyles = styled.li`
                     z-index: 9;
                     background-color: var(--burlywood);
                 }
+                .cover{
+                    width: 100%;
+                    height: 100%;
+                    position: absolute;
+                    top: 0;
+                    z-index: 10;
+                    background-color: var(--black);
+                }
                 img{
                     position: absolute;
                     height: 100%;
@@ -104,6 +112,13 @@ const WorksItemStyles = styled.li`
                     position: absolute;
                     background-color: var(--burlywood);
                 }
+                .cover{
+                    width: 100%;
+                    height: 0.6vw;
+                    z-index: 10;
+                    position: absolute; 
+                    background-color: var(--black);
+                }
             }
         }
     }
@@ -136,8 +151,12 @@ const WorksItem = (props: Prop)=>{
                     <div className={`line left flex-${leftFlex}`}>
                         <motion.div 
                         variants={maskAnimation}
-                        transition={{...transition, duration: 1, times:[0, 0.01, 1]}}
+                        transition={{...transition, duration: 1}}
                         className="mask"></motion.div>
+                        <motion.div 
+                        initial={{backgroundColor: "#0f0e0e"}}
+                        animate={{backgroundColor: "transparent"}}
+                        className="cover"></motion.div>
                     </div>
                     <motion.div className="title">
                         <h2>
@@ -155,8 +174,12 @@ const WorksItem = (props: Prop)=>{
                         <img src={src} alt=""/>
                         <motion.div 
                         variants={maskAnimation}
-                        transition={{...transition, duration: 1,times:[0, 0.01, 1]}}
+                        transition={{...transition, duration: 1}}
                         className="mask"></motion.div>
+                        <motion.div 
+                        initial={{backgroundColor: "#0f0e0e"}}
+                        animate={{backgroundColor: "transparent"}}
+                        className="cover"></motion.div>
                     </motion.div>
                     <motion.div 
                     initial={{opacity: 0}}
@@ -171,12 +194,16 @@ const WorksItem = (props: Prop)=>{
                     </motion.div>
                     <motion.div 
                     variants={maskAnimation}
-                    transition={{...transition, duration: 1, times:[0, 0.01, 1]}}
+                    transition={{...transition, duration: 1}}
                     className={`line right flex-${rightFlex}`}>
                         <motion.div 
                         variants={maskAnimation}
-                        transition={{...transition, duration: 1, times:[0, 0.01, 1]}}
+                        transition={{...transition, duration: 1}}
                         className="mask right"></motion.div>
+                        <motion.div 
+                        initial={{backgroundColor: "#0f0e0e"}}
+                        animate={{backgroundColor: "transparent"}}
+                        className="cover"></motion.div>
                     </motion.div>
                 </div>
             </Link>
