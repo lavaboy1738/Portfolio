@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 
 const SecondarySectionStyles = styled.div`
-    margin: 20vh calc(var(--VW) *10);
+    margin: 20vh 10vw;
     .content{
         h2{
             font-size: calc(var(--VW) *2);

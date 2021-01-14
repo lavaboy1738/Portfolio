@@ -9,10 +9,10 @@ const NavStyles = styled.div`
     }
 
     .logo{
-        top: calc(var(--VW) *2 );
-        left: calc(var(--VW) *2);
-        width: calc(var(--VW) *3.2);
-        height: calc(var(--VW) *3.2);
+        top: 2vw;
+        left: 2vw;
+        width: 3.2vw;
+        height: 3.2vw;
         mix-blend-mode: normal;
         svg{
             width: 100%;
@@ -26,19 +26,19 @@ const NavStyles = styled.div`
         transition: 0.3s all ease;
         transform: rotate(90deg);
         transform-origin: 0% 0%;
-        right: calc(var(--VW) *-3);
+        right: -3vw;
         font-size: calc(var(--VW) *1.2);
         :hover{
-            -webkit-text-stroke: calc(var(--VW) *0.1) var(--black);
+            -webkit-text-stroke: 0.1vw var(--black);
         }
     }
 
     .works{
-        top: calc(var(--VW) *2.2);
+        top: 2.2vw;
     }
 
     .about{
-        bottom: calc(var(--VW) *6.5);
+        bottom: 6.5vw;
     }
 
 

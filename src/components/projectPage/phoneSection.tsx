@@ -4,14 +4,14 @@ import styled from "styled-components";
 const PhoneSectionStyles = styled.div`
     display: flex;
     flex-wrap: nowrap;
-    margin: 15vh calc(var(--VW) *10);
+    margin: 15vh 10vw;
     justify-content: space-around;
     .image-wrapper{
         width: 28%;
         :nth-child(2){
             width: 30%;
             position: relative;
-            top: calc(var(--VW) *-1);
+            top: -1vw;
         }
         img{
             width: 100%;

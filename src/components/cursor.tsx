@@ -8,13 +8,13 @@ const CursorStyles = styled(motion.div)`
     position: absolute;
     left: 0;
     top: 0;
-    width: calc(var(--VW) *0.36);
-    height: calc(var(--VW) *0.36);
-    padding: calc(var(--VW) *1.5);
+    width: 0.36vw;
+    height: 0.36vw;
+    padding: 1.5vw;
     border-radius: 100%;
     background-color: var(--black);
     opacity: 0.3;
-    border: calc(var(--VW) *0.1) solid var(--black);
+    border: 0.1vw solid var(--black);
     mix-blend-mode: difference;
     z-index: 10;
 `
@@ -24,8 +24,8 @@ const PointerStyles =styled.div`
     position: absolute;
     left: 0;
     top: 0;
-    width: calc(var(--VW) *0.5);
-    height: calc(var(--VW) *0.5);
+    width: 0.5vw;
+    height: 0.5vw;
     border-radius: 100%;
     background-color: var(--black);
     transform: translate(-50%, -50%);

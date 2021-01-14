@@ -8,9 +8,9 @@ import {Panels} from "../components/panels";
 import {Animations} from "../animations";
 
 const WorksStyles = styled(motion.div)`
-    width: calc(var(--VW)*100);
+    width: 100vw;
     height: 100vh;
-    padding: calc(var(--VW)*6) calc(var(--VW)*4);
+    padding: 6vw 4vw;
     display: flex;
     .title-wrapper{
         width: 30%;
@@ -35,7 +35,7 @@ const WorksStyles = styled(motion.div)`
     .content{
         width: 70%;
         height: 100%;
-        padding: 0 calc(var(--VW)*2);
+        padding: 0 2vw;
         display: flex;
         justify-content: center;
         align-items: center;

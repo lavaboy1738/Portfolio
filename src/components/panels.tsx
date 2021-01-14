@@ -76,7 +76,7 @@ const Panels = ()=>{
                 left: "50%",
                 x: "-50%",
                 y:"-50%", 
-                opacity: [0, 1, 1, 0, 0], display: ["block", "block", "block", "block","none"],
+                opacity: [0, 1, 1, 0, 0],
                 transition: {...transition, duration: 2.1, times: [0, 0.5, 0.5, 0.99, 1]}
         }}
             exit={{display: "none", opacity: 0, transition:{duration: 0.01}}}
