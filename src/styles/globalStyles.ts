@@ -10,6 +10,7 @@ const GlobalStyles = createGlobalStyle`
         --black: #0f0e0e;
         --burlywood: #f6c9a0;
         --grey: #866c55;
+        --VW: 12px;
     }
 
     *{
@@ -52,8 +53,8 @@ const GlobalStyles = createGlobalStyle`
     p{
         font-family: Jakarta;
         font-weight: 200;
-        font-size: 1.2vw;
-        word-spacing: 0.2vw;
+        font-size: calc(var(--VW)*1.2);
+        word-spacing: calc(var(--VW) *0.2);
         line-height: 140%;
     }
 
@@ -66,7 +67,7 @@ const GlobalStyles = createGlobalStyle`
         outline: none;
         &:hover{
             -webkit-text-fill-color: var(--burlywood);
-            -webkit-text-stroke: 0.14vw var(--black);
+            -webkit-text-stroke: calc(var(--VW)*0.14) var(--black);
             cursor: none;
         }
     }

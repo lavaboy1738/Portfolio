@@ -32,7 +32,7 @@ pointer-events: none;
         left: 50%;
         transform: translate(-50%, -50%);
         color: var(--burlywood);
-        font-size:2vw;
+        font-size:calc(var(--VW) *2);
         z-index: 13;
     }
 `

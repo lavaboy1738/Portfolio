@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import './App.scss';
 import {Cursor} from "./components/cursor";
 import {GlobalStyles} from "./styles/globalStyles";
@@ -13,6 +13,15 @@ import {AnimatePresence} from "framer-motion";
 
 function App() {
   const location = useLocation();
+  const [deviceWidth, setDeviceWidth] = useState(window.innerWidth);
+  const root = document.documentElement;
+  window.addEventListener("resize", ()=>{
+    setDeviceWidth(window.innerWidth)
+  })
+  useEffect(()=>{
+    root.style.setProperty("--VW", `${deviceWidth*0.01}px`)
+  }, [deviceWidth, root.style])
+
   return (
     <div className="App">
         <GlobalStyles/>

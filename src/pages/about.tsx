@@ -11,8 +11,8 @@ import {Panels} from "../components/panels";
 import {Animations} from "../animations";
 
 const AboutStyles = styled(motion.div)`
-    padding: 0 4vw;
-    padding-bottom: 6vw;
+    padding: 0 calc(var(--VW)*4);
+    padding-bottom: calc(var(--VW)*6);
     .big-text{
         height:100vh;
         display: flex;
@@ -26,38 +26,38 @@ const AboutStyles = styled(motion.div)`
                 text-align: right;
             }
             :nth-child(3){
-                    padding-left: 15vw;
+                    padding-left: calc(var(--VW)*15);
             }
             h1{
                 text-transform: uppercase;
-                font-size: 11vw;
-                line-height: 10vw;
-                height: 10vw;
+                font-size: calc(var(--VW)*11);
+                line-height: calc(var(--VW)*10);
+                height: calc(var(--VW)*10);
                 overflow: hidden;
             }
         }
     }
     .hello{
         h1{
-            font-size: 3vw;
+            font-size: calc(var(--VW)*3);
             text-align: center;
         }
     }
     .name{
         margin: 10vh 0 20vh 0;
         h1{
-            font-size: 16vw;
-            line-height: 10vw;
-            height: 10vw;
+            font-size: calc(var(--VW)*16);
+            line-height: calc(var(--VW)*10);
+            height: calc(var(--VW)*10);
             -webkit-text-fill-color: transparent;
-            -webkit-text-stroke: 0.1vw var(--black);
+            -webkit-text-stroke: calc(var(--VW)*0.1) var(--black);
             text-transform: uppercase;
             :nth-child(3){
                 text-align: right;
             }
         }
         h3{
-            font-size: 3vw;
+            font-size: calc(var(--VW)*3);
             text-align: center;
             z-index: 5;
         }
@@ -68,16 +68,16 @@ const AboutStyles = styled(motion.div)`
         justify-content: center;
         align-items: center;
         &-pic{
-            width: 25vw;
-            height: 30vw;
-            margin-right: 5vw;
+            width: calc(var(--VW)*25);
+            height: calc(var(--VW)*30);
+            margin-right: calc(var(--VW)*5);
             text-align: center;
             overflow: hidden;
         }
         &-text{
             width: 40%;
             p{
-                margin: 3vw 0;
+                margin: calc(var(--VW)*3) 0;
                 a{
                     font-family: Jakarta;
                     text-transform: none;
@@ -90,7 +90,7 @@ const AboutStyles = styled(motion.div)`
         margin: 5vh 0;
         h1{
             text-transform: uppercase;
-            font-size: 3vw;
+            font-size: calc(var(--VW)*3);
         }
     }
     .info{
@@ -100,10 +100,10 @@ const AboutStyles = styled(motion.div)`
         &-main{
             width: 45%;
             h2{
-                font-size: 2vw;
+                font-size: calc(var(--VW)*2);
             }
             p{
-                margin-bottom: 3vw;
+                margin-bottom: calc(var(--VW)*3);
                 :last-child{
                     margin-bottom: 0;
                 }
@@ -115,34 +115,34 @@ const AboutStyles = styled(motion.div)`
             flex-direction: column;
             justify-content: flex-end;
             h1{
-                font-size: 4vw;
+                font-size: calc(var(--VW)*4);
             }
             h2{
-                font-size: 2vw;
-                margin: 0.5vw 0;
+                font-size: calc(var(--VW)*2);
+                margin: calc(var(--VW)*0.5) 0;
                 :last-child{
                     margin-bottom: 0;
                 }
             }
             p{
-                margin-bottom: 3vw;
+                margin-bottom: calc(var(--VW)*3);
             }
         }
     }
     .contact{
         text-align: right;
         h1{
-            font-size: 6vw;
+            font-size: calc(var(--VW)*6);
             text-transform: uppercase;
         }
         a{
-            font-size: 10vw;
+            font-size: calc(var(--VW)*10);
             text-transform: uppercase;
             -webkit-text-fill-color: var(--burlywood);
-            -webkit-text-stroke: 0.14vw var(--black);
+            -webkit-text-stroke: calc(var(--VW)*0.14) var(--black);
             &:hover{
                 -webkit-text-fill-color: var(--black);
-                -webkit-text-stroke: 0.14vw var(--burlywood);
+                -webkit-text-stroke: calc(var(--VW)*0.14) var(--burlywood);
             }
         }
     }

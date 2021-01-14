@@ -5,7 +5,7 @@ import {Link} from "react-router-dom";
 const ProjectFooterStyles = styled.div`
     display: flex;
     justify-content: flex-start;
-    font-size: 3vw;
+    font-size: calc(var(--VW) *3);
     .next{
         span{
             position: relative;

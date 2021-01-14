@@ -8,11 +8,13 @@ const CursorStyles = styled(motion.div)`
     position: absolute;
     left: 0;
     top: 0;
-    width: 0.36vw;
-    height: 0.36vw;
-    padding: 1.5vw;
+    width: calc(var(--VW) *0.36);
+    height: calc(var(--VW) *0.36);
+    padding: calc(var(--VW) *1.5);
     border-radius: 100%;
-    border: 0.1vw solid var(--black);
+    background-color: var(--black);
+    opacity: 0.3;
+    border: calc(var(--VW) *0.1) solid var(--black);
     mix-blend-mode: difference;
     z-index: 10;
 `
@@ -22,8 +24,8 @@ const PointerStyles =styled.div`
     position: absolute;
     left: 0;
     top: 0;
-    width: 0.2vw;
-    height: 0.2vw;
+    width: calc(var(--VW) *0.5);
+    height: calc(var(--VW) *0.5);
     border-radius: 100%;
     background-color: var(--black);
     transform: translate(-50%, -50%);
@@ -46,8 +48,9 @@ const Cursor = ()=>{
             x: "-50%",
             y: "-50%",
             scale: hoverNav? 1.8: 1,
-            opacity: hoverNav? 1 : 0.7,
-            backgroundColor: hoverNav? "#f6c9a0" : "transparent"
+            opacity: hoverNav? 1 : 0.1,
+            border: hoverNav? "0.1vw solid #0f0e0e" : "none",
+            backgroundColor: hoverNav? "#f6c9a0" : "#0f0e0e"
         }}
         transition= {{ease: "linear", duration: 0.2}}
         />

@@ -15,21 +15,21 @@ import {Panels} from "../components/panels";
 import {Animations} from "../animations";
 
 const ProjectStyles  = styled(motion.div)`
-padding: 6vw 5vw;
-padding-right: 6vw;
+padding: calc(var(--VW)*6) calc(var(--VW)*5);
+padding-right: calc(var(--VW)*6);
 .number{
     display: flex;
     justify-content: flex-start;
     position: relative;
     left: -26%;
     overflow: hidden;
-    margin: 5vw 0;
+    margin: calc(var(--VW)*5) 0;
     &-wrapper{
         overflow: hidden;
         h1{
-            font-size: 40vw;
-            line-height: 33vw;
-            height: 33vw;
+            font-size: calc(var(--VW)*40);
+            line-height: calc(var(--VW)*33);
+            height: calc(var(--VW)*33);
             position: relative;
             bottom: -10%;
         }

@@ -12,29 +12,29 @@ const MainSectionStyles = styled.div`
         .title-wrapper{
             overflow: hidden;
             .title{
-                font-size: 3vw;
+                font-size: calc(var(--VW) *3);
                 position: relative;
-                margin-bottom: 2vw;
+                margin-bottom: calc(var(--VW) *3);
                 .underline{
                     position: absolute;
                     width: 30%;
-                    height: 0.3vw;
+                    height: calc(var(--VW) *0.3);
                     left: 0;
-                    bottom: -1vw;
+                    bottom: calc(var(--VW) *-1);
                     background-color: var(--black);
                 }
             }
         }
         .links{
             text-align: right;
-            margin-bottom: 2vw;
+            margin-bottom: calc(var(--VW) *2);
             a{
-                margin-left: 1vw;
+                margin-left: calc(var(--VW));
                 height: 100%;
                 display: inline-block;
                 svg{
-                    width: 3vw;
-                    height: 3vw;
+                    width: calc(var(--VW) *3);
+                    height: calc(var(--VW) *3);
                     pointer-events: none;
                     mix-blend-mode: difference;
                     color: var(--black);
@@ -43,7 +43,7 @@ const MainSectionStyles = styled.div`
             }
         }
         .text{
-            margin-bottom: 3vw;
+            margin-bottom: calc(var(--VW) *3);
         }
     }
 `

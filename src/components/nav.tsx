@@ -2,8 +2,6 @@ import React from "react";
 import styled from "styled-components";
 import {Link} from "react-router-dom";
 
-const navFontSize = "1.2vw";
-
 const NavStyles = styled.div`
     .logo, .works, .about{
         position: fixed;
@@ -11,10 +9,10 @@ const NavStyles = styled.div`
     }
 
     .logo{
-        top: 2vw;
-        left: 2vw;
-        width: 3.2vw;
-        height: 3.2vw;
+        top: calc(var(--VW) *2 );
+        left: calc(var(--VW) *2);
+        width: calc(var(--VW) *3.2);
+        height: calc(var(--VW) *3.2);
         mix-blend-mode: normal;
         svg{
             width: 100%;
@@ -28,19 +26,19 @@ const NavStyles = styled.div`
         transition: 0.3s all ease;
         transform: rotate(90deg);
         transform-origin: 0% 0%;
-        right: -3vw;
-        font-size: ${navFontSize};
+        right: calc(var(--VW) *-3);
+        font-size: calc(var(--VW) *1.2);
         :hover{
-            -webkit-text-stroke: 0.1vw var(--black);
+            -webkit-text-stroke: calc(var(--VW) *0.1) var(--black);
         }
     }
 
     .works{
-        top: 2.2vw;
+        top: calc(var(--VW) *2.2);
     }
 
     .about{
-        bottom: 6.5vw;
+        bottom: calc(var(--VW) *6.5);
     }
 
 

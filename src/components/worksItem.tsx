@@ -17,7 +17,7 @@ const WorksItemStyles = styled.li`
             align-items: flex-end;
             pointer-events: none;
             .title{
-                margin: 0 1vw;
+                margin: 0 calc(var(--VW));
                 h2{
                     overflow: hidden;
                     .text{
@@ -29,8 +29,8 @@ const WorksItemStyles = styled.li`
                 overflow: hidden;
                 position: absolute;
                 height: 100%;
-                width: 7vw;
-                bottom: 1.1vw;
+                width: calc(var(--VW) *7);
+                bottom: calc(var(--VW) *1.1);
                 .mask{
                     width: 100%;
                     height: 100%;
@@ -57,7 +57,7 @@ const WorksItemStyles = styled.li`
             }
             .floating-image{
                 pointer-events: none;
-                height: 15vw;
+                height: calc(var(--VW) *15);
                 width: auto;
                 position: absolute;
                 z-index: 10;
@@ -70,13 +70,13 @@ const WorksItemStyles = styled.li`
                 }
             }
             .line{
-                height: 0.1vw;
+                height: calc(var(--VW) *0.1);
                 width: 100%;
                 background-color: var(--black);
                 position: relative;
                 display: flex;
                 align-items: center;
-                bottom: 1vw;
+                bottom: calc(var(--VW));
                 &.flex-0{
                     flex: 0;
                     &::after{
@@ -95,8 +95,8 @@ const WorksItemStyles = styled.li`
                 &::after{
                     content: "";
                     position: absolute;
-                    height: 0.5vw;
-                    width: 0.5vw;
+                    height: calc(var(--VW)*0.5);
+                    width: calc(var(--VW) *0.5);
                     border-radius: 100%;
                     background-color: var(--black);
                 }
@@ -107,14 +107,14 @@ const WorksItemStyles = styled.li`
                 }
                 .mask{
                     width: 100%;
-                    height: 0.6vw;
+                    height: calc(var(--VW)*0.6);
                     z-index: 9;
                     position: absolute;
                     background-color: var(--burlywood);
                 }
                 .cover{
                     width: 100%;
-                    height: 0.6vw;
+                    height: calc(var(--VW)*0.6);
                     z-index: 10;
                     position: absolute; 
                     background-color: var(--black);
