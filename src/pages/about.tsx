@@ -211,13 +211,17 @@ const About = ()=>{
                 <div data-scroll-section  className="info">
                     <div className="info-main">
                         <h2>Languages</h2>
-                        <p>HTML, CSS/Scss/Sass, Javascript, Typescript, Python, SQL</p>
-                        <h2>Frameworks/Libraries/Runtime:</h2>
-                        <p>React.js, Vue.js, Firebase, Framer Motion, GSAP, Styled Components, Node.js</p>
-                        <h2>UI/UX:</h2>
+                        <p>HTML, CSS/Scss/Sass, JavaScript(ES6+), TypeScript, Python, SQL</p>
+                        <h2>Frameworks/Libraries/Others</h2>
+                        <p>React.js, Vue.js, Firebase, Framer Motion, GSAP, Styled Components, Webpack, Git, Command Line, Babel, NPM, PWA, Node.js</p>
+                        <h2>UI/UX</h2>
                         <p>Responsive Design, Prototyping, Wireframing, Figma, Adobe Xd, Interview, Survey, Usability Testing</p>
-                        <h2>Learning:</h2>
-                        <p>Node.js, Gatsby.js</p>
+                        <h2>Learning</h2>
+                        <p>Node.js, Gatsby.js, Java</p>
+                        <h2>Other Skills</h2>
+                        <p>CPR/AED, American Sign Language, Mandarin, Content Creation, Media Management</p>
+                        <h2>Volunteer/Organizations</h2>
+                        <p>Lambda Chi Alpha, Special Olympics, Feeding America</p>
                         <h2>Education</h2>
                         <p>Master of Information <br/>Information Systems <br/>University of Toronto Exp. June 2021</p>
                         <p>Bachelor of Science <br/>Communications, American Studies <br/>Boston University May 2018</p>
