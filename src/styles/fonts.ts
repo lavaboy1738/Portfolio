@@ -1,10 +1,14 @@
 import {css} from "styled-components";
 import JakartaLightWoff from "../fonts/PlusJakartaSans-Light.woff";
 import JakartaLightWoff2 from  "../fonts/PlusJakartaSans-Light.woff2";
+import JakartaMediumWoff from "../fonts/PlusJakartaSans-Bold.woff";
+import JakartaMediumWoff2 from "../fonts/PlusJakartaSans-Bold.woff2";
 import Monument from "../fonts/MonumentExtended-Bold.otf";
+
 
 const jakartaNormalWeights = {
     200: [JakartaLightWoff, JakartaLightWoff2],
+    600: [JakartaMediumWoff, JakartaMediumWoff2]
 }
 
 

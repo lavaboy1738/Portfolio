@@ -184,7 +184,7 @@ const About = ()=>{
                         <motion.h1 variants={textReveal} initial="initial" animate="animate"  transition= {{...transition, delay: 3.4}}>average</motion.h1>
                     </div>
                     <div className="container">
-                        <motion.h1 variants={textReveal} initial="initial" animate="animate"  transition= {{...transition, delay: 3.6}}>web dev</motion.h1>
+                        <motion.h1 variants={textReveal} initial="initial" animate="animate"  transition= {{...transition, delay: 3.6}}>web dev.</motion.h1>
                     </div>
                 </div>
                 <div data-scroll-section  className="hello">
@@ -211,7 +211,7 @@ const About = ()=>{
                 <div data-scroll-section  className="info">
                     <div className="info-main">
                         <h2>Languages</h2>
-                        <p>HTML, CSS/Scss/Sass, JavaScript(ES6+), TypeScript, Python, SQL</p>
+                        <p>TypeScript, JavaScript(ES6+), HTML, CSS/Scss/Sass, Python, SQL</p>
                         <h2>Frameworks/Libraries/Others</h2>
                         <p>React.js, Vue.js, Firebase, Framer Motion, GSAP, Styled Components, Webpack, Git, Command Line, Babel, NPM, PWA, Node.js</p>
                         <h2>UI/UX</h2>
