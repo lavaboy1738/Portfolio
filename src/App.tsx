@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import './App.scss';
 import {Cursor} from "./components/cursor";
+import {Cover} from "./components/cover";
 import {GlobalStyles} from "./styles/globalStyles";
 import {Switch, Route, useLocation} from "react-router-dom";
 // import {Homepage} from "./pages/homepage";
@@ -25,6 +26,7 @@ function App() {
   return (
     <div className="App">
         <GlobalStyles/>
+        <Cover/>
         <Cursor/>
       <AnimatePresence exitBeforeEnter>
         <Switch location={location} key={location.pathname}>

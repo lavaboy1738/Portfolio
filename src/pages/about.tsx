@@ -166,6 +166,7 @@ const About = ()=>{
     return (
         <>
             <Nav/>
+            <Panels/>
             <AboutStyles 
             initial={{backgroundColor: "#0f0e0e", pointerEvents: "none"}}
             animate={{backgroundColor: "transparent", pointerEvents: "unset"}}
@@ -242,7 +243,6 @@ const About = ()=>{
                     <a href="mailto: ronnie@ronniefeng.com">Let's Talk.</a>
                 </div>
             </AboutStyles>
-            <Panels/>
         </>
     )
 }
