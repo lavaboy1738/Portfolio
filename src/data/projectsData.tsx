@@ -4,6 +4,14 @@ import XpensityV2LG3 from "../assets/images/projects/xpensityV2/xpensityv2-lg-3.
 import XpensityV2TabletMain from "../assets/images/projects/xpensityV2/xpensityV2-tablet-main.png";
 import XpensityV2TabletSide from "../assets/images/projects/xpensityV2/xpensityV2-tablet-side.png";
 
+import PortfolioLG1 from "../assets/images/projects/portfolio/portfolio-lg-1.png";
+import PortfolioLG2 from "../assets/images/projects/portfolio/portfolio-lg-2.png";
+import PortfolioLG3 from "../assets/images/projects/portfolio/portfolio-lg-3.png";
+import PortfolioTabletMain from "../assets/images/projects/portfolio/portfolio-tablet-main.png";
+import PortfolioTabletSide from "../assets/images/projects/portfolio/portfolio-tablet-side.png";
+import PortfolioLaptopMain from "../assets/images/projects/portfolio/portfolio-laptop-main.png";
+import PortfolioLaptopSide from "../assets/images/projects/portfolio/portfolio-laptop-side.png";
+
 import AgencyLG1 from "../assets/images/projects/agency/agency-lg-1.png";
 import AgencyLG2 from "../assets/images/projects/agency/agency-lg-2.png";
 import AgencyLG3 from "../assets/images/projects/agency/agency-lg-3.png";
@@ -70,12 +78,12 @@ export const ProjectData: ProjectDataType[] = [
         title: "Portfolio",
         text: ["I woke up one morning at 4:44 a.m.", "I've been thinking about the portfolio for a while and doing some prep work. However, at the same time, there were some uncertainties. I didn't know what colours to use until the idea came to me at 4:44 a.m. that particular morning. I should just use the colour scheme from Jay-Z's album 4:44.", "The album was released at a very special time in his career. Jay-Z has finally made it to the billionaire's club. He was no longer a rapper and a street hustler, but a business man, a husband, and a father. Matured, experienced and wealthy, yet, he still struggles with many problems he has had for years. Fame, success, setbacks, racism, gossips, betrayals, the possibility that he cheated on his wife — it's the most loaded and serious discussion that he has delivered. ", "I guess this portfolio is an attempt to recapture the feeling when I appreciated the album for the very first time. It's complicated, but fulfilling. This is the best work I've produced so far, and I drew inspirations from many places I visited along the way. I credited them in the about page."],
         secondary: ["React", "TypeScript", "Custom Hooks", "Smooth Scroll", "Framer Motion", "Transitions", "CSS in JS", "UI/UX"],
-        phoneImgSrc: [AgencyLG1, AgencyLG2, AgencyLG3],
-        desktopImgSrc: [AgencyLaptopMain, AgencyLaptopSide],
-        tabletImgSrc: [AgencyTabletMain, AgencyTabletSide],
-        mobileFirst: false,
+        phoneImgSrc: [PortfolioLG1, PortfolioLG2, PortfolioLG3],
+        desktopImgSrc: [PortfolioLaptopMain, PortfolioLaptopSide],
+        tabletImgSrc: [PortfolioTabletMain, PortfolioTabletSide],
+        mobileFirst: true,
         githubLink: "https://github.com/lavaboy1738/Portfolio",
-        liveLink: "https://github.com/lavaboy1738/Portfolio",
+        liveLink: "https://ronniefeng.com/",
         next: "xpensity-v1"
     },
     {

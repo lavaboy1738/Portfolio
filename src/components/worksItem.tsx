@@ -70,7 +70,7 @@ const WorksItemStyles = styled.li`
                 z-index: 10;
                 overflow: hidden;
                 opacity: 0;
-                @media (hover: none) and (pointer: coarse)   {
+                @media (hover: none) and (pointer: coarse) {
                     display: none;
                 }
                 img{
