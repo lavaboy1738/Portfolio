@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect} from 'react';
 import './App.scss';
 import {Cursor} from "./components/cursor";
 import {Cover} from "./components/cover";
@@ -14,14 +14,16 @@ import {AnimatePresence} from "framer-motion";
 
 function App() {
   const location = useLocation();
-  const [deviceWidth, setDeviceWidth] = useState(window.innerWidth);
-  const root = document.documentElement;
+
   window.addEventListener("resize", ()=>{
-    setDeviceWidth(window.innerWidth)
+    window.location.reload();
   })
+
   useEffect(()=>{
-    root.style.setProperty("--VW", `${deviceWidth*0.01}px`)
-  }, [deviceWidth, root.style])
+    const root = document.documentElement;
+    root.style.setProperty("--VW", `${window.innerWidth*0.01}px`);
+    root.style.setProperty("--VH", `${window.innerHeight*0.01}px`);
+  }, [])
 
   return (
     <div className="App">

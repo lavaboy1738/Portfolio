@@ -7,25 +7,25 @@ const PanelStyles = styled(motion.div)`
 position: absolute;
 left: 0;
 top: 0;
-width: 100vw;
-height: 100vh;
+width: calc(var(--VW)*100);
+height: calc(var(--VH)*100);
 z-index: 11;
 pointer-events: none;
     .left, .right{
-        height: 110vh;
-        width: 60vw;
+        height: 100%;
+        width: 50.5%;
         position: absolute;
-        top: -5vh;
+        top: 0;
         z-index: 12;
         background-color: var(--black);
     }
 
     .left{
-        left: -10vw;
+        left: 0;
     }
 
     .right{
-        right: -10vw;
+        right: 0;
     }
     .message{
         position: absolute;
@@ -46,7 +46,7 @@ const generateMessage = ()=>{
     "It's coming...",
     "One moment...",
     "Almost there...",
-    "Hang on...", 
+    "Hang on...",
     "Easy does it..."]
     const randomNum = Math.floor(Math.random()*messages.length)
     return messages[randomNum]
@@ -54,20 +54,21 @@ const generateMessage = ()=>{
 
 const Panels = ()=>{
     const {transition} = Animations();
+
     return (
         <PanelStyles>
             <motion.div 
             initial={{height: 0}}
             animate={{height: [window.innerHeight, window.innerHeight, 0, 0], 
-                top: [0, 0, window.innerHeight,window.innerHeight], transition: {...transition, duration: 3.5, times: [0, 0.6, 0.99, 1]}}}
-            exit={{height: [0,0, window.innerHeight, window.innerHeight], top: [0,0,0,0], transition: {...transition, duration: 1.5, times: [0, 0,1, 0.9, 1]}}}
+                top: [0, 0, window.innerHeight, window.innerHeight], transition: {...transition, duration: 3.5, times: [0, 0.6, 0.99, 1]}}}
+            exit={{height: [0,0, window.innerHeight, window.innerHeight], top: [0,0,0,0], transition: {...transition, duration: 2, times: [0, 0,1, 0.9, 1]}}}
             // transition={{...transition, duration: 2.5, times: [0, 0,2, 0.8, 1]}}
             className="left"></motion.div>
             <motion.div 
             initial={{height: 0}}
             animate={{height: [window.innerHeight, window.innerHeight, 0, 0], top: [0,0,0,0], transition: {...transition, duration: 3.5, times: [0, 0.6, 0.99, 1]}}}
             exit={{height: [0,0, window.innerHeight, window.innerHeight], 
-                top: [window.innerHeight, window.innerHeight, 0, 0], transition: {...transition, duration: 1.5, times: [0, 0,1, 0.9, 1]}}}
+                top: [window.innerHeight, window.innerHeight, 0, 0], transition: {...transition, duration: 2, times: [0, 0,1, 0.9, 1]}}}
             // transition={{...transition, duration: 2.5, times: [0, 0.2, 0.8, 1]}}
             className="right"></motion.div>
             <motion.h2 

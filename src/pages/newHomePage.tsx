@@ -4,7 +4,7 @@ import {Link} from "react-router-dom";
 import hoverEffect from "hover-effect";
 import Ronnie from "../assets/images/homepage/profile.jpg";
 import Ronnie2 from "../assets/images/homepage/profile2.jpeg";
-import DisplacementImg from "../assets/images/homepage/heightMap.png";
+import DisplacementImg from "../assets/images/homepage/glass.jpg";
 import {motion} from "framer-motion";
 import {Panels} from "../components/panels";
 
@@ -24,6 +24,10 @@ align-items: space-between;
     align-items: center;
     align-content: space-evenly;
     justify-content: flex-end;
+    @media (hover: none) and (pointer: coarse) and (min-width: 500px){
+        height: 40%;
+        padding-bottom: 10vh;
+    }
     &-contact{
         text-align: right;
         a{
@@ -34,6 +38,11 @@ align-items: space-between;
             top: 0.5vw;
             -webkit-text-fill-color: var(--burlywood);
             -webkit-text-stroke: 0.14vw var(--black);
+            @media (hover: none) and (pointer: coarse) and (min-width: 500px){
+                font-size: calc(var(--VW) *12.5);
+                height: 10vw;
+                line-height: 10vw;
+            }
             &:hover{
                 -webkit-text-fill-color: var(--black);
                 -webkit-text-stroke: 0.14vw var(--burlywood);
@@ -47,13 +56,18 @@ align-items: space-between;
         flex-wrap: nowrap;
         margin-right: -3vw;
         padding-right: 0.15vw;
+        @media (hover: none) and (pointer: coarse) and (min-width: 500px){
+            flex-wrap: wrap;
+        }
         a{
             margin-right: 3vw;
             font-size: calc(var(--VW) *6.5);
             line-height: 5vw;
             height: 5vw;
-            span{
-                pointer-events: none;
+            @media (hover: none) and (pointer: coarse) and (min-width: 500px){
+                font-size: calc(var(--VW) *10);
+                line-height: 9vw;
+                height: 9vw;
             }
         }
         .dot{
@@ -69,10 +83,19 @@ align-items: space-between;
     height: 55%;
     display: flex;
     flex-wrap: nowrap;
+    @media (hover: none) and (pointer: coarse) and (min-width: 500px){
+        height: 60%;
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+        justify-content: space-evenly;
+    }
     &-pic{
         height: 100%;
         width: 24%;
         overflow: hidden;
+        @media (hover: none) and (pointer: coarse) and (min-width: 500px){
+            display: none;
+        }
     }
     &-description{
         margin-left: 2vw;
@@ -80,6 +103,10 @@ align-items: space-between;
         height: 100%;
         display: flex;
         align-items: flex-end;
+        @media (hover: none) and (pointer: coarse) and (min-width: 500px){
+            width: 50%;
+            height: unset;
+        }
         p{
             position: relative;
             bottom: -0.35vw;
@@ -91,14 +118,23 @@ align-items: space-between;
         display: flex;
         align-items: flex-start;
         justify-content: flex-end;
+        @media (hover: none) and (pointer: coarse) and (min-width: 500px){
+            flex-grow: unset;
+        }
         .wrapper{
             h1{
                 font-size: calc(var(--VW)*11);
+                @media (hover: none) and (pointer: coarse) and (min-width: 500px){
+                    font-size: calc(var(--VW)*18);
+                }
             }
             h2{
                 font-weight: 200;
                 font-size: calc(var(--VW)*2);
                 word-spacing: 0.5vw;
+                @media (hover: none) and (pointer: coarse) and (min-width: 500px){
+                    font-size: calc(var(--VW)*3.5);
+                }
             }
             .last{
                 margin-top: -3vw;
@@ -129,10 +165,11 @@ const NewHomePage = ()=>{
 
     return (
         <>
+        <Panels/>
         <NewHomePageStyles
             initial={{backgroundColor: "#0f0e0e", pointerEvents: "none"}}
             animate={{backgroundColor: "transparent", pointerEvents: "unset"}}
-            exit={{opacity: [1, 1, 0], transition:{duration: 1.4, times: [0, 0.99, 1]}}}
+            exit={{opacity: [1, 1, 0], transition:{duration: 2, times: [0, 0.99, 1]}}}
         key="home"
         >
             <div className="bottom">
@@ -156,7 +193,7 @@ const NewHomePage = ()=>{
                 <div className="top-nav">
                     <Link to="/works">Works</Link>
                     <div className="dot"></div>
-                    <Link to="/about">About <span>Me</span></Link>
+                    <Link to="/about">About Me</Link>
                     <div className="dot"></div>
                 </div>
                 <div className="top-contact">
@@ -168,7 +205,6 @@ const NewHomePage = ()=>{
                 </div>
             </div>
         </NewHomePageStyles>
-        <Panels/>
         </>
     )
 }

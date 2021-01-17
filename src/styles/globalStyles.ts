@@ -10,7 +10,6 @@ const GlobalStyles = createGlobalStyle`
         --black: #0f0e0e;
         --burlywood: #f6c9a0;
         --grey: #866c55;
-        --VW: 12px;
     }
 
     *{
@@ -56,6 +55,10 @@ const GlobalStyles = createGlobalStyle`
         font-size: calc(var(--VW)*1.2);
         word-spacing: calc(var(--VW) *0.2);
         line-height: 140%;
+        @media (hover: none) and (pointer: coarse) and (min-width: 500px){
+            font-size: calc(var(--VW)*3);
+            word-spacing: calc(var(--VW) *0.5);
+        }
     }
 
     a{

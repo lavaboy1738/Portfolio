@@ -62,10 +62,11 @@ const Project = ()=>{
     return (
         <>
         <Nav/>
+        <Panels/>
         <ProjectStyles 
             initial={{backgroundColor: "#0f0e0e", pointerEvents: "none"}}
             animate={{backgroundColor: "transparent", pointerEvents: "unset"}}
-            exit={{opacity: [1, 1, 0], transition:{duration: 1.4, times: [0, 0.99, 1]}}}
+            exit={{opacity: [1, 1, 0], transition:{duration: 2, times: [0, 0.99, 1]}}}
         key="project"
         ref={scrollRef} data-scroll-container>
             <div data-scroll-section className="number">
@@ -102,7 +103,6 @@ const Project = ()=>{
             }
             <ProjectFooter next={next} />
         </ProjectStyles>
-        <Panels/>
         </>
     )
 }

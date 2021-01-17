@@ -16,6 +16,9 @@ const CursorStyles = styled(motion.div)`
     border: 0.1vw solid var(--black);
     mix-blend-mode: difference;
     z-index: 10;
+    @media (hover: none) and (pointer: coarse){
+        display: none;
+    }
 `
 
 const PointerStyles =styled.div`
@@ -31,6 +34,9 @@ const PointerStyles =styled.div`
     z-index: 10;
     &.on-focus {
         background-color: transparent;
+    }
+    @media (hover: none) and (pointer: coarse){
+        display: none;
     }
 `
 

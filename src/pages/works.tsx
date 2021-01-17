@@ -54,10 +54,11 @@ const Works = ()=>{
     return (
         <>
             <Nav/>
+            <Panels/>
             <WorksStyles
             initial={{backgroundColor: "#0f0e0e", pointerEvents: "none"}}
             animate={{backgroundColor: "transparent", pointerEvents: "unset"}}
-            exit={{opacity: [1, 1, 0], transition:{duration: 1.4, times: [0, 0.99, 1]}}}
+            exit={{opacity: [1, 1, 0], transition:{duration: 2, times: [0, 0.99, 1]}}}
             key="works"
             >
                 <div className="title-wrapper">
@@ -102,7 +103,6 @@ const Works = ()=>{
                     </motion.ul>
                 </div>
             </WorksStyles>
-            <Panels/>
         </>
     )
 }
