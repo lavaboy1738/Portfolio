@@ -7,14 +7,24 @@ const MainSectionStyles = styled.div`
     display: flex;
     flex-wrap: no-wrap;
     justify-content: flex-end;
+    @media (hover: none) and (pointer: coarse) and (min-width: 500px){
+       justify-content: flex-start;
+    }
     .content{
         width: 40%;
+        @media (hover: none) and (pointer: coarse) and (min-width: 500px){
+            width: 95%;
+        }
         .title-wrapper{
             overflow: hidden;
             .title{
                 font-size: calc(var(--VW) *3);
                 position: relative;
                 margin-bottom: 3vw;
+                @media (hover: none) and (pointer: coarse) and (min-width: 500px){
+                    font-size: calc(var(--VW) *8);
+                    margin-bottom: 6vw;
+                }
                 .underline{
                     position: absolute;
                     width: 30%;
@@ -28,6 +38,9 @@ const MainSectionStyles = styled.div`
         .links{
             text-align: right;
             margin-bottom: 2vw;
+            @media (hover: none) and (pointer: coarse) and (min-width: 500px){
+                margin-bottom: 4vw;
+            }
             a{
                 height: 100%;
                 display: inline-block;
@@ -38,6 +51,9 @@ const MainSectionStyles = styled.div`
                     mix-blend-mode: difference;
                     color: var(--black);
                     background-color: var(--burlywood);
+                    @media (hover: none) and (pointer: coarse) and (min-width: 500px){
+                        font-size: calc(var(--VW) *8);
+                    }
                 }
             }
         }
@@ -56,7 +72,7 @@ type Prop = {
 
 const MainSection = (props: Prop)=>{
     const {title, githubLink, liveLink, texts} = props;
-    const {transition, textReveal} = Animations();
+    const {transition, textReveal, opacityReveal} = Animations();
     return (
         <MainSectionStyles data-scroll-section>
             <div className="content">
@@ -68,18 +84,26 @@ const MainSection = (props: Prop)=>{
                         <span className="underline"></span>
                     </motion.h1>
                 </div>
-                <div className="links">
+                <motion.div 
+                variants={opacityReveal} initial="initial"
+                animate="animate"
+                transition={{...transition, duration:2, delay: 3.6}}
+                className="links">
                     <a href={githubLink} target="_blank" rel="noreferrer">
                         <i className='bx bxl-github'></i>
                     </a>
                     <a href={liveLink} target="_blank" rel="noreferrer">
                         <i className='bx bx-link-external'></i>
                     </a>
-                </div>
+                </motion.div>
                 {
                     texts.map((text,index) =>{
                         return(
-                            <p className="text" key={index}>{text}</p>
+                            <motion.p 
+                            variants={opacityReveal} initial="initial"
+                            animate="animate"
+                            transition={{...transition, duration:2, delay: 3.8}}
+                            className="text" key={index}>{text}</motion.p>
                         )
                     })
                 }

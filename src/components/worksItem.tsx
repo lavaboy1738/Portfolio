@@ -22,6 +22,9 @@ const WorksItemStyles = styled.li`
                     overflow: hidden;
                     .text{
                         font-size:calc(var(--VW)*3.5);
+                        @media (hover: none) and (pointer: coarse) and (min-width: 500px){
+                            font-size:calc(var(--VW)*5);
+                        }
                     }
                 }
             }
@@ -31,6 +34,10 @@ const WorksItemStyles = styled.li`
                 height: 100%;
                 width: 7vw;
                 bottom: 1.1vw;
+                font-size:calc(var(--VW)*3.5);
+                @media (hover: none) and (pointer: coarse) and (min-width: 500px){
+                    width: 10vw;
+                }
                 .mask{
                     width: 100%;
                     height: 100%;
@@ -63,6 +70,9 @@ const WorksItemStyles = styled.li`
                 z-index: 10;
                 overflow: hidden;
                 opacity: 0;
+                @media (hover: none) and (pointer: coarse) and (min-width: 500px){
+                    display: none;
+                }
                 img{
                     height: 100%;
                     width: auto;

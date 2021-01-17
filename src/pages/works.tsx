@@ -12,12 +12,18 @@ const WorksStyles = styled(motion.div)`
     height: 100vh;
     padding: 6vw 4vw;
     display: flex;
+    @media (hover: none) and (pointer: coarse) and (min-width: 500px){
+        padding: 6vw 10vw;
+    }
     .title-wrapper{
         width: 30%;
         height: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
+        @media (hover: none) and (pointer: coarse) and (min-width: 500px){
+            display: none;
+        }
         .title{
             .word-wrapper{
                 overflow: hidden;
@@ -39,6 +45,10 @@ const WorksStyles = styled(motion.div)`
         display: flex;
         justify-content: center;
         align-items: center;
+        @media (hover: none) and (pointer: coarse) and (min-width: 500px){
+            width: 100%;
+            padding: 5vh 0 10vh 0;
+        }
         .works-list{
             width: 100%;
             height: 100%;

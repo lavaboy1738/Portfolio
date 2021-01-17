@@ -67,6 +67,9 @@ const AboutStyles = styled(motion.div)`
         display: flex;
         justify-content: center;
         align-items: center;
+        @media (hover: none) and (pointer: coarse) and (min-width: 500px){
+            flex-wrap: wrap;
+        }
         &-pic{
             width: 25vw;
             height: 30vw;
@@ -76,6 +79,9 @@ const AboutStyles = styled(motion.div)`
         }
         &-text{
             width: 40%;
+            @media (hover: none) and (pointer: coarse) and (min-width: 500px){
+                width: 100%;
+            }
             p{
                 margin: 3vw 0;
                 mix-blend-mode: normal;

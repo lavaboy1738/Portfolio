@@ -6,6 +6,9 @@ const ProjectFooterStyles = styled.div`
     display: flex;
     justify-content: flex-start;
     font-size: calc(var(--VW) *3);
+    @media (hover: none) and (pointer: coarse) and (min-width: 500px){
+        font-size: calc(var(--VW) *6);
+    }
     .next{
         span{
             position: relative;

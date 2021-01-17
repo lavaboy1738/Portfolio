@@ -24,6 +24,11 @@ padding-right: 6vw;
     left: -26%;
     overflow: hidden;
     margin: 5vw 0;
+    @media (hover: none) and (pointer: coarse) and (min-width: 500px){
+        left: -38%;
+        width: 120%;
+        margin: 15vw 0;
+    }
     &-wrapper{
         overflow: hidden;
         h1{
@@ -32,6 +37,11 @@ padding-right: 6vw;
             height: 33vw;
             position: relative;
             bottom: -10%;
+            @media (hover: none) and (pointer: coarse) and (min-width: 500px){
+                font-size:calc(var(--VW)*60);
+                line-height: 50vw;
+                height: 50vw;
+            }
         }
     }
 }

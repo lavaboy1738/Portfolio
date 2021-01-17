@@ -14,6 +14,10 @@ const NavStyles = styled.div`
         width: 3.2vw;
         height: 3.2vw;
         mix-blend-mode: normal;
+        @media (hover: none) and (pointer: coarse) and (min-width: 500px){
+            width: 7vw;
+            height: 7vw;
+        }
         svg{
             width: 100%;
             height: 100%;
@@ -28,6 +32,10 @@ const NavStyles = styled.div`
         transform-origin: 0% 0%;
         right: -3vw;
         font-size: calc(var(--VW) *1.2);
+        @media (hover: none) and (pointer: coarse) and (min-width: 500px){
+            font-size: calc(var(--VW) *3);
+            right: -12vw;
+        }
         :hover{
             -webkit-text-stroke: 0.1vw var(--black);
         }
@@ -39,6 +47,9 @@ const NavStyles = styled.div`
 
     .about{
         bottom: 6.5vw;
+        @media (hover: none) and (pointer: coarse) and (min-width: 500px){
+            bottom: 13.5vw;
+        }
     }
 
 
