@@ -36,7 +36,7 @@ pointer-events: none;
         font-size:calc(var(--VW) *2);
         z-index: 13;
         @media (hover: none) and (pointer: coarse) and (min-width: 500px){
-            font-size:calc(var(--VW) *4);
+            font-size:calc(var(--VW) *3);
         }
     }
 `
