@@ -3,13 +3,13 @@ import styled from "styled-components";
 
 const SecondarySectionStyles = styled.div`
     margin: 20vh 10vw;
-    @media (hover: none) and (pointer: coarse) and (min-width: 500px){
+    @media (hover: none) and (pointer: coarse)   {
         margin: 10vh 0;
     }
     .content{
         h2{
             font-size: calc(var(--VW) *2);
-            @media (hover: none) and (pointer: coarse) and (min-width: 500px){
+            @media (hover: none) and (pointer: coarse)   {
                 font-size: calc(var(--VW) *6);
             }
         }

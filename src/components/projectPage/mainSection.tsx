@@ -7,12 +7,12 @@ const MainSectionStyles = styled.div`
     display: flex;
     flex-wrap: no-wrap;
     justify-content: flex-end;
-    @media (hover: none) and (pointer: coarse) and (min-width: 500px){
+    @media (hover: none) and (pointer: coarse)   {
        justify-content: flex-start;
     }
     .content{
         width: 40%;
-        @media (hover: none) and (pointer: coarse) and (min-width: 500px){
+        @media (hover: none) and (pointer: coarse)   {
             width: 95%;
         }
         .title-wrapper{
@@ -21,7 +21,7 @@ const MainSectionStyles = styled.div`
                 font-size: calc(var(--VW) *3);
                 position: relative;
                 margin-bottom: 3vw;
-                @media (hover: none) and (pointer: coarse) and (min-width: 500px){
+                @media (hover: none) and (pointer: coarse)   {
                     font-size: calc(var(--VW) *8);
                     margin-bottom: 6vw;
                 }
@@ -38,7 +38,7 @@ const MainSectionStyles = styled.div`
         .links{
             text-align: right;
             margin-bottom: 2vw;
-            @media (hover: none) and (pointer: coarse) and (min-width: 500px){
+            @media (hover: none) and (pointer: coarse)   {
                 margin-bottom: 4vw;
             }
             a{
@@ -51,7 +51,7 @@ const MainSectionStyles = styled.div`
                     mix-blend-mode: difference;
                     color: var(--black);
                     background-color: var(--burlywood);
-                    @media (hover: none) and (pointer: coarse) and (min-width: 500px){
+                    @media (hover: none) and (pointer: coarse)   {
                         font-size: calc(var(--VW) *8);
                     }
                 }

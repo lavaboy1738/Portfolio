@@ -12,7 +12,7 @@ const WorksStyles = styled(motion.div)`
     height: 100vh;
     padding: 6vw 4vw;
     display: flex;
-    @media (hover: none) and (pointer: coarse) and (min-width: 500px){
+    @media (hover: none) and (pointer: coarse)   {
         padding: 6vw 10vw;
     }
     .title-wrapper{
@@ -21,7 +21,7 @@ const WorksStyles = styled(motion.div)`
         display: flex;
         justify-content: center;
         align-items: center;
-        @media (hover: none) and (pointer: coarse) and (min-width: 500px){
+        @media (hover: none) and (pointer: coarse)   {
             display: none;
         }
         .title{
@@ -45,7 +45,7 @@ const WorksStyles = styled(motion.div)`
         display: flex;
         justify-content: center;
         align-items: center;
-        @media (hover: none) and (pointer: coarse) and (min-width: 500px){
+        @media (hover: none) and (pointer: coarse)   {
             width: 100%;
             padding: 5vh 0 10vh 0;
         }

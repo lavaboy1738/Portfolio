@@ -24,7 +24,7 @@ align-items: space-between;
     align-items: center;
     align-content: space-evenly;
     justify-content: flex-end;
-    @media (hover: none) and (pointer: coarse) and (min-width: 500px){
+    @media (hover: none) and (pointer: coarse)   {
         height: 40%;
         padding-bottom: 10vh;
     }
@@ -38,7 +38,7 @@ align-items: space-between;
             top: 0.5vw;
             -webkit-text-fill-color: var(--burlywood);
             -webkit-text-stroke: 0.14vw var(--black);
-            @media (hover: none) and (pointer: coarse) and (min-width: 500px){
+            @media (hover: none) and (pointer: coarse)   {
                 font-size: calc(var(--VW) *12.5);
                 height: 10vw;
                 line-height: 10vw;
@@ -56,7 +56,7 @@ align-items: space-between;
         flex-wrap: nowrap;
         margin-right: -3vw;
         padding-right: 0.15vw;
-        @media (hover: none) and (pointer: coarse) and (min-width: 500px){
+        @media (hover: none) and (pointer: coarse)   {
             flex-wrap: wrap;
         }
         a{
@@ -64,7 +64,7 @@ align-items: space-between;
             font-size: calc(var(--VW) *6.5);
             line-height: 5vw;
             height: 5vw;
-            @media (hover: none) and (pointer: coarse) and (min-width: 500px){
+            @media (hover: none) and (pointer: coarse)   {
                 font-size: calc(var(--VW) *10);
                 line-height: 9vw;
                 height: 9vw;
@@ -83,7 +83,7 @@ align-items: space-between;
     height: 55%;
     display: flex;
     flex-wrap: nowrap;
-    @media (hover: none) and (pointer: coarse) and (min-width: 500px){
+    @media (hover: none) and (pointer: coarse)   {
         height: 60%;
         flex-wrap: wrap;
         flex-direction: column-reverse;
@@ -93,7 +93,7 @@ align-items: space-between;
         height: 100%;
         width: 24%;
         overflow: hidden;
-        @media (hover: none) and (pointer: coarse) and (min-width: 500px){
+        @media (hover: none) and (pointer: coarse)   {
             display: none;
         }
     }
@@ -103,8 +103,12 @@ align-items: space-between;
         height: 100%;
         display: flex;
         align-items: flex-end;
-        @media (hover: none) and (pointer: coarse) and (min-width: 500px){
+        @media (hover: none) and (pointer: coarse)   {
             width: 50%;
+            height: unset;
+        }
+        @media (hover: none) and (pointer: coarse) and (max-width: 500px){
+            width: 75%;
             height: unset;
         }
         p{
@@ -118,13 +122,13 @@ align-items: space-between;
         display: flex;
         align-items: flex-start;
         justify-content: flex-end;
-        @media (hover: none) and (pointer: coarse) and (min-width: 500px){
+        @media (hover: none) and (pointer: coarse)   {
             flex-grow: unset;
         }
         .wrapper{
             h1{
                 font-size: calc(var(--VW)*11);
-                @media (hover: none) and (pointer: coarse) and (min-width: 500px){
+                @media (hover: none) and (pointer: coarse)   {
                     font-size: calc(var(--VW)*18);
                 }
             }
@@ -132,7 +136,7 @@ align-items: space-between;
                 font-weight: 200;
                 font-size: calc(var(--VW)*2);
                 word-spacing: 0.5vw;
-                @media (hover: none) and (pointer: coarse) and (min-width: 500px){
+                @media (hover: none) and (pointer: coarse)   {
                     font-size: calc(var(--VW)*3.5);
                 }
             }
