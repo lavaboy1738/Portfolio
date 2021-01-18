@@ -68,6 +68,7 @@ align-items: space-between;
                 font-size: calc(var(--VW) *10);
                 line-height: 9vw;
                 height: 9vw;
+                margin-top: 2vh;
             }
         }
         .dot{
