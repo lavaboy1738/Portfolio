@@ -14,13 +14,14 @@ import {AnimatePresence} from "framer-motion";
 
 function App() {
   const location = useLocation();
+  const root = document.documentElement;
 
   window.addEventListener("resize", ()=>{
-    window.location.reload();
+    root.style.setProperty("--VW", `${window.innerWidth*0.01}px`);
+    root.style.setProperty("--VH", `${window.innerHeight*0.01}px`);
   })
 
   useEffect(()=>{
-    const root = document.documentElement;
     root.style.setProperty("--VW", `${window.innerWidth*0.01}px`);
     root.style.setProperty("--VH", `${window.innerHeight*0.01}px`);
   }, [])
