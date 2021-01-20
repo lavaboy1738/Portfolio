@@ -50,8 +50,8 @@ const GlobalStyles = createGlobalStyle`
     }
 
     p{
-        font-family: Jakarta;
-        font-weight: 200;
+        font-family: Roobert;
+        font-weight: 400;
         font-size: calc(var(--VW)*1.2);
         word-spacing: calc(var(--VW) *0.2);
         line-height: 140%;
@@ -60,7 +60,7 @@ const GlobalStyles = createGlobalStyle`
             word-spacing: calc(var(--VW) *0.5);
         }
         @media (hover: none) and (pointer: coarse) and (max-width: 500px){
-            font-size: calc(var(--VW)*4);
+            font-size: calc(var(--VW)*4.5);
             word-spacing: calc(var(--VW) *0.5);
         }
     }

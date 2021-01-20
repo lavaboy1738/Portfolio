@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import styled from "styled-components";
 import {motion} from "framer-motion";
 import {Animations} from "../animations";
@@ -6,7 +6,7 @@ import {Animations} from "../animations";
 const PanelStyles = styled(motion.div)`
 position: absolute;
 left: 0;
-top: 0;
+bottom: 0;
 width: calc(var(--VW)*100);
 height: calc(var(--VH)*100);
 z-index: 11;
@@ -30,36 +30,46 @@ pointer-events: none;
     .message{
         position: absolute;
         top: 50%;
-        left: 50%;
+        left: 0;
+        width: 100%;
+        text-align: center;
         transform: translate(-50%, -50%);
         color: var(--burlywood);
         font-size:calc(var(--VW) *2);
         z-index: 13;
         @media (hover: none) and (pointer: coarse)   {
-            font-size:calc(var(--VW) *3);
+            font-size:calc(var(--VW) *4);
         }
     }
 `
 
 const generateMessage = ()=>{
     const messages = ["Hold On...",
-    "Just a sec...",
-    "Any minute now...",
+    "Just A Sec...",
+    "Any Minute Now...",
     "Loading...",
-    "It's coming...",
-    "One moment...",
-    "Almost there...",
-    "Hang on...",
-    "Easy does it..."]
+    "It's Coming...",
+    "One Moment...",
+    "Almost There...",
+    "Hang On...",
+    "Easy Does It..."]
     const randomNum = Math.floor(Math.random()*messages.length)
     return messages[randomNum]
 }
 
 const Panels = ()=>{
     const {transition} = Animations();
+    // const panelRef = useRef<HTMLDivElement>(null);
+    // window.addEventListener("resize", ()=>{
+    //     if(panelRef.current){
+    //         panelRef.current.style.bottom= "0";
+    //     }
+    // })
 
     return (
-        <PanelStyles>
+        <PanelStyles 
+        // ref={panelRef}
+        >
             <motion.div 
             initial={{height: 0}}
             animate={{height: [window.innerHeight, window.innerHeight, 0, 0], 
@@ -82,10 +92,12 @@ const Panels = ()=>{
                 x: "-50%",
                 y:"-50%", 
                 opacity: [0, 1, 1, 0, 0],
-                transition: {...transition, duration: 2.1, times: [0, 0.5, 0.5, 0.99, 1]}
+                transition: {...transition, duration: 2.4, times: [0, 0.5, 0.5, 0.99, 1]}
         }}
             exit={{display: "none", opacity: 0, transition:{duration: 0.01}}}
-            className="message">{generateMessage()}</motion.h2>
+            className="message">{
+                window.innerWidth < 500? "Best Viewed on Desktop" : generateMessage()
+            }</motion.h2>
         </PanelStyles>
     )
 }

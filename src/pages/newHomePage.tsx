@@ -30,6 +30,9 @@ align-items: space-between;
     }
     &-contact{
         text-align: right;
+        @media (hover: none) and (pointer: coarse)   {
+            display: none;
+        }
         a{
             font-size: calc(var(--VW) *12);
             height: 9vw;
@@ -64,11 +67,22 @@ align-items: space-between;
             font-size: calc(var(--VW) *6.5);
             line-height: 5vw;
             height: 5vw;
+            span{
+                @media (hover: none) and (pointer: coarse)   {
+                    display: none;
+                }
+            }
             @media (hover: none) and (pointer: coarse)   {
-                font-size: calc(var(--VW) *10);
-                line-height: 9vw;
-                height: 9vw;
+                font-size: calc(var(--VW) *13);
+                line-height: 11vw;
+                height: 11vw;
                 margin-top: 2vh;
+            }
+        }
+        .mobile{
+                display: none;
+            @media (hover: none) and (pointer: coarse)   {
+                display: unset;
             }
         }
         .dot{
@@ -76,6 +90,11 @@ align-items: space-between;
             margin-right: 3vw;
             height: 1.8vw;
             background-color: var(--black);
+            @media (hover: none) and (pointer: coarse)   {
+                width: 3vw;
+                height: 3vw;
+                margin-top: 1vw;
+            }
         }
     }
 }
@@ -198,8 +217,10 @@ const NewHomePage = ()=>{
                 <div className="top-nav">
                     <Link to="/works">Works</Link>
                     <div className="dot"></div>
-                    <Link to="/about">About Me</Link>
+                    <Link to="/about">About <span>Me</span></Link>
                     <div className="dot"></div>
+                    <a href="mailto: ronnie@ronniefeng.com" className="mobile">Contact</a>
+                    <div className="dot mobile"></div>
                 </div>
                 <div className="top-contact">
                     <motion.a 

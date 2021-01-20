@@ -45,6 +45,9 @@ const MainSectionStyles = styled.div`
                 height: 100%;
                 display: inline-block;
                 margin: 0 0.5vw;
+                @media (hover: none) and (pointer: coarse)   {
+                    margin: 0 2vw;
+                }
                 .bx{
                     font-size: calc(var(--VW)*3);
                     pointer-events: none;
@@ -52,13 +55,16 @@ const MainSectionStyles = styled.div`
                     color: var(--black);
                     background-color: var(--burlywood);
                     @media (hover: none) and (pointer: coarse)   {
-                        font-size: calc(var(--VW) *8);
+                        font-size: calc(var(--VW) *10);
                     }
                 }
             }
         }
         .text{
             margin-bottom: 3vw;
+            @media (hover: none) and (pointer: coarse)   {
+                margin-bottom: 5vw;
+            }
         }
     }
 `

@@ -79,8 +79,8 @@ const AboutStyles = styled(motion.div)`
             overflow: hidden;
             @media (hover: none) and (pointer: coarse)   {
                 width: 100%;
-                width: 35vw;
-                height: 40vw;
+                width: 45vw;
+                height: 50vw;
             }
         }
         &-text{
@@ -91,6 +91,9 @@ const AboutStyles = styled(motion.div)`
             p{
                 margin: 3vw 0;
                 mix-blend-mode: normal;
+                @media (hover: none) and (pointer: coarse)   {
+                    margin: 5vw 0;
+                }
                 a{
                     font-family: Jakarta;
                     text-transform: none;
@@ -129,6 +132,9 @@ const AboutStyles = styled(motion.div)`
             }
             p{
                 margin-bottom: 3vw;
+                @media (hover: none) and (pointer: coarse)   {
+                    margin-bottom: 5vw;
+                }
                 :last-child{
                     margin-bottom: 0;
                 }
@@ -140,7 +146,7 @@ const AboutStyles = styled(motion.div)`
             flex-direction: column;
             justify-content: flex-end;
             @media (hover: none) and (pointer: coarse)   {
-                width: 60%;
+                width: 85%;
                 margin-top: 10vh;
             }
             h1{

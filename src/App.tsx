@@ -17,8 +17,7 @@ function App() {
   const root = document.documentElement;
 
   window.addEventListener("resize", ()=>{
-    root.style.setProperty("--VW", `${window.innerWidth*0.01}px`);
-    root.style.setProperty("--VH", `${window.innerHeight*0.01}px`);
+    window.location.reload();
   })
 
   useEffect(()=>{

@@ -4,6 +4,8 @@ import JakartaLightWoff2 from  "../fonts/PlusJakartaSans-Light.woff2";
 import JakartaMediumWoff from "../fonts/PlusJakartaSans-Bold.woff";
 import JakartaMediumWoff2 from "../fonts/PlusJakartaSans-Bold.woff2";
 import Monument from "../fonts/MonumentExtended-Bold.otf";
+// import Roobert from "../fonts/Roobert-Medium.otf";
+import RoobertLight from "../fonts/Roobert-Light.otf";
 
 
 const jakartaNormalWeights = {
@@ -35,6 +37,13 @@ const Fonts = css`
     @font-face {
         font-family: "Monument";
         src: url(${Monument});
+        font-weight: 400;
+        font-style: normal;
+        font-display: auto;
+    }
+    @font-face {
+        font-family: "Roobert";
+        src: url(${RoobertLight});
         font-weight: 400;
         font-style: normal;
         font-display: auto;
