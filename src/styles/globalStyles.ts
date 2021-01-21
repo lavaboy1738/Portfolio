@@ -52,9 +52,9 @@ const GlobalStyles = createGlobalStyle`
     p{
         font-family: Roobert;
         font-weight: 400;
-        font-size: calc(var(--VW)*1.2);
+        font-size: calc(var(--VW)*1.4);
         word-spacing: calc(var(--VW) *0.2);
-        line-height: 140%;
+        line-height: 130%;
         overflow-wrap: break-word;
         word-wrap: break-word;
         -webkit-hyphens: auto;

@@ -84,7 +84,7 @@ const AboutStyles = styled(motion.div)`
             }
         }
         &-text{
-            width: 42%;
+            width: 44%;
             @media (hover: none) and (pointer: coarse)   {
                 width: 95%;
             }
@@ -114,13 +114,14 @@ const AboutStyles = styled(motion.div)`
     }
     .info{
         margin-bottom: 20vh;
+        margin-right: 5vw;
         display: flex;
         justify-content: space-between;
         @media (hover: none) and (pointer: coarse)   {
             flex-wrap: wrap;
         }
         &-main{
-            width: 45%;
+            width: 48%;
             @media (hover: none) and (pointer: coarse)   {
                 width: 95%;
             }
@@ -141,7 +142,7 @@ const AboutStyles = styled(motion.div)`
             }
         }
         &-credits{
-            width: 40%;
+            width: 35%;
             display: flex;
             flex-direction: column;
             justify-content: flex-end;

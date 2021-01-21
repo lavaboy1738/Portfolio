@@ -49,7 +49,7 @@ const MainSectionStyles = styled.div`
                     margin: 0 2vw;
                 }
                 .bx{
-                    font-size: calc(var(--VW)*3);
+                    font-size: calc(var(--VW)*4);
                     pointer-events: none;
                     mix-blend-mode: difference;
                     color: var(--black);

@@ -119,7 +119,7 @@ align-items: space-between;
     }
     &-description{
         margin-left: 2vw;
-        width: 19%;
+        width: 22%;
         height: 100%;
         display: flex;
         align-items: flex-end;
