@@ -23,7 +23,7 @@ function App() {
   useEffect(()=>{
     root.style.setProperty("--VW", `${window.innerWidth*0.01}px`);
     root.style.setProperty("--VH", `${window.innerHeight*0.01}px`);
-  }, [])
+  }, [root.style])
 
   return (
     <div className="App">

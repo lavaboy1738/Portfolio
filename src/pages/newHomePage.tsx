@@ -119,7 +119,7 @@ align-items: space-between;
     }
     &-description{
         margin-left: 2vw;
-        width: 20%;
+        width: 19%;
         height: 100%;
         display: flex;
         align-items: flex-end;
@@ -128,7 +128,7 @@ align-items: space-between;
             height: unset;
         }
         @media (hover: none) and (pointer: coarse) and (max-width: 500px){
-            width: 75%;
+            width: 70%;
             height: unset;
         }
         p{

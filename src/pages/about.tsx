@@ -84,7 +84,7 @@ const AboutStyles = styled(motion.div)`
             }
         }
         &-text{
-            width: 40%;
+            width: 42%;
             @media (hover: none) and (pointer: coarse)   {
                 width: 95%;
             }
@@ -95,7 +95,7 @@ const AboutStyles = styled(motion.div)`
                     margin: 5vw 0;
                 }
                 a{
-                    font-family: Jakarta;
+                    font-family: Roobert;
                     text-transform: none;
                     mix-blend-mode: normal;
                 }

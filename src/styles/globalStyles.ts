@@ -55,6 +55,12 @@ const GlobalStyles = createGlobalStyle`
         font-size: calc(var(--VW)*1.2);
         word-spacing: calc(var(--VW) *0.2);
         line-height: 140%;
+        overflow-wrap: break-word;
+        word-wrap: break-word;
+        -webkit-hyphens: auto;
+        -ms-hyphens: auto;
+        -moz-hyphens: auto;
+        hyphens: auto;
         @media (hover: none) and (pointer: coarse)   {
             font-size: calc(var(--VW)*3);
             word-spacing: calc(var(--VW) *0.5);
