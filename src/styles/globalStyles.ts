@@ -50,23 +50,23 @@ const GlobalStyles = createGlobalStyle`
     }
 
     p{
-        font-family: Roobert;
+        font-family:   Grotesk;
         font-weight: 400;
-        font-size: calc(var(--VW)*1.4);
+        font-size: calc(var(--VW)*1.5);
         word-spacing: calc(var(--VW) *0.2);
-        line-height: 130%;
+        line-height: 120%;
         overflow-wrap: break-word;
         word-wrap: break-word;
         -webkit-hyphens: auto;
         -ms-hyphens: auto;
         -moz-hyphens: auto;
         hyphens: auto;
-        @media (hover: none) and (pointer: coarse)   {
+        @media (hover: none) and (pointer: coarse){
             font-size: calc(var(--VW)*3);
             word-spacing: calc(var(--VW) *0.5);
         }
         @media (hover: none) and (pointer: coarse) and (max-width: 500px){
-            font-size: calc(var(--VW)*4.5);
+            font-size: calc(var(--VW)*5);
             word-spacing: calc(var(--VW) *0.5);
         }
     }

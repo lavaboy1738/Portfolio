@@ -119,16 +119,16 @@ align-items: space-between;
     }
     &-description{
         margin-left: 2vw;
-        width: 22%;
+        width: 21%;
         height: 100%;
         display: flex;
         align-items: flex-end;
         @media (hover: none) and (pointer: coarse)   {
-            width: 50%;
+            width: 40%;
             height: unset;
         }
         @media (hover: none) and (pointer: coarse) and (max-width: 500px){
-            width: 70%;
+            width: 69%;
             height: unset;
         }
         p{

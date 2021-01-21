@@ -41,6 +41,9 @@ const AboutStyles = styled(motion.div)`
         h1{
             font-size: calc(var(--VW)*3);
             text-align: center;
+            @media (hover: none) and (pointer: coarse)   {
+                font-size: calc(var(--VW)*6);
+            }
         }
     }
     .name{
@@ -60,6 +63,9 @@ const AboutStyles = styled(motion.div)`
             font-size: calc(var(--VW)*3);
             text-align: center;
             z-index: 5;
+            @media (hover: none) and (pointer: coarse)   {
+                font-size: calc(var(--VW)*6);
+            }
         }
     }
     .main{
@@ -79,12 +85,12 @@ const AboutStyles = styled(motion.div)`
             overflow: hidden;
             @media (hover: none) and (pointer: coarse)   {
                 width: 100%;
-                width: 45vw;
-                height: 50vw;
+                width: 50vw;
+                height: 55vw;
             }
         }
         &-text{
-            width: 44%;
+            width: 45%;
             @media (hover: none) and (pointer: coarse)   {
                 width: 95%;
             }
@@ -95,7 +101,7 @@ const AboutStyles = styled(motion.div)`
                     margin: 5vw 0;
                 }
                 a{
-                    font-family: Roobert;
+                    font-family:   Grotesk;
                     text-transform: none;
                     mix-blend-mode: normal;
                 }

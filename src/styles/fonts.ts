@@ -1,7 +1,7 @@
 import {css} from "styled-components";
 import Monument from "../fonts/MonumentExtended-Bold.otf";
-import RoobertLight from "../fonts/Roobert-Light.otf";
-import RoobertSemiBold from "../fonts/Roobert-SemiBold.otf";
+import GroteskLight from "../fonts/founders-grotesk-test-light.woff";
+import GroteskSemiBold from "../fonts/founders-grotesk-test-semibold.woff";
 
 
 
@@ -14,13 +14,13 @@ const fontsArr = [
         weight: 400,
     },
     {
-        name: "Roobert",
-        src: RoobertLight,
+        name: "Grotesk",
+        src: GroteskLight,
         weight: 200,
     },
     {
-        name: "Roobert",
-        src: RoobertSemiBold,
+        name: "Grotesk",
+        src: GroteskSemiBold,
         weight: 600,
     }
 ]

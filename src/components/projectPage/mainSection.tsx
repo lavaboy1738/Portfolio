@@ -49,13 +49,13 @@ const MainSectionStyles = styled.div`
                     margin: 0 2vw;
                 }
                 .bx{
-                    font-size: calc(var(--VW)*4);
+                    font-size: calc(var(--VW)*3.5);
                     pointer-events: none;
                     mix-blend-mode: difference;
                     color: var(--black);
                     background-color: var(--burlywood);
                     @media (hover: none) and (pointer: coarse)   {
-                        font-size: calc(var(--VW) *10);
+                        font-size: calc(var(--VW) *8);
                     }
                 }
             }
