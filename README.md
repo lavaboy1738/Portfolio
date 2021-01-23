@@ -49,8 +49,9 @@ Yes, feel free to fork this repo. Please give me proper credit by linking back t
 1. Preview the site as it will appear once deployed
 
    ```sh
-serve -s build
+    serve -s build
    ```
+  
 ## 🎨 Color Reference
 
 | Color          | Hex                                                                |
