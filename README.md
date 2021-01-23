@@ -1,46 +1,78 @@
-# Getting Started with Create React App
+<div align="center">
+  <img alt="Logo" src="https://raw.githubusercontent.com/lavaboy1738/LGN/d7dda7c93fe8496e50b7f4e966756838d56fcd85/src/assets/images/logo.svg" width="100" />
+</div>
+<h1 align="center">
+  ronniefeng.com
+</h1>
+<p align="center">
+  The first version of my portfolio <a href="https://ronniefeng.com" target="_blank">ronniefeng.com</a> built with <a href="https://reactjs.org/" target="_blank">React</a> and hosted with <a href="https://www.hostgator.com/" target="_blank">Hostgator</a>
+</p>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![demo](https://raw.githubusercontent.com/lavaboy1738/Portfolio/main/src/assets/images/readme.gif)
 
-## Available Scripts
+## 🚨 Before you fork (please read!!!)
 
-In the project directory, you can run:
+A few people have contacted me asking if they can use my code for learning or for their own website, and the answer is **yes, absolutely, but please credit me dawg**. 
 
-### `yarn start`
+I wanted to share this project with all of y'all and that's why I pushed the code up here. However, keep in mind that, _**plagiarism is bad**_. So please give credits for the creators, as I did so with many websites from where I drew my inspirations. I spent quite a lot of time and effort building and designing this project, the least you can do is to give me credit, as well as all the sites I credited. 
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### TL;DR
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Yes, feel free to fork this repo. Please give me proper credit by linking back to [ronniefeng.com](https://ronniefeng.com). Thanks!
 
-### `yarn test`
+## 🛠 Installation & Set Up
+1. Install the Create React App CLI
+   ```sh
+   yarn add global create-react-app
+   ```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+2. Install dependencies
 
-### `yarn build`
+   ```sh
+   yarn install
+   ```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+3. Start the development server
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+   ```sh
+   yarn start
+   ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 🚀 Building and Running for Production
 
-### `yarn eject`
+1. Generate a full static production build
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+   ```sh
+   yarn build
+   ```
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+1. Preview the site as it will appear once deployed
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+   ```sh
+serve -s build
+   ```
+## 🎨 Color Reference
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+| Color          | Hex                                                                |
+| -------------- | ------------------------------------------------------------------ |
+| Liquorice           | ![#0f0e0e](https://via.placeholder.com/10/0f0e0e?text=+) `#0f0e0e` |
+| Burlywood     | ![#f6c9a0](https://via.placeholder.com/10/f6c9a0?text=+) `#f6c9a0` |
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+## 👏 Credits
+I wrote all the code and built the website myself. 
+<br/>
+These are the websites/artworks from where I drew my inspirations 
+<br/>
+Navigation and Cursor: 
+<a href="https://romainavalle.com/" target="_blank">Romain Avalle</a>
+<br/>
+Projects Menu:  <a href="https://loerarchitecten.com/en/" target="_blank">Loer Architecten</a>
+<br/>
+Project Page: 
+<a href="https://www.clockstrikestwelve.com/" target="_blank">CLOCKSTRIKESTWLEVE</a>
+<br/>
+Colours: 
+<a href="https://www.youtube.com/watch?v=zSkA61esq_c" target="_blank">Jay-Z's 4:44</a>
+<br/>
+Scrolling, About Page: 
+<a href="https://www.loftgarten.co/" target="_blank">LOFTGARTEN</a>
