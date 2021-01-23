@@ -68,6 +68,7 @@ align-items: space-between;
             line-height: 5vw;
             height: 5vw;
             span{
+                pointer-events: none;
                 @media (hover: none) and (pointer: coarse)   {
                     display: none;
                 }
