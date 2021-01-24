@@ -1,5 +1,12 @@
-RewriteBase /
+<ifModule mod_rewrite.c>
+RewriteEngine On
+RewriteCond %{HTTPS} off
+RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+
 RewriteRule ^index\.html$ - [L]
- RewriteCond %{REQUEST_FILENAME} !-f
- RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule . /index.html [L]
+</IfModule>
+
+#https://gist.github.com/iheartmedia-matt/253ccb6183fdeaa5619f615f2cb5a58b
