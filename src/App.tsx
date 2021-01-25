@@ -18,7 +18,12 @@ function App() {
   const width = window.innerWidth;
 
   window.addEventListener("resize", ()=>{
-    if(window.innerWidth !== width){
+    const newWidth = window.innerWidth;
+    if(newWidth < 500){
+      if(newWidth !== width){
+        window.location.reload();
+      }
+    }else{
       window.location.reload();
     }
   })

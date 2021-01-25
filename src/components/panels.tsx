@@ -59,15 +59,9 @@ const generateMessage = ()=>{
 
 const Panels = ()=>{
     const {transition} = Animations();
-    // const panelRef = useRef<HTMLDivElement>(null);
-    // window.addEventListener("resize", ()=>{
-    //     if(panelRef.current){
-    //         panelRef.current.style.bottom= "0";
-    //     }
-    // })
 
     return (
-        <PanelStyles 
+        <PanelStyles
         // ref={panelRef}
         >
             <motion.div 
