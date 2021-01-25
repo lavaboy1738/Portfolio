@@ -15,9 +15,12 @@ import {AnimatePresence} from "framer-motion";
 function App() {
   const location = useLocation();
   const root = document.documentElement;
+  const width = window.innerWidth;
 
   window.addEventListener("resize", ()=>{
-    window.location.reload();
+    if(window.innerWidth !== width){
+      window.location.reload();
+    }
   })
 
   useEffect(()=>{
