@@ -37,7 +37,7 @@ pointer-events: none;
         color: var(--burlywood);
         font-size:calc(var(--VW) *2);
         z-index: 13;
-        @media (hover: none) and (pointer: coarse)   {
+        @media (hover: none) and (pointer: coarse), (max-width: 500px){
             font-size:calc(var(--VW) *4);
         }
     }

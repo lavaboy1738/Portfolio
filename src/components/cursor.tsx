@@ -16,7 +16,7 @@ const CursorStyles = styled(motion.div)`
     border: 0.1vw solid var(--black);
     mix-blend-mode: difference;
     z-index: 10;
-    @media (hover: none) and (pointer: coarse){
+    @media (hover: none) and (pointer: coarse), (max-width: 500px){
         display: none;
     }
 `
@@ -35,7 +35,7 @@ const PointerStyles =styled.div`
     &.on-focus {
         background-color: transparent;
     }
-    @media (hover: none) and (pointer: coarse){
+    @media (hover: none) and (pointer: coarse), (max-width: 500px){
         display: none;
     }
 `
