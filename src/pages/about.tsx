@@ -41,7 +41,7 @@ const AboutStyles = styled(motion.div)`
         h1{
             font-size: calc(var(--VW)*3);
             text-align: center;
-            @media (hover: none) and (pointer: coarse)   {
+            @media (hover: none) and (pointer: coarse), (max-width: 500px){
                 font-size: calc(var(--VW)*6);
             }
         }
@@ -63,7 +63,7 @@ const AboutStyles = styled(motion.div)`
             font-size: calc(var(--VW)*3);
             text-align: center;
             z-index: 5;
-            @media (hover: none) and (pointer: coarse)   {
+            @media (hover: none) and (pointer: coarse), (max-width: 500px){
                 font-size: calc(var(--VW)*6);
             }
         }
@@ -73,7 +73,7 @@ const AboutStyles = styled(motion.div)`
         display: flex;
         justify-content: center;
         align-items: center;
-        @media (hover: none) and (pointer: coarse)   {
+        @media (hover: none) and (pointer: coarse), (max-width: 500px){
             flex-wrap: wrap;
             justify-content: flex-start;
         }
@@ -83,7 +83,7 @@ const AboutStyles = styled(motion.div)`
             margin-right: 5vw;
             text-align: center;
             overflow: hidden;
-            @media (hover: none) and (pointer: coarse)   {
+            @media (hover: none) and (pointer: coarse), (max-width: 500px){
                 width: 100%;
                 width: 50vw;
                 height: 55vw;
@@ -91,13 +91,13 @@ const AboutStyles = styled(motion.div)`
         }
         &-text{
             width: 45%;
-            @media (hover: none) and (pointer: coarse)   {
+            @media (hover: none) and (pointer: coarse), (max-width: 500px){
                 width: 95%;
             }
             p{
                 margin: 3vw 0;
                 mix-blend-mode: normal;
-                @media (hover: none) and (pointer: coarse)   {
+                @media (hover: none) and (pointer: coarse), (max-width: 500px){
                     margin: 5vw 0;
                 }
                 a{
@@ -113,7 +113,7 @@ const AboutStyles = styled(motion.div)`
         h1{
             text-transform: uppercase;
             font-size: calc(var(--VW)*3);
-            @media (hover: none) and (pointer: coarse)   {
+            @media (hover: none) and (pointer: coarse), (max-width: 500px){
                 font-size: calc(var(--VW)*5);
             }
         }
@@ -123,23 +123,23 @@ const AboutStyles = styled(motion.div)`
         margin-right: 5vw;
         display: flex;
         justify-content: space-between;
-        @media (hover: none) and (pointer: coarse)   {
+        @media (hover: none) and (pointer: coarse), (max-width: 500px){
             flex-wrap: wrap;
         }
         &-main{
             width: 48%;
-            @media (hover: none) and (pointer: coarse)   {
+            @media (hover: none) and (pointer: coarse), (max-width: 500px){
                 width: 95%;
             }
             h2{
                 font-size: calc(var(--VW)*2);
-                @media (hover: none) and (pointer: coarse)   {
+                @media (hover: none) and (pointer: coarse), (max-width: 500px){
                     font-size: calc(var(--VW)*4);
                 }
             }
             p{
                 margin-bottom: 3vw;
-                @media (hover: none) and (pointer: coarse)   {
+                @media (hover: none) and (pointer: coarse), (max-width: 500px){
                     margin-bottom: 5vw;
                 }
                 :last-child{
@@ -152,20 +152,20 @@ const AboutStyles = styled(motion.div)`
             display: flex;
             flex-direction: column;
             justify-content: flex-end;
-            @media (hover: none) and (pointer: coarse)   {
+            @media (hover: none) and (pointer: coarse), (max-width: 500px){
                 width: 85%;
                 margin-top: 10vh;
             }
             h1{
                 font-size: calc(var(--VW)*4);
-                @media (hover: none) and (pointer: coarse)   {
+                @media (hover: none) and (pointer: coarse), (max-width: 500px){
                     font-size: calc(var(--VW)*6);
                 }
             }
             h2{
                 font-size: calc(var(--VW)*2);
                 margin: 0.5vw 0;
-                @media (hover: none) and (pointer: coarse)   {
+                @media (hover: none) and (pointer: coarse), (max-width: 500px){
                     font-size: calc(var(--VW)*4);
                 }
                 :last-child{
