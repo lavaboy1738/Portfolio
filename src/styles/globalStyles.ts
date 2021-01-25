@@ -65,7 +65,7 @@ const GlobalStyles = createGlobalStyle`
             font-size: calc(var(--VW)*3);
             word-spacing: calc(var(--VW) *0.5);
         }
-        @media (hover: none) and (pointer: coarse) and (max-width: 500px){
+        @media (hover: none) and (pointer: coarse) and (max-width: 500px), (max-width: 500px){
             font-size: calc(var(--VW)*5);
             word-spacing: calc(var(--VW) *0.5);
         }

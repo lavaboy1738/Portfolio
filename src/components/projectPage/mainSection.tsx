@@ -54,8 +54,11 @@ const MainSectionStyles = styled.div`
                     mix-blend-mode: difference;
                     color: var(--black);
                     background-color: var(--burlywood);
-                    @media (hover: none) and (pointer: coarse), (max-width: 500px){
+                    @media (hover: none) and (pointer: coarse){
                         font-size: calc(var(--VW) *8);
+                    }
+                    @media (hover: none) and (pointer: coarse), (max-width: 500px){
+                        font-size: calc(var(--VW) *12);
                     }
                 }
             }

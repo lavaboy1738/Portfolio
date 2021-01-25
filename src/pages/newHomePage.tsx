@@ -195,7 +195,6 @@ const NewHomePage = ()=>{
             initial={{backgroundColor: "#0f0e0e", pointerEvents: "none"}}
             animate={{backgroundColor: "transparent", pointerEvents: "unset"}}
             exit={{opacity: [1, 1, 0], transition:{duration: 2, times: [0, 0.99, 1]}}}
-        key="home"
         >
             <div className="bottom">
                 <div className="bottom-pic" ref={profile}></div>
