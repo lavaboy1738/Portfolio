@@ -20,6 +20,7 @@ const TabletSectionStyles = styled.div`
     }
     @media (hover: none) and (pointer: coarse), (max-width: 500px){
         flex-wrap: wrap;
+        margin: 5vh 0;
     }
 `
 
@@ -29,12 +30,13 @@ type Prop = {
 
 const TabletSection = (props: Prop)=>{
     const {tabletImgSrc} = props;
+    const mobile = window.innerWidth < 500? true : false;
     return(
         <TabletSectionStyles data-scroll-section >
-            <div data-scroll data-scroll-speed="4" className="side">
+            <div data-scroll data-scroll-speed={mobile? "1" : "4"} className="side">
                 <img src={tabletImgSrc[1]} alt=""/>
             </div>
-            <div data-scroll data-scroll-speed="0.5" className="main">
+            <div data-scroll data-scroll-speed={mobile? "1" : "0.5"} className="main">
                 <img src={tabletImgSrc[0]} alt=""/>
             </div>
         </TabletSectionStyles>

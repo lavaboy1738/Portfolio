@@ -20,6 +20,7 @@ const DesktopSectionStyles = styled.div`
     }
     @media (hover: none) and (pointer: coarse), (max-width: 500px){
         flex-wrap: wrap;
+        margin: 5vh 0;
     }
 `
 
@@ -29,12 +30,14 @@ type Prop = {
 
 const DesktopSection = (props: Prop)=>{
     const {desktopImgSrc} = props;
+    const mobile = window.innerWidth < 500? true : false;
+
     return(
         <DesktopSectionStyles data-scroll-section >
-            <div data-scroll data-scroll-speed="0.5" className="main">
+            <div data-scroll data-scroll-speed={mobile? "1" : "0.5"} className="main">
                 <img src={desktopImgSrc[0]} alt=""/>
             </div>
-            <div data-scroll data-scroll-speed="4" className="side">
+            <div data-scroll data-scroll-speed={mobile? "1" : "4"} className="side">
                 <img src={desktopImgSrc[1]} alt=""/>
             </div>
         </DesktopSectionStyles>
