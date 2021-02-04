@@ -153,7 +153,7 @@ const AboutStyles = styled(motion.div)`
             flex-direction: column;
             justify-content: flex-end;
             @media (hover: none) and (pointer: coarse), (max-width: 500px){
-                width: 85%;
+                width: 68%;
                 margin-top: 10vh;
             }
             h1{
