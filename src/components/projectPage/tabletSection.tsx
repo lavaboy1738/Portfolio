@@ -8,9 +8,18 @@ const TabletSectionStyles = styled.div`
     margin: 15vh 0;
     .main{
         width: 60%;
+        @media (hover: none) and (pointer: coarse), (max-width: 500px){
+            width: 100%;
+        }
     }
     .side{
         width: 35%;
+        @media (hover: none) and (pointer: coarse), (max-width: 500px){
+            width: 100%;
+        }
+    }
+    @media (hover: none) and (pointer: coarse), (max-width: 500px){
+        flex-wrap: wrap;
     }
 `
 

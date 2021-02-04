@@ -8,16 +8,25 @@ const PhoneSectionStyles = styled.div`
     justify-content: space-around;
     .image-wrapper{
         width: 28%;
+        @media (hover: none) and (pointer: coarse), (max-width: 500px){
+            width: 100%;
+        }
         :nth-child(2){
             width: 30%;
             position: relative;
             top: -1vw;
+            @media (hover: none) and (pointer: coarse), (max-width: 500px){
+                width: 100%;
+            }
         }
         img{
             width: 100%;
             height: auto;
             display: block;
         }
+    }
+    @media (hover: none) and (pointer: coarse), (max-width: 500px){
+        flex-wrap: wrap;
     }
 `
 
