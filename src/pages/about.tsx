@@ -174,6 +174,10 @@ const AboutStyles = styled(motion.div)`
             }
             p{
                 margin-bottom: 3vw;
+                :nth-child(2){
+                    margin-bottom: 1vw;
+                    margin-top: 0.5vw;
+                }
             }
         }
     }
@@ -277,11 +281,13 @@ const About = ()=>{
                     </div>
                     <div className="info-credits">
                         <h1>Credits</h1>
-                        <p>Although I designed and built this portfolio myself, I have to credit a few places from where I drew my inspirations. </p>
+                        <p>I developed this website with React.js. Animations are powered by Framer Motion.</p>
+                        <p>Huge thanks to the following sites/individuals for design and layout inspirations.</p>
+                        <h2><a href="https://pitchfork.com/reviews/albums/jay-z-444/" target="_blank" rel="noreferrer">Jay-Z's 4:44</a></h2>
                         <h2><a href="https://romainavalle.com/" target="_blank" rel="noreferrer">Romain Avalle</a></h2>
                         <h2><a href="https://loerarchitecten.com/en/" target="_blank" rel="noreferrer">Loer Architecten</a></h2>
                         <h2><a href="https://www.clockstrikestwelve.com/" target="_blank" rel="noreferrer">ClockStrikesTwelve</a></h2>
-                        <h2><a href="https://pitchfork.com/reviews/albums/jay-z-444/" target="_blank" rel="noreferrer">Jay-Z's 4:44</a></h2>
+                        <h2><a href="https://www.behance.net/martiniidesign" rel="noreferrer" target="_blank">Stefan Martinovic</a></h2>
                         <h2><a href="https://www.youtube.com/watch?v=xvFZjo5PgG0" target="_blank" rel="noreferrer">Rick Astley</a></h2>
                         <h2><a href="https://www.loftgarten.co/" target="_blank" rel="noreferrer">Loftgarten</a></h2>
                     </div>
