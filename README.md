@@ -62,10 +62,13 @@ Yes, feel free to fork this repo. Please give me proper credit by linking back t
 ## 👏 Credits
 I wrote all the code and built the website myself. 
 <br/>
-These are the websites/artworks from where I drew my inspirations 
+These are the websites/artworks/individuals from where I drew my inspirations 
 <br/>
 Navigation and Cursor: 
 <a href="https://romainavalle.com/" target="_blank">Romain Avalle</a>
+<br/>
+Homepage: 
+<a href="https://www.behance.net/martiniidesign" target="_blank">Stefan Martinovic</a>
 <br/>
 Projects Menu:  <a href="https://loerarchitecten.com/en/" target="_blank">Loer Architecten</a>
 <br/>
