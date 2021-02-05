@@ -40,9 +40,11 @@ const HomepageStyles = styled(motion.div)`
             overflow: hidden;
             a{
                 margin-right: 3vw;
-                font-family: Grotesk;
-                font-weight: 400;
-                font-size: calc(var(--VW)*1.5);
+                display: inline-block;
+                i{
+                    pointer-events: none;
+                    font-size: calc(var(--VW)*2.5);
+                }
             }
         }
     }
@@ -170,12 +172,16 @@ const Home = ()=>{
                     variants={opacityReveal} initial="initial"
                     animate="animate"
                     transition={{...transition, duration:1, delay: 5.5}}
-                    href="https://www.linkedin.com/in/ronniefeng/" target="_blank" rel="noreferrer">Li</motion.a>
+                    href="https://www.linkedin.com/in/ronniefeng/" target="_blank" rel="noreferrer">
+                        <i className='bx bxl-linkedin-square' ></i>
+                    </motion.a>
                     <motion.a 
                     variants={opacityReveal} initial="initial"
                     animate="animate"
                     transition={{...transition, duration:1, delay: 5.7}}
-                    href="https://github.com/lavaboy1738" target="_blank" rel="noreferrer">Gh</motion.a>
+                    href="https://github.com/lavaboy1738" target="_blank" rel="noreferrer">
+                        <i className='bx bxl-github'></i>
+                    </motion.a>
                 </div>
             </div>
             <div className="right">
@@ -196,7 +202,11 @@ const Home = ()=>{
                     </div>
                 </div>
                 <div className="right-descriptions">
-                    <p>Award-winning interactive developer striving to craft memorable experiences on the digital canvas. Front-end addicted, Fullstack capable. Currently located in Toronto, Canada.</p>
+                    <motion.p
+                    variants={opacityReveal} initial="initial"
+                    animate="animate"
+                    transition={{...transition, duration:1, delay: 4}}
+                    >Award-winning interactive developer striving to craft memorable experiences on the digital canvas. Front-end addicted, Fullstack capable. Currently located in Toronto, Canada.</motion.p>
                 </div>
                 <div className="right-bottom">
                     <motion.div className="link-container">
