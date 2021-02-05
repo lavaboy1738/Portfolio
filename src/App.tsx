@@ -8,7 +8,8 @@ import {Switch, Route, useLocation} from "react-router-dom";
 import {Works} from "./pages/works";
 import {About} from "./pages/about";
 import {NotFound} from "./pages/NotFound";
-import {NewHomePage} from "./pages/newHomePage";
+// import {NewHomePage} from "./pages/newHomePage";
+import {Home} from "./pages/home";
 import {Project} from "./pages/project";
 import {AnimatePresence} from "framer-motion";
 
@@ -41,7 +42,7 @@ function App() {
       <AnimatePresence exitBeforeEnter>
         <Switch location={location} key={location.pathname}>
           <Route path="/" exact>
-            <NewHomePage/>
+            <Home/>
           </Route>
           <Route path="/works" exact>
             <Works/>
