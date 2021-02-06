@@ -118,8 +118,6 @@ const HomepageStyles = styled(motion.div)`
                         font-size:calc(var(--VW)*7);
                         line-height: calc(var(--VW)*6);
                         height: calc(var(--VW)*6);
-                        position: relative;
-                        top: 15%;
                         @media (hover: none) and (pointer: coarse), (max-width: 500px){
                             font-size:calc(var(--VW)*12);
                             line-height: calc(var(--VW)*11);
