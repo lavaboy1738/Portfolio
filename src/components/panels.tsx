@@ -9,14 +9,14 @@ left: 0;
 bottom: 0;
 width: calc(var(--VW)*100);
 height: calc(var(--VH)*100);
-z-index: 11;
+z-index: 30;
 pointer-events: none;
     .left, .right{
         height: 100%;
         width: 50.5%;
         position: absolute;
         top: 0;
-        z-index: 12;
+        z-index: 30;
         background-color: var(--black);
     }
 
@@ -36,7 +36,7 @@ pointer-events: none;
         transform: translate(-50%, -50%);
         color: var(--burlywood);
         font-size:calc(var(--VW) *2);
-        z-index: 13;
+        z-index: 31;
         @media (hover: none) and (pointer: coarse), (max-width: 500px){
             font-size:calc(var(--VW) *4);
         }
