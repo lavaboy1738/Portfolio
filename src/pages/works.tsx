@@ -1,11 +1,20 @@
 import React from "react";
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 import {Nav} from "../components/nav";
 import {WorksItem} from "../components/worksItem";
 import {WorksList} from "../data/worksList";
 import {motion} from "framer-motion";
 import {Panels} from "../components/panels";
 import {Animations} from "../animations";
+
+const coverReveal = keyframes`
+    from {
+        left: 0;
+    }
+    to {
+        left: -120%;
+    }
+`
 
 const WorksStyles = styled(motion.div)`
     width: 100vw;
@@ -14,6 +23,16 @@ const WorksStyles = styled(motion.div)`
     display: flex;
     @media (hover: none) and (pointer: coarse), (max-width: 500px){
         padding: 6vw 10vw;
+    }
+    .cover{
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        left: 0;
+        top: 0;
+        background-color: transparent;
+        z-index: 9;
+        animation: ${coverReveal} 0.01s linear 6.5s forwards;
     }
     .title-wrapper{
         width: 30%;
@@ -70,6 +89,7 @@ const Works = ()=>{
             animate={{backgroundColor: "transparent", pointerEvents: "unset"}}
             exit={{opacity: [1, 1, 0], transition:{duration: 2, times: [0, 0.99, 1]}}}
             >
+                <div className="cover"></div>
                 <div className="title-wrapper">
                     <motion.div 
                     variants={worksTitleParent}
