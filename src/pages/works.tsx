@@ -8,12 +8,23 @@ import {Panels} from "../components/panels";
 import {Animations} from "../animations";
 
 const coverReveal = keyframes`
-    from {
-        left: 0;
+    from{
+        left: 0%;
     }
     to {
-        left: -120%;
+        left: 120%;
     }
+`
+
+const CoverStyles = styled.div`
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vw;
+    z-index: 15;
+    background-color: transparent;
+    animation: ${coverReveal} 0.01s linear 6.5s forwards;
 `
 
 const WorksStyles = styled(motion.div)`
@@ -23,16 +34,6 @@ const WorksStyles = styled(motion.div)`
     display: flex;
     @media (hover: none) and (pointer: coarse), (max-width: 500px){
         padding: 6vw 10vw;
-    }
-    .cover{
-        width: 100%;
-        height: 100%;
-        position: fixed;
-        left: 0;
-        top: 0;
-        background-color: transparent;
-        z-index: 9;
-        animation: ${coverReveal} 0.01s linear 6.5s forwards;
     }
     .title-wrapper{
         width: 30%;
@@ -84,12 +85,12 @@ const Works = ()=>{
         <>
             <Nav/>
             <Panels/>
+            <CoverStyles/>
             <WorksStyles
             initial={{backgroundColor: "#0f0e0e", pointerEvents: "none"}}
             animate={{backgroundColor: "transparent", pointerEvents: "unset"}}
             exit={{opacity: [1, 1, 0], transition:{duration: 2, times: [0, 0.99, 1]}}}
             >
-                <div className="cover"></div>
                 <div className="title-wrapper">
                     <motion.div 
                     variants={worksTitleParent}

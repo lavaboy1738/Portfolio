@@ -5,7 +5,7 @@ import {Link} from "react-router-dom";
 const NavStyles = styled.div`
     .logo, .works, .about{
         position: fixed;
-        z-index: 10;
+        z-index: 20;
     }
 
     .logo{
