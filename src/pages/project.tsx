@@ -14,6 +14,7 @@ import{motion} from "framer-motion";
 import {Panels} from "../components/panels";
 import {Animations} from "../animations";
 
+
 const ProjectStyles  = styled(motion.div)`
 padding: 6vw 5vw;
 padding-right: 6vw;

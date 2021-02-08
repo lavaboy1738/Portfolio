@@ -2,6 +2,13 @@ import React from "react";
 import styled from "styled-components";
 import {motion} from "framer-motion";
 import {Animations} from "../../animations";
+import {fab} from "@fortawesome/free-brands-svg-icons";
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import {faExternalLinkSquareAlt} from "@fortawesome/free-solid-svg-icons";
+import {library} from "@fortawesome/fontawesome-svg-core";
+
+//fontawesome
+library.add(fab, faExternalLinkSquareAlt);
 
 const MainSectionStyles = styled.div`
     display: flex;
@@ -48,17 +55,22 @@ const MainSectionStyles = styled.div`
                 @media (hover: none) and (pointer: coarse), (max-width: 500px){
                     margin: 0 2vw;
                 }
-                .bx{
-                    font-size: calc(var(--VW)*3.5);
+                svg{
+                    width: 3.5vw;
+                    height: 3.5vw;
                     pointer-events: none;
                     mix-blend-mode: difference;
                     color: var(--black);
                     background-color: var(--burlywood);
-                    @media (hover: none) and (pointer: coarse){
-                        font-size: calc(var(--VW) *8);
+                    @media (hover: none) and (pointer: coarse) and (min-width: 500px){
+                        width: 8vw;
+                        height: 8vw;
+                        mix-blend-mode: unset;
                     }
-                    @media (hover: none) and (pointer: coarse), (max-width: 500px){
-                        font-size: calc(var(--VW) *12);
+                    @media (max-width: 500px){
+                        width: 12vw;
+                        height: 12vw;
+                        mix-blend-mode: unset;
                     }
                 }
             }
@@ -99,10 +111,10 @@ const MainSection = (props: Prop)=>{
                 transition={{...transition, duration:2, delay: 3.6}}
                 className="links">
                     <a href={githubLink} target="_blank" rel="noreferrer">
-                        <i className='bx bxl-github'></i>
+                        <FontAwesomeIcon icon={["fab", "github"]} />
                     </a>
                     <a href={liveLink} target="_blank" rel="noreferrer">
-                        <i className='bx bx-link-external'></i>
+                        <FontAwesomeIcon icon={["fas", "external-link-square-alt"]} />
                     </a>
                 </motion.div>
                 {

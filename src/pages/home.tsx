@@ -8,6 +8,12 @@ import DisplacementImg from "../assets/images/homepage/glass.webp";
 import {Animations} from "../animations";
 import {motion} from "framer-motion";
 import {Panels} from "../components/panels";
+import {fab} from "@fortawesome/free-brands-svg-icons";
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import {library} from "@fortawesome/fontawesome-svg-core";
+
+//fontawesome
+library.add(fab);
 
 const HomepageStyles = styled(motion.div)`
     width: 100vw;
@@ -41,9 +47,17 @@ const HomepageStyles = styled(motion.div)`
             a{
                 margin-right: 3vw;
                 display: inline-block;
-                i{
+                svg{
                     pointer-events: none;
-                    font-size: calc(var(--VW)*2.5);
+                    width: 2.5vw;
+                    height: 2.5vw;
+                    mix-blend-mode: difference;
+                    color: var(--black);
+                    background-color: var(--burlywood);
+                    &:hover{
+                        color: var(--burlywood);
+                        background-color:var(--black);
+                    }
                 }
             }
         }
@@ -172,14 +186,14 @@ const Home = ()=>{
                     animate="animate"
                     transition={{...transition, duration:1, delay: 5.5}}
                     href="https://www.linkedin.com/in/ronniefeng/" target="_blank" rel="noreferrer">
-                        <i className='bx bxl-linkedin-square' ></i>
+                        <FontAwesomeIcon icon={["fab", "linkedin"]} />
                     </motion.a>
                     <motion.a 
                     variants={opacityReveal} initial="initial"
                     animate="animate"
                     transition={{...transition, duration:1, delay: 5.7}}
                     href="https://github.com/lavaboy1738" target="_blank" rel="noreferrer">
-                        <i className='bx bxl-github'></i>
+                        <FontAwesomeIcon icon={["fab", "github"]} />
                     </motion.a>
                 </div>
             </div>
