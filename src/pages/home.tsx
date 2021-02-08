@@ -51,7 +51,7 @@ const HomepageStyles = styled(motion.div)`
                     pointer-events: none;
                     width: 2.5vw;
                     height: 2.5vw;
-                    mix-blend-mode: difference;
+                    mix-blend-mode: normal;
                     color: var(--black);
                     background-color: var(--burlywood);
                     &:hover{
