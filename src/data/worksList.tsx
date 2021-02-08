@@ -1,10 +1,10 @@
-import XpensityV2 from "../assets/images/projects/xpensityv2-sm.png";
-import Agency from "../assets/images/projects/digital-agency-sm.png";
-import XpensityV1 from "../assets/images/projects/xpensityv1-sm.png";
-import Portfolio from "../assets/images/projects/portfolio-sm.png";
-import LGN from "../assets/images/projects/lgn-sm.png";
-import ECommerce from "../assets/images/projects/e-commerce-sm.png";
-import LavaUI from "../assets/images/projects/Lava-UI-sm.png";
+import XpensityV2 from "../assets/images/projects/xpensityv2-sm.webp";
+import Agency from "../assets/images/projects/digital-agency-sm.webp";
+import XpensityV1 from "../assets/images/projects/xpensityv1-sm.webp";
+import Portfolio from "../assets/images/projects/portfolio-sm.webp";
+import LGN from "../assets/images/projects/lgn-sm.webp";
+import ECommerce from "../assets/images/projects/e-commerce-sm.webp";
+import LavaUI from "../assets/images/projects/Lava-UI-sm.webp";
 
 export type WorksListItem = {
     id: string,

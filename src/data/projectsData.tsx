@@ -1,46 +1,46 @@
-import XpensityV2LG1 from "../assets/images/projects/xpensityV2/xpensityv2-lg-1.png";
-import XpensityV2LG2 from "../assets/images/projects/xpensityV2/xpensityv2-lg-2.png";
-import XpensityV2LG3 from "../assets/images/projects/xpensityV2/xpensityv2-lg-3.png";
-import XpensityV2TabletMain from "../assets/images/projects/xpensityV2/xpensityV2-tablet-main.png";
-import XpensityV2TabletSide from "../assets/images/projects/xpensityV2/xpensityV2-tablet-side.png";
+import XpensityV2LG1 from "../assets/images/projects/xpensityV2/xpensityv2-lg-1.webp";
+import XpensityV2LG2 from "../assets/images/projects/xpensityV2/xpensityv2-lg-2.webp";
+import XpensityV2LG3 from "../assets/images/projects/xpensityV2/xpensityv2-lg-3.webp";
+import XpensityV2TabletMain from "../assets/images/projects/xpensityV2/xpensityV2-tablet-main.webp";
+import XpensityV2TabletSide from "../assets/images/projects/xpensityV2/xpensityV2-tablet-side.webp";
 
-import PortfolioLG1 from "../assets/images/projects/portfolio/portfolio-lg-1.png";
-import PortfolioLG2 from "../assets/images/projects/portfolio/portfolio-lg-2.png";
-import PortfolioLG3 from "../assets/images/projects/portfolio/portfolio-lg-3.png";
-import PortfolioTabletMain from "../assets/images/projects/portfolio/portfolio-tablet-main.png";
-import PortfolioTabletSide from "../assets/images/projects/portfolio/portfolio-tablet-side.png";
-import PortfolioLaptopMain from "../assets/images/projects/portfolio/portfolio-laptop-main.png";
-import PortfolioLaptopSide from "../assets/images/projects/portfolio/portfolio-laptop-side.png";
+import PortfolioLG1 from "../assets/images/projects/portfolio/portfolio-lg-1.webp";
+import PortfolioLG2 from "../assets/images/projects/portfolio/portfolio-lg-2.webp";
+import PortfolioLG3 from "../assets/images/projects/portfolio/portfolio-lg-3.webp";
+import PortfolioTabletMain from "../assets/images/projects/portfolio/portfolio-tablet-main.webp";
+import PortfolioTabletSide from "../assets/images/projects/portfolio/portfolio-tablet-side.webp";
+import PortfolioLaptopMain from "../assets/images/projects/portfolio/portfolio-laptop-main.webp";
+import PortfolioLaptopSide from "../assets/images/projects/portfolio/portfolio-laptop-side.webp";
 
-import AgencyLG1 from "../assets/images/projects/agency/agency-lg-1.png";
-import AgencyLG2 from "../assets/images/projects/agency/agency-lg-2.png";
-import AgencyLG3 from "../assets/images/projects/agency/agency-lg-3.png";
-import AgencyLaptopMain from "../assets/images/projects/agency/agencyLaptop-Main.png";
-import AgencyLaptopSide from "../assets/images/projects/agency/agencyLaptop-Side.png";
-import AgencyTabletMain from "../assets/images/projects/agency/agency-tablet-main.png";
-import AgencyTabletSide from "../assets/images/projects/agency/agency-tablet-side.png";
+import AgencyLG1 from "../assets/images/projects/agency/agency-lg-1.webp";
+import AgencyLG2 from "../assets/images/projects/agency/agency-lg-2.webp";
+import AgencyLG3 from "../assets/images/projects/agency/agency-lg-3.webp";
+import AgencyLaptopMain from "../assets/images/projects/agency/agencyLaptop-Main.webp";
+import AgencyLaptopSide from "../assets/images/projects/agency/agencyLaptop-Side.webp";
+import AgencyTabletMain from "../assets/images/projects/agency/agency-tablet-main.webp";
+import AgencyTabletSide from "../assets/images/projects/agency/agency-tablet-side.webp";
 
-import XpensityV1LG1 from "../assets/images/projects/xpensityV1/xpensityV1-lg-1.png";
-import XpensityV1LG2 from "../assets/images/projects/xpensityV1/xpensityV1-lg-2.png";
-import XpensityV1LG3 from "../assets/images/projects/xpensityV1/xpensityV1-lg-3.png";
-import XpensityV1TabletMain from "../assets/images/projects/xpensityV1/xpensityV1-tablet-main.png";
-import XpensityV1TabletSide from "../assets/images/projects/xpensityV1/xpensityV1-tablet-side.png";
+import XpensityV1LG1 from "../assets/images/projects/xpensityV1/xpensityV1-lg-1.webp";
+import XpensityV1LG2 from "../assets/images/projects/xpensityV1/xpensityV1-lg-2.webp";
+import XpensityV1LG3 from "../assets/images/projects/xpensityV1/xpensityV1-lg-3.webp";
+import XpensityV1TabletMain from "../assets/images/projects/xpensityV1/xpensityV1-tablet-main.webp";
+import XpensityV1TabletSide from "../assets/images/projects/xpensityV1/xpensityV1-tablet-side.webp";
 
-import LGNLG1 from "../assets/images/projects/lgn/lgn-lg-1.png";
-import LGNLG2 from "../assets/images/projects/lgn/lgn-lg-2.png";
-import LGNLG3 from "../assets/images/projects/lgn/lgn-lg-3.png";
-import LGNLaptopMain from "../assets/images/projects/lgn/lgn-laptop-main.png";
-import LGNLaptopSide from "../assets/images/projects/lgn/lgn-laptop-side.png";
-import LGNTabletMain from "../assets/images/projects/lgn/lgn-tablet-main.png";
-import LGNTabletSide from "../assets/images/projects/lgn/lgn-tablet-side.png";
+import LGNLG1 from "../assets/images/projects/lgn/lgn-lg-1.webp";
+import LGNLG2 from "../assets/images/projects/lgn/lgn-lg-2.webp";
+import LGNLG3 from "../assets/images/projects/lgn/lgn-lg-3.webp";
+import LGNLaptopMain from "../assets/images/projects/lgn/lgn-laptop-main.webp";
+import LGNLaptopSide from "../assets/images/projects/lgn/lgn-laptop-side.webp";
+import LGNTabletMain from "../assets/images/projects/lgn/lgn-tablet-main.webp";
+import LGNTabletSide from "../assets/images/projects/lgn/lgn-tablet-side.webp";
 
-import EConLG1 from "../assets/images/projects/eCommerce/ecommerce-lg-1.png";
-import EConLG2 from "../assets/images/projects/eCommerce/ecommerce-lg-2.png";
-import EConLG3 from "../assets/images/projects/eCommerce/ecommerce-lg-3.png";
-import EConLaptopMain from "../assets/images/projects/eCommerce/ecommerce-laptop-main.png";
-import EConLaptopSide from "../assets/images/projects/eCommerce/ecommerce-laptop-side.png";
-import EConTabletMain from "../assets/images/projects/eCommerce/ecommerce-tablet-main.png";
-import EConTabletSide from "../assets/images/projects/eCommerce/ecommerce-tablet-side.png";
+import EConLG1 from "../assets/images/projects/eCommerce/ecommerce-lg-1.webp";
+import EConLG2 from "../assets/images/projects/eCommerce/ecommerce-lg-2.webp";
+import EConLG3 from "../assets/images/projects/eCommerce/ecommerce-lg-3.webp";
+import EConLaptopMain from "../assets/images/projects/eCommerce/ecommerce-laptop-main.webp";
+import EConLaptopSide from "../assets/images/projects/eCommerce/ecommerce-laptop-side.webp";
+import EConTabletMain from "../assets/images/projects/eCommerce/ecommerce-tablet-main.webp";
+import EConTabletSide from "../assets/images/projects/eCommerce/ecommerce-tablet-side.webp";
 
 export type ProjectDataType = {
     id: string,
