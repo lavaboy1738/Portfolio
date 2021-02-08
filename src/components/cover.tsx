@@ -8,7 +8,7 @@ const CoverStyles = styled.div`
     justify-content: center;
     align-items: center;
     background-color: var(--burlywood);
-    z-index: 20;
+    z-index: 50;
     display: none;
     @media (hover: none) and (pointer: coarse) and (orientation: landscape){
         display: flex;
