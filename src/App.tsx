@@ -1,14 +1,12 @@
-import React, { useEffect} from 'react';
+import React, {useEffect} from 'react';
 import './App.scss';
 import {Cursor} from "./components/cursor";
 import {Cover} from "./components/cover";
 import {GlobalStyles} from "./styles/globalStyles";
 import {Switch, Route, useLocation} from "react-router-dom";
-// import {Homepage} from "./pages/homepage";
 import {Works} from "./pages/works";
 import {About} from "./pages/about";
 import {NotFound} from "./pages/NotFound";
-// import {NewHomePage} from "./pages/newHomePage";
 import {Home} from "./pages/home";
 import {Project} from "./pages/project";
 import {AnimatePresence} from "framer-motion";
@@ -42,19 +40,19 @@ function App() {
       <AnimatePresence exitBeforeEnter>
         <Switch location={location} key={location.pathname}>
           <Route path="/" exact>
-            <Home/>
+              <Home/>
           </Route>
           <Route path="/works" exact>
-            <Works/>
+              <Works/>
           </Route>
           <Route path="/works/:projectID" exact>
-            <Project/>
+              <Project/>
           </Route>
           <Route path="/About" exact>
-            <About/>
+              <About/>
           </Route>
           <Route path="*">
-            <NotFound/>
+              <NotFound/>
           </Route>
         </Switch>
       </AnimatePresence>
