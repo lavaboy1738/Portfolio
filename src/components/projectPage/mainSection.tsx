@@ -59,7 +59,7 @@ const MainSectionStyles = styled.div`
                     width: 3.5vw;
                     height: 3.5vw;
                     pointer-events: none;
-                    mix-blend-mode: difference;
+                    mix-blend-mode: normal;
                     color: var(--black);
                     background-color: var(--burlywood);
                     @media (hover: none) and (pointer: coarse) and (min-width: 500px){
