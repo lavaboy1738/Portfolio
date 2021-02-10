@@ -57,7 +57,7 @@ const Cursor = ()=>{
             border: hoverNav? "0.1vw solid #0f0e0e" : "none",
             backgroundColor: hoverNav? "#f6c9a0" : "#0f0e0e",
         }}
-        transition= {{ease: "linear", duration: 0.2}}
+        transition= {{ease: "linear", duration: 0.15}}
         />
         <PointerStyles 
         className={hoverNav? "on-focus" : ""}
