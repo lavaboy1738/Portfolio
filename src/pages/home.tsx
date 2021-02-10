@@ -177,7 +177,7 @@ const Home = ()=>{
                         variants={opacityReveal} initial="initial"
                         animate="animate"
                         transition={{...transition, duration:1, delay: 4}}
-                        >Award-winning interactive developer striving to craft memorable experiences on the digital canvas. Front-end addicted, Fullstack capable. Currently located in Toronto, Canada.</motion.p>
+                        >Interactive developer striving to craft memorable experiences on the digital canvas. Front-end addicted, Fullstack capable. Currently located in Toronto.</motion.p>
                     </div>
                 </div>
                 <div className="left-bottom">
