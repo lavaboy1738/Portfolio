@@ -200,7 +200,13 @@ const WorksItem = (props: Prop)=>{
                     }}
                     transition={{ease: "linear", duration: 0.2}}
                     className="floating-image">
-                        <img src={src} alt=""/>
+                        <motion.img 
+                        animate={{
+                            x: hovered? 0: "-120%",
+                            opacity: hovered? 1 : 0.7,
+                        }}
+                        transition={{ease: [0.6, -0.05, 0.01, 0.9], duration: 0.6, delay: 0.05}}
+                        src={src} alt=""/>
                     </motion.div>
                     <motion.div 
                     variants={maskAnimation}
