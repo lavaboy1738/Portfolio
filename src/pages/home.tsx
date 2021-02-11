@@ -26,7 +26,7 @@ const HomepageStyles = styled(motion.div)`
     }
     .left{
         height: 100%;
-        width: 25%;
+        width: 24%;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -40,6 +40,7 @@ const HomepageStyles = styled(motion.div)`
             }
             .descriptions{
                 margin-top: 3vh;
+                text-align: justify;
             }
         }
         &-bottom{
@@ -94,11 +95,12 @@ const HomepageStyles = styled(motion.div)`
             display: none;
             @media (hover: none) and (pointer: coarse), (max-width: 500px){
                 display: block;
-                width: 55%;
+                text-align: justify;
+                width: 52%;
                 margin: 5vh 0;
             }
             @media (max-width: 500px){
-                width: 90%;
+                width: 85%;
             }
         }
         &-bottom{
@@ -109,7 +111,6 @@ const HomepageStyles = styled(motion.div)`
             max-height: 40vh;
             position: relative;
             top: 1%;
-            margin-top: 10vh;
             @media (hover: none) and (pointer: coarse), (max-width: 500px){
                 margin-top: 0;
                 margin-bottom: 5vh;
@@ -222,7 +223,7 @@ const Home = ()=>{
                     variants={opacityReveal} initial="initial"
                     animate="animate"
                     transition={{...transition, duration:1, delay: 4}}
-                    >Award-winning interactive developer striving to craft memorable experiences on the digital canvas. Front-end addicted, Fullstack capable. Currently located in Toronto, Canada.</motion.p>
+                    >Interactive developer striving to craft memorable experiences on the digital canvas. Front-end addicted, Fullstack capable. Currently located in Toronto.</motion.p>
                 </div>
                 <div className="right-bottom">
                     <motion.div className="link-container">

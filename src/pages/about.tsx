@@ -282,7 +282,7 @@ const About = ()=>{
                     <div className="info-credits">
                         <h1>Credits</h1>
                         <p>I developed this website with React.js. Animations are powered by Framer Motion.</p>
-                        <p>Huge thanks to the following sites/individuals for design and layout inspirations.</p>
+                        <p>Thanks goes out to the following sites/individuals for inspirations. I learn from the best.</p>
                         <h2><a href="https://pitchfork.com/reviews/albums/jay-z-444/" target="_blank" rel="noreferrer">Jay-Z's 4:44</a></h2>
                         <h2><a href="https://romainavalle.com/" target="_blank" rel="noreferrer">Romain Avalle</a></h2>
                         <h2><a href="https://loerarchitecten.com/en/" target="_blank" rel="noreferrer">Loer Architecten</a></h2>
