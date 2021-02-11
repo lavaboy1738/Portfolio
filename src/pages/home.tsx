@@ -106,6 +106,9 @@ const HomepageStyles = styled(motion.div)`
             flex-direction: column;
             justify-content: space-between;
             flex-grow: 1;
+            max-height: 40vh;
+            position: relative;
+            top: 1%;
             margin-top: 10vh;
             @media (hover: none) and (pointer: coarse), (max-width: 500px){
                 margin-top: 0;
