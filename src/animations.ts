@@ -34,17 +34,19 @@ export const Animations = ()=>{
         animate: {
             opacity:1,
             transition: {
-                staggerChildren: 0.1,
-                delayChildren: 3,
+                staggerChildren: 0.08,
+                delayChildren: 3.8,
             }
         }
     }
 
     const textReveal = {
         initial: {
+            rotate: 10,
             y: "200%",
         },
         animate: {
+            rotate: 0,
             y: "0%",
         }
     }

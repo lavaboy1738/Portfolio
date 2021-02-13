@@ -162,7 +162,7 @@ const Home = ()=>{
                         <motion.p
                         variants={opacityReveal} initial="initial"
                         animate="animate"
-                        transition={{...transition, duration:1, delay: 4}}
+                        transition={{...transition, duration:1, delay: 4.5}}
                         >Interactive developer striving to craft memorable experiences on the digital canvas. Front-end addicted, Fullstack capable. Currently located in Toronto.</motion.p>
                     </div>
                 </div>
@@ -170,14 +170,14 @@ const Home = ()=>{
                     <motion.a 
                     variants={opacityReveal} initial="initial"
                     animate="animate"
-                    transition={{...transition, duration:1, delay: 5.5}}
+                    transition={{...transition, duration:1, delay: 5.7}}
                     href="https://www.linkedin.com/in/ronniefeng/" target="_blank" rel="noreferrer">
                         <FontAwesomeIcon icon={["fab", "linkedin"]} />
                     </motion.a>
                     <motion.a 
                     variants={opacityReveal} initial="initial"
                     animate="animate"
-                    transition={{...transition, duration:1, delay: 5.7}}
+                    transition={{...transition, duration:1, delay: 5.9}}
                     href="https://github.com/lavaboy1738" target="_blank" rel="noreferrer">
                         <FontAwesomeIcon icon={["fab", "github"]} />
                     </motion.a>
@@ -189,27 +189,27 @@ const Home = ()=>{
                     <motion.p
                     variants={opacityReveal} initial="initial"
                     animate="animate"
-                    transition={{...transition, duration:1, delay: 4}}
+                    transition={{...transition, duration:1, delay: 4.5}}
                     >Interactive developer striving to craft memorable experiences on the digital canvas. Front-end addicted, Fullstack capable. Currently located in Toronto.</motion.p>
                 </div>
                 <div className="right-bottom">
                     <motion.div className="link-container">
                         <motion.div className="link-wrapper"
-                        variants={textReveal} initial="initial" animate="animate" transition= {{...transition, duration: 1, delay: 4.3}}
+                        variants={textReveal} initial="initial" animate="animate" transition= {{...transition, duration: 1, delay: 5}}
                         >
                             <Link to="works"><span className="number">01.</span>Works</Link>
                         </motion.div>
                     </motion.div>
                     <motion.div className="link-container">
                         <motion.div className="link-wrapper"
-                        variants={textReveal} initial="initial" animate="animate" transition= {{...transition, duration: 1, delay: 4.5}}
+                        variants={textReveal} initial="initial" animate="animate" transition= {{...transition, duration: 1, delay: 5.2}}
                         >
                             <Link to="about"><span className="number">02.</span>About</Link>
                         </motion.div>
                     </motion.div>
                     <motion.div className="link-container">
                         <motion.div className="link-wrapper"
-                        variants={textReveal} initial="initial" animate="animate" transition= {{...transition, duration: 1, delay: 4.7}}
+                        variants={textReveal} initial="initial" animate="animate" transition= {{...transition, duration: 1, delay: 5.4}}
                         >
                             <a href="mailto:ronnie@ronniefeng.com"><span className="number">03.</span>Contact</a>
                         </motion.div>

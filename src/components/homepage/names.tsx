@@ -57,7 +57,7 @@ const titleParent2 = {
 
 const titleTextReveal = {
     hidden: {
-        y: "200%",
+        y: "120%",
     },
     show: {
         y: "0%",
