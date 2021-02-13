@@ -7,12 +7,13 @@ import Ronnie2 from "../assets/images/homepage/profile2.webp";
 import DisplacementImg from "../assets/images/homepage/glass.webp";
 import {Animations} from "../animations";
 import {motion} from "framer-motion";
+//components
 import {Panels} from "../components/panels";
+import {Names} from "../components/homepage/names";
+//icons
 import {fab} from "@fortawesome/free-brands-svg-icons";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {library} from "@fortawesome/fontawesome-svg-core";
-
-//fontawesome
 library.add(fab);
 
 const HomepageStyles = styled(motion.div)`
@@ -71,25 +72,6 @@ const HomepageStyles = styled(motion.div)`
         justify-content: space-between;
         @media (hover: none) and (pointer: coarse), (max-width: 500px){
             width: 100%;
-        }
-        &-top{
-            text-align: right;
-            .name-wrapper{
-                overflow: hidden;
-                h1{
-                    font-size:calc(var(--VW)*13);
-                    line-height: calc(var(--VW)*11);
-                    height: calc(var(--VW)*11);
-                    text-transform: uppercase;
-                    -webkit-text-fill-color: var(--burlywood);
-                    -webkit-text-stroke: calc(var(--VW)*0.14) var(--black);
-                    @media (hover: none) and (pointer: coarse){
-                        font-size:calc(var(--VW)*17);
-                        line-height: calc(var(--VW)*16);
-                        height: calc(var(--VW)*16);
-                    }
-                }
-            }
         }
         &-descriptions{
             display: none;
@@ -202,22 +184,7 @@ const Home = ()=>{
                 </div>
             </div>
             <div className="right">
-                <div className="right-top">
-                    <div className="name-wrapper">
-                    <motion.h1
-                    variants={textReveal} initial="initial"
-                        animate="animate"
-                        transition={{...transition, duration:0.8, delay: 3.5}}
-                    >Ronnie</motion.h1>
-                    </div>
-                    <div className="name-wrapper">
-                    <motion.h1
-                    variants={textReveal} initial="initial"
-                        animate="animate"
-                        transition={{...transition, duration:0.8, delay: 3.8}}
-                    >Feng</motion.h1>
-                    </div>
-                </div>
+                <Names/>
                 <div className="right-descriptions">
                     <motion.p
                     variants={opacityReveal} initial="initial"
