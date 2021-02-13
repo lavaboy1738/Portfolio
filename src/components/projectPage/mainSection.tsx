@@ -24,22 +24,21 @@ const MainSectionStyles = styled.div`
         }
         .title-wrapper{
             overflow: hidden;
+            margin-bottom: 3vw;
+            @media (hover: none) and (pointer: coarse), (max-width: 500px){
+                margin-bottom: 6vw;
+            }
             .title{
                 font-size: calc(var(--VW) *3);
                 position: relative;
-                margin-bottom: 3vw;
                 @media (hover: none) and (pointer: coarse), (max-width: 500px){
                     font-size: calc(var(--VW) *8);
-                    margin-bottom: 6vw;
                 }
-                .underline{
-                    position: absolute;
+            }
+            .underline{
                     width: 30%;
                     height: 0.3vw;
-                    left: 0;
-                    bottom: -1vw;
                     background-color: var(--black);
-                }
             }
         }
         .links{
@@ -100,15 +99,19 @@ const MainSection = (props: Prop)=>{
                 <div className="title-wrapper">
                     <motion.h1 variants={textReveal} initial="initial"
                     animate="animate"
-                    transition={{...transition, duration:2, delay: 3.4}}
+                    transition={{...transition, duration:2, delay: 3.6}}
                     className="title">{title}
-                        <span className="underline"></span>
                     </motion.h1>
+                    <motion.div 
+                    initial={{x: "-120%"}}
+                    animate={{x:"0%"}}
+                    transition={{...transition, duration: 2, delay: 4 }}
+                    className="underline"></motion.div>
                 </div>
                 <motion.div 
                 variants={opacityReveal} initial="initial"
                 animate="animate"
-                transition={{...transition, duration:2, delay: 3.6}}
+                transition={{...transition, duration:2, delay: 4.2}}
                 className="links">
                     <a href={githubLink} target="_blank" rel="noreferrer">
                         <FontAwesomeIcon icon={["fab", "github"]} />
@@ -123,7 +126,7 @@ const MainSection = (props: Prop)=>{
                             <motion.p 
                             variants={opacityReveal} initial="initial"
                             animate="animate"
-                            transition={{...transition, duration:2, delay: 3.8}}
+                            transition={{...transition, duration:2, delay: 4.5}}
                             className="text" key={index}>{text}</motion.p>
                         )
                     })
