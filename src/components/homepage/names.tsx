@@ -66,23 +66,29 @@ const titleTextReveal = {
 
 //component
 const Names = ()=>{
+    const ronnie = ["R", "o", "n", "n", "i", "e"]
+    const feng = ["F", "e", "n", "g"];
     const {transition} = Animations();
     return(
         <NamesStyles>
-            <motion.ol className="name-wrapper" variants={titleParent} initial="hidden" animate="show">
-                <motion.li variants={titleTextReveal} transition={{...transition, duration: 0.8}}>R</motion.li>
-                <motion.li variants={titleTextReveal} transition={{...transition, duration: 0.8}}>o</motion.li>
-                <motion.li variants={titleTextReveal} transition={{...transition, duration: 0.8}}>n</motion.li>
-                <motion.li variants={titleTextReveal} transition={{...transition, duration: 0.8}}>n</motion.li>
-                <motion.li variants={titleTextReveal} transition={{...transition, duration: 0.8}}>i</motion.li>
-                <motion.li variants={titleTextReveal} transition={{...transition, duration: 0.8}}>e</motion.li>
-            </motion.ol>
-            <motion.ol className="name-wrapper" variants={titleParent2} initial="hidden" animate="show">
-                <motion.li variants={titleTextReveal} transition={{...transition, duration: 0.8}}>F</motion.li>
-                <motion.li variants={titleTextReveal} transition={{...transition, duration: 0.8}}>e</motion.li>
-                <motion.li variants={titleTextReveal} transition={{...transition, duration: 0.8}}>n</motion.li>
-                <motion.li variants={titleTextReveal} transition={{...transition, duration: 0.8}}>g</motion.li>
-            </motion.ol>
+                <motion.ol className="name-wrapper" variants={titleParent} initial="hidden" animate="show">
+                {
+                    ronnie.map((letter, index)=>{
+                        return(
+                            <motion.li key={index} variants={titleTextReveal} transition={{...transition, duration: 1}}>{letter}</motion.li>
+                        )
+                    })
+                }
+                </motion.ol>
+                <motion.ol className="name-wrapper" variants={titleParent2} initial="hidden" animate="show">
+                {
+                    feng.map((letter, index)=>{
+                        return(
+                            <motion.li key={index} variants={titleTextReveal} transition={{...transition, duration: 1}}>{letter}</motion.li>
+                        )
+                    })
+                }
+                </motion.ol>
         </NamesStyles>
     )
 }
