@@ -136,7 +136,7 @@ const HomepageStyles = styled(motion.div)`
 
 const Home = ()=>{
     const profile = useRef(null);
-    const {transition, textReveal, opacityReveal} = Animations();
+    const {transition, opacityReveal, angleTextReveal} = Animations();
     useEffect(()=>{
             new hoverEffect({
                 parent: profile.current,
@@ -195,21 +195,21 @@ const Home = ()=>{
                 <div className="right-bottom">
                     <motion.div className="link-container">
                         <motion.div className="link-wrapper"
-                        variants={textReveal} initial="initial" animate="animate" transition= {{...transition, duration: 1, delay: 5}}
+                        variants={angleTextReveal} initial="initial" animate="animate" transition= {{...transition, duration: 1, delay: 5}}
                         >
                             <Link to="works"><span className="number">01.</span>Works</Link>
                         </motion.div>
                     </motion.div>
                     <motion.div className="link-container">
                         <motion.div className="link-wrapper"
-                        variants={textReveal} initial="initial" animate="animate" transition= {{...transition, duration: 1, delay: 5.2}}
+                        variants={angleTextReveal} initial="initial" animate="animate" transition= {{...transition, duration: 1, delay: 5.2}}
                         >
                             <Link to="about"><span className="number">02.</span>About</Link>
                         </motion.div>
                     </motion.div>
                     <motion.div className="link-container">
                         <motion.div className="link-wrapper"
-                        variants={textReveal} initial="initial" animate="animate" transition= {{...transition, duration: 1, delay: 5.4}}
+                        variants={angleTextReveal} initial="initial" animate="animate" transition= {{...transition, duration: 1, delay: 5.4}}
                         >
                             <a href="mailto:ronnie@ronniefeng.com"><span className="number">03.</span>Contact</a>
                         </motion.div>

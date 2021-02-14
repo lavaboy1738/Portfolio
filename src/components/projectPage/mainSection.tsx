@@ -99,19 +99,19 @@ const MainSection = (props: Prop)=>{
                 <div className="title-wrapper">
                     <motion.h1 variants={textReveal} initial="initial"
                     animate="animate"
-                    transition={{...transition, duration:2, delay: 3.6}}
+                    transition={{...transition, duration:2, delay: 4}}
                     className="title">{title}
                     </motion.h1>
                     <motion.div 
                     initial={{x: "-120%"}}
                     animate={{x:"0%"}}
-                    transition={{...transition, duration: 2, delay: 4 }}
+                    transition={{...transition, duration: 2, delay: 4.4 }}
                     className="underline"></motion.div>
                 </div>
                 <motion.div 
                 variants={opacityReveal} initial="initial"
                 animate="animate"
-                transition={{...transition, duration:2, delay: 4.2}}
+                transition={{...transition, duration:2, delay: 4.6}}
                 className="links">
                     <a href={githubLink} target="_blank" rel="noreferrer">
                         <FontAwesomeIcon icon={["fab", "github"]} />
@@ -126,7 +126,7 @@ const MainSection = (props: Prop)=>{
                             <motion.p 
                             variants={opacityReveal} initial="initial"
                             animate="animate"
-                            transition={{...transition, duration:2, delay: 4.5}}
+                            transition={{...transition, duration:2, delay: 4.8}}
                             className="text" key={index}>{text}</motion.p>
                         )
                     })

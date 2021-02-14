@@ -80,7 +80,7 @@ const WorksStyles = styled(motion.div)`
 `
 
 const Works = ()=>{
-    const {parent,textReveal, transition, worksTitleParent} = Animations();
+    const {parent, transition, worksTitleParent, angleTextReveal} = Animations();
     return (
         <>
             <Nav/>
@@ -99,19 +99,19 @@ const Works = ()=>{
                     className="title">
                         <motion.h1 className="word-wrapper">
                             <motion.div
-                            variants={textReveal}
+                            variants={angleTextReveal}
                             transition={transition}
                             className="word">Blood,</motion.div>
                         </motion.h1>
                         <motion.h1 className="word-wrapper">
                             <motion.div
-                            variants={textReveal}
+                            variants={angleTextReveal}
                             transition={transition}
                             className="word">Sweat,</motion.div>
                         </motion.h1>
                         <motion.h1 className="word-wrapper">
                             <motion.div
-                            variants={textReveal}
+                            variants={angleTextReveal}
                             transition={transition}
                             className="word">and ideas.</motion.div>
                         </motion.h1>

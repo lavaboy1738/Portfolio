@@ -50,7 +50,7 @@ const titleParent2 = {
         opacity: 1,
         transition: {
             staggerChildren: 0.1,
-            delayChildren: 3.8
+            delayChildren: 4
         }
     }
 }

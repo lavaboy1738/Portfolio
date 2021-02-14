@@ -40,13 +40,22 @@ export const Animations = ()=>{
         }
     }
 
-    const textReveal = {
+    const angleTextReveal = {
         initial: {
             rotate: 10,
             y: "200%",
         },
         animate: {
             rotate: 0,
+            y: "0%",
+        }
+    }
+
+    const textReveal = {
+        initial: {
+            y: "200%",
+        },
+        animate: {
             y: "0%",
         }
     }
@@ -68,6 +77,7 @@ export const Animations = ()=>{
         parent,
         textReveal,
         opacityReveal,
-        worksTitleParent
+        worksTitleParent,
+        angleTextReveal
     }
 }

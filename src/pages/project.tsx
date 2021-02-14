@@ -56,7 +56,7 @@ const Project = ()=>{
     const {scrollRef} = useScroll();
     const {projectID} = useParams<Params>();
     const {getData} = useData();
-    const {textReveal, transition} = Animations();
+    const { transition, angleTextReveal} = Animations();
 
     const {title, 
         sequence, 
@@ -81,10 +81,10 @@ const Project = ()=>{
         ref={scrollRef} data-scroll-container>
             <div data-scroll-section className="number">
                 <div className="number-wrapper">
-                    <motion.h1 variants={textReveal} initial="initial" animate="animate" transition= {{...transition, duration: 2, delay: 3}}>0</motion.h1>
+                    <motion.h1 variants={angleTextReveal} initial="initial" animate="animate" transition= {{...transition, duration: 2, delay: 3}}>0</motion.h1>
                 </div>
                 <div className="number-wrapper">
-                    <motion.h1 variants={textReveal} initial="initial" animate="animate" transition= {{...transition, duration: 2, delay: 3.2}}>{sequence}</motion.h1>
+                    <motion.h1 variants={angleTextReveal} initial="initial" animate="animate" transition= {{...transition, duration: 2, delay: 3.4}}>{sequence}</motion.h1>
                 </div>
             </div>
             <MainSection title={title} texts={text} githubLink = {githubLink} liveLink={liveLink} />

@@ -152,8 +152,12 @@ const AboutStyles = styled(motion.div)`
             display: flex;
             flex-direction: column;
             justify-content: flex-end;
-            @media (hover: none) and (pointer: coarse), (max-width: 500px){
+            @media (hover: none) and (pointer: coarse){
                 width: 68%;
+                margin-top: 10vh;
+            }
+            @media (hover: none) and (pointer: coarse) and (max-width: 500px){
+                width: 80%;
                 margin-top: 10vh;
             }
             h1{
