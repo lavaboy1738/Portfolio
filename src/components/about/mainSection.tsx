@@ -13,6 +13,7 @@ const MainSectionStyles = styled.div`
     @media (hover: none) and (pointer: coarse), (max-width: 500px){
         flex-wrap: wrap;
         justify-content: flex-start;
+        margin-bottom: 10vh;
     }
     .main-pic{
         width: 25vw;

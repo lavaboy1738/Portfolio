@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import React from "react";
 import styled from "styled-components";
 import {Nav} from "../components/nav";
 import {useScroll} from "../hooks/useScroll";
@@ -8,6 +8,7 @@ import {Panels} from "../components/panels";
 import {Info} from "../components/about/info";
 import {BigText} from "../components/about/bigText";
 import {MainSection} from "../components/about/mainSection";
+import {Recognitions} from "../components/about/recognitions";
 
 const AboutStyles = styled(motion.div)`
     padding: 0 4vw;
@@ -93,6 +94,7 @@ const About = ()=>{
                     <h1 data-scroll data-scroll-speed="0.5">Feng</h1>
                 </div>
                 <MainSection/>
+                <Recognitions/>
                 <div data-scroll-section className="split">
                     <h1>Front-End Addicted</h1>
                     <h1>Fullstack Capable.</h1>
