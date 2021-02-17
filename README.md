@@ -73,7 +73,7 @@ Homepage:
 Projects Menu:  <a href="https://loerarchitecten.com/en/" target="_blank">Loer Architecten</a>
 <br/>
 Project Page: 
-<a href="iaragrinspun.com/" target="_blank">Iara Grinspun</a>
+<a href="https://iaragrinspun.com/" target="_blank">Iara Grinspun</a>
 <br/>
 Colours: 
 <a href="https://www.youtube.com/watch?v=zSkA61esq_c" target="_blank">Jay-Z's 4:44</a>
