@@ -60,7 +60,7 @@ Yes, feel free to fork this repo. Please give me proper credit by linking back t
 | Burlywood     | ![#f6c9a0](https://via.placeholder.com/10/f6c9a0?text=+) `#f6c9a0` |
 
 ## 👏 Credits
-I wrote all the code and built the website myself. 
+This site is built with React.js. Animations are powered by Framer Motion. 
 <br/>
 These are the websites/artworks/individuals from where I drew my inspirations 
 <br/>
@@ -73,7 +73,7 @@ Homepage:
 Projects Menu:  <a href="https://loerarchitecten.com/en/" target="_blank">Loer Architecten</a>
 <br/>
 Project Page: 
-<a href="https://www.clockstrikestwelve.com/" target="_blank">CLOCKSTRIKESTWLEVE</a>
+<a href="iaragrinspun.com/" target="_blank">Iara Grinspun</a>
 <br/>
 Colours: 
 <a href="https://www.youtube.com/watch?v=zSkA61esq_c" target="_blank">Jay-Z's 4:44</a>
