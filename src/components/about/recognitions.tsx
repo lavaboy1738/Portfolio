@@ -113,13 +113,17 @@ const Recognitions = ()=>{
         <DetailsStyles data-scroll-section>
             <div className="container">
                 <div className="container-left">
+                    <p>Awwwards - Honorable Mention</p>
+                    <p>Awwwards - Mobile Exellence</p>
                     <p>CSSDA - Special Kudos Award</p>
-                    <p>CSS Winner - SOTD</p>
                     <p>CSSDA - UI Award</p>
                     <p>CSSDA - UX Award</p>
                     <p>CSSDA - Innovation Award</p>
+                    <p>CSS Winner - SOTD</p>
                 </div>
                 <div className="container-right">
+                    <p>Feb 2020</p>
+                    <p>Feb 2020</p>
                     <p>Feb 2020</p>
                     <p>Feb 2020</p>
                     <p>Feb 2020</p>
