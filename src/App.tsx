@@ -1,5 +1,6 @@
 import React, {useEffect} from 'react';
 import './App.scss';
+import {Awwwards} from "./components/awwwards";
 import {Cursor} from "./components/cursor";
 import {Cover} from "./components/cover";
 import {GlobalStyles} from "./styles/globalStyles";
@@ -34,6 +35,9 @@ function App() {
 
   return (
     <div className="App">
+      {
+        width > 500? <Awwwards/> : null
+      }
         <GlobalStyles/>
         <Cover/>
         <Cursor/>

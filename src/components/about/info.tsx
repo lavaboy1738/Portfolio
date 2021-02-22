@@ -8,6 +8,7 @@ const InfoStyles = styled.div`
     justify-content: space-between;
     @media (hover: none) and (pointer: coarse), (max-width: 500px){
         flex-wrap: wrap;
+        margin-bottom: 10vh;
     }
     .info-main{
         width: 48%;
@@ -92,14 +93,15 @@ const Info = ()=>{
             <div className="info-credits">
                 <h1>Credits</h1>
                 <p>I developed this website with React.js. Animations are powered by Framer Motion.</p>
-                <p>Thanks goes out to the following sites/individuals for inspirations. I learn from the best.</p>
+                <p>Thanks goes out to the following sites/individuals for inspirations and your words of encouragement. I only learn from the best.</p>
                 <h2><a href="https://pitchfork.com/reviews/albums/jay-z-444/" target="_blank" rel="noreferrer">Jay-Z's 4:44</a></h2>
-                <h2><a href="https://romainavalle.com/" target="_blank" rel="noreferrer">Romain Avalle</a></h2>
-                <h2><a href="https://loerarchitecten.com/en/" target="_blank" rel="noreferrer">Loer Architecten</a></h2>
-                <h2><a href="https://www.clockstrikestwelve.com/" target="_blank" rel="noreferrer">ClockStrikesTwelve</a></h2>
-                <h2><a href="https://www.behance.net/martiniidesign" rel="noreferrer" target="_blank">Stefan Martinovic</a></h2>
                 <h2><a href="https://www.youtube.com/watch?v=xvFZjo5PgG0" target="_blank" rel="noreferrer">Rick Astley</a></h2>
                 <h2><a href="https://www.loftgarten.co/" target="_blank" rel="noreferrer">Loftgarten</a></h2>
+                <h2><a href="http://www.iaragrinspun.com/" target="_blank" rel="noreferrer">Iara Grinspun</a></h2>
+                <h2><a href="https://romainavalle.com/" target="_blank" rel="noreferrer">Romain Avalle</a></h2>
+                <h2><a href="https://loerarchitecten.com/en/" target="_blank" rel="noreferrer">Loer Architecten</a></h2>
+                <h2><a href="https://www.behance.net/martiniidesign" rel="noreferrer" target="_blank">Stefan Martinovic</a></h2>
+                <h2><a href="https://lorenzocadamuro.com/" target="_blank" rel="noreferrer">Lorenzo Cadamuro</a></h2>
             </div>
         </InfoStyles>
     )

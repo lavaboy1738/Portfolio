@@ -113,7 +113,7 @@ const Recognitions = ()=>{
         <DetailsStyles data-scroll-section>
             <div className="container">
                 <div className="container-left">
-                    <p>CSSDA - Special Kudos, Avg. 7.9</p>
+                    <p>CSSDA - Special Kudos Award</p>
                     <p>CSS Winner - SOTD</p>
                     <p>CSSDA - UI Award</p>
                     <p>CSSDA - UX Award</p>
