@@ -1,6 +1,8 @@
-import React from "react";
+import React, {useState } from "react";
 import styled from "styled-components";
 import {motion} from "framer-motion";
+import {useMousePosition} from "../../hooks/useMousePosition";
+import {AwardsInfo} from "../../data/awardsInfo";
 
 const MarqueeStyles = styled.div`
     position: relative;
@@ -34,6 +36,7 @@ const MarqueeStyles = styled.div`
 `
 
 const DetailsStyles = styled.div`
+    position: relative;
     margin: 10vh 0 20vh 0;
     width: 100%;
     padding-right: 5vw;
@@ -50,17 +53,41 @@ const DetailsStyles = styled.div`
             width: 100%;
         }
         p{
-            margin: 3vw 0;
+            margin: 1vw 0;
+            padding: 1vw 0;
             font-size: calc(var(--VW)*2);
             @media (hover: none) and (pointer: coarse), (max-width: 500px){
                 font-size: calc(var(--VW)*4.5);
             }
         }
     }
+    .certificate{
+        pointer-events: none;
+        position: absolute;
+        height: 50vh;
+        z-index: 0;
+        box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.1);
+        img{
+            height: 100%;
+            width: auto;
+            display: block;
+        }
+    }
 `
 
 const Recognitions = ()=>{
     const travelDistance = 85.7;
+    const {x,y} = useMousePosition();
+    const [hovered, setHovered] = useState(false);
+    const [currentImage, setCurrentImage] = useState("");
+    const hoverAward = (imageURL: string)=>{
+        setHovered(true);
+        setCurrentImage(imageURL);
+    }
+    const unHoverAward = ()=>{
+        setHovered(false);
+        setCurrentImage("");
+    }
     return(
         <>
         <MarqueeStyles data-scroll-section>
@@ -113,13 +140,13 @@ const Recognitions = ()=>{
         <DetailsStyles data-scroll-section>
             <div className="container">
                 <div className="container-left">
-                    <p>Awwwards - Honorable Mention</p>
-                    <p>Awwwards - Mobile Exellence</p>
-                    <p>CSSDA - Special Kudos Award</p>
-                    <p>CSSDA - UI Award</p>
-                    <p>CSSDA - UX Award</p>
-                    <p>CSSDA - Innovation Award</p>
-                    <p>CSS Winner - SOTD</p>
+                    {
+                        AwardsInfo.map((award)=>{
+                            return <p onMouseEnter={()=>hoverAward(award.imgURL)}
+                            onMouseLeave = {()=>unHoverAward()}
+                             key={award.id}>{award.text}</p>
+                        })
+                    }
                 </div>
                 <div className="container-right">
                     <p>Feb 2020</p>
@@ -131,6 +158,19 @@ const Recognitions = ()=>{
                     <p>Feb 2020</p>
                 </div>
             </div>
+            <motion.div className="certificate"
+            initial={{opacity: 0}}
+            animate={{
+                opacity: hovered? 1 : 0,
+                x: x,
+                y: y,
+                left: "-40%",
+                top: "-50%"
+            }}
+            transition={{duration: 0.3, ease: "linear"}}
+            >
+                <img src={currentImage} alt=""/>
+            </motion.div>
         </DetailsStyles>
         </>
     )
