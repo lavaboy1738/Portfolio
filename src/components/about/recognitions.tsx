@@ -62,6 +62,9 @@ const DetailsStyles = styled.div`
         }
     }
     .certificate{
+        @media (hover: none) and (pointer: coarse), (max-width: 500px){
+            display: none;
+        }
         pointer-events: none;
         position: absolute;
         height: 50vh;
