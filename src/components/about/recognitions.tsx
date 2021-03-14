@@ -152,13 +152,14 @@ const Recognitions = ()=>{
                     }
                 </div>
                 <div className="container-right">
-                    <p>Feb 2020</p>
-                    <p>Feb 2020</p>
-                    <p>Feb 2020</p>
-                    <p>Feb 2020</p>
-                    <p>Feb 2020</p>
-                    <p>Feb 2020</p>
-                    <p>Feb 2020</p>
+                    <p>Feb 2021</p>
+                    <p>Feb 2021</p>
+                    <p>Feb 2021</p>
+                    <p>Feb 2021</p>
+                    <p>Feb 2021</p>
+                    <p>Feb 2021</p>
+                    <p>Feb 2021</p>
+                    <p>Feb 2021</p>
                 </div>
             </div>
             <motion.div className="certificate"

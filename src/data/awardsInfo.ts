@@ -5,6 +5,7 @@ import CSSDAUI from "../assets/images/awards/cssda-ui-Ronnie-Feng.webp";
 import CSSDAUX from "../assets/images/awards/cssda-ux-Ronnie-Feng.webp";
 import CSSDAInnovation from "../assets/images/awards/cssda-inn-Ronnie-Feng.webp";
 import CSSWinner from "../assets/images/awards/CSSW-15167-SOTD-Certificate.webp";
+import Jury from "../assets/images/awards/certificate-ronnie-feng-young_jury.webp";
 
 type AwardInfo = {
     id: number,
@@ -13,6 +14,11 @@ type AwardInfo = {
 }
 
 export const AwardsInfo: AwardInfo[] = [
+    {
+        id: 0,
+        text: "Awwwards - Young Jury Member",
+        imgURL: Jury
+    },
     {
         id: 1,
         text: "Awwwards - Honorable Mention",
