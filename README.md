@@ -10,7 +10,7 @@
 
 ![demo](https://raw.githubusercontent.com/lavaboy1738/Portfolio/main/src/assets/images/readme.gif)
 
-## 🚨 Before you fork (please read!!!)
+## 🚨 Before you clone (please read!!!)
 
 A few people have contacted me asking if they can use my code for learning or for their own website, and the answer is **yes, absolutely, but please credit me dawg**. 
 
