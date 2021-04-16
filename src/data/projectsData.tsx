@@ -42,6 +42,14 @@ import EConLaptopSide from "../assets/images/projects/eCommerce/ecommerce-laptop
 import EConTabletMain from "../assets/images/projects/eCommerce/ecommerce-tablet-main.webp";
 import EConTabletSide from "../assets/images/projects/eCommerce/ecommerce-tablet-side.webp";
 
+import LavaUILG1 from "../assets/images/projects/lava-ui/lava-ui-lg-1.webp";
+import LavaUILG2 from "../assets/images/projects/lava-ui/lava-ui-lg-2.webp";
+import LavaUILG3 from "../assets/images/projects/lava-ui/lava-ui-lg-3.webp";
+import LavaUILaptopMain from "../assets/images/projects/lava-ui/lava-ui-laptop-main.webp";
+import LavaUILaptopSide from "../assets/images/projects/lava-ui/lava-ui-laptop-side.webp";
+import LavaUITabletMain from "../assets/images/projects/lava-ui/lava-ui-tablet-main.webp";
+import LavaUITabletSide from "../assets/images/projects/lava-ui/lava-ui-tablet-side.webp";
+
 export type ProjectDataType = {
     id: string,
     sequence: number,
@@ -148,10 +156,10 @@ export const ProjectData: ProjectDataType[] = [
         title: "Lava UI",
         text: ["This is a UI library that I'm building with Vue. I feel like I spend quite a lot of time building things with React and Vue doesn't get as much of my attention and time. I'm still working on this thing so, please check back later if you're interested. You won't be disappointed. "],
         secondary: ["Vue", "Scss/Sass", "TypeScript", "UX/UI"],
-        phoneImgSrc: [],
-        desktopImgSrc: [],
-        tabletImgSrc: [],
-        mobileFirst: true,
+        phoneImgSrc: [LavaUILG1, LavaUILG2, LavaUILG3],
+        desktopImgSrc: [LavaUILaptopMain, LavaUILaptopSide],
+        tabletImgSrc: [LavaUITabletMain, LavaUITabletSide],
+        mobileFirst: false,
         githubLink: "",
         liveLink: "",
         next: "xpensity-v2"
