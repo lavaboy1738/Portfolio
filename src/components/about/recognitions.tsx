@@ -152,7 +152,7 @@ const Recognitions = ()=>{
                     }
                 </div>
                 <div className="container-right">
-                    <p>Feb 2021</p>
+                    <p>Mar 2021</p>
                     <p>Feb 2021</p>
                     <p>Feb 2021</p>
                     <p>Feb 2021</p>
