@@ -109,8 +109,22 @@ export const ProjectData: ProjectDataType[] = [
         next: "agency"
     },
     {
-        id: "agency",
+        id: "lava-ui",
         sequence: 4,
+        title: "Lava UI",
+        text: ["This is a UI library built with Vue3 composition API. It's written in Typescript and easy to use. There are only four different components at the moment but I'll likely add more later. It's available on npm, therefore, you're just one command away. ", "The process of writing this library was a great learning experience. A few issues came up that I've never encountered previously, like opening the dialogue window with a function, where should the dialogue element fit in the DOM, how to scope and structure CSS to avoid creating more problems for the user, etc. Let's just say that there was a lot of...Googling. Problem solving...that's what I meant." ],
+        secondary: ["Vue", "Scss/Sass", "TypeScript", "UX/UI", "NPM"],
+        phoneImgSrc: [LavaUILG1, LavaUILG2, LavaUILG3],
+        desktopImgSrc: [LavaUILaptopMain, LavaUILaptopSide],
+        tabletImgSrc: [LavaUITabletMain, LavaUITabletSide],
+        mobileFirst: false,
+        githubLink: "https://github.com/lavaboy1738/lava-UI",
+        liveLink: "https://lava-ui.netlify.app/",
+        next: "xpensity-v2"
+    },
+    {
+        id: "agency",
+        sequence: 5,
         title: "Agency",
         text: ["I had to do it. I just had to build a digital agency website. Prior to transitioning into web development and graduate school, I was trained in communications and previously worked in advertising agencies of various scales. From the smaller, modest creative agencies to 4A agencies, they all share something in common, that is, a stunning website with smooth animations and creative interactions.", "This project was built concurrently as I explored the framer motions library. I came across this motion library and I was immediately hooked by its functionalities and capabilities. It was a great venture to hone my react skills and create cool transitions. Link to the live version is listed above."],
         secondary: ["React", "TypeScript", "React Router", "Custom Hooks", "Framer Motion", "CSS in JS", "UI/UX"],
@@ -124,7 +138,7 @@ export const ProjectData: ProjectDataType[] = [
     },
     {
         id: "lgn",
-        sequence: 5,
+        sequence: 6,
         title: "Lava Game Network",
         text: ["Asynchronous Javascript is certainly one of the most useful and powerful features. Fetching data and selectively displaying them is the foundation of the web. I wanted to build a project that utilizes async JS, Redux and play around with an open-source API, so I built this site that displays pictures and relevant information of new, popular, and upcoming games. It also comes with a search function that sends a request, fetches data and then dynamically renders the data on the page.", "The API used in this site is from rawg.io, a gaming website with all sorts of information about the latest and upcoming games across various platforms. It's a great API with a plethora of information, links to videos and photos to use. I was also able to further express my creativity in UI with framer motion and use a seamless transition."],
         secondary: ["React", "TypeScript", "Redux-Thunk", "Framer Motion", "Custom Hooks", "Transitions", "CSS in JS", "UX/UI", "API"],
@@ -138,7 +152,7 @@ export const ProjectData: ProjectDataType[] = [
     },
     {
         id: "e-commerce",
-        sequence: 6,
+        sequence: 7,
         title: "E-Commerce",
         text: ["I build this project while learning React and Redux for the very first time. I found a course on Udemy made by Andrei Neagoie and Yihua Zhang, and this project was part of the course as I learned the basics of React, React Router, Redux, and many other things. ", "I did not build the website exactly how it was built in the course, because I wanted to integrate more features and make things look like an actual E-Commerce website. Pictures used in this project are all from a small boutique in the New England region called Kiel Patrick James. They sell nice bracelets. If you have time, I'd recommend you to checkout their website and look around. ", "Keep in mind that this project was built a while ago and I write much better code now. But I still want to put this up here since it's a substantial project. "],
         secondary: ["React", "Redux", "Firebase", "Stripe API", "Authentication", "Shopping Cart", "Scss/Sass", "UI/UX"],
@@ -150,18 +164,4 @@ export const ProjectData: ProjectDataType[] = [
         liveLink: "https://new-england-clothing.netlify.app/",
         next: "lava-ui"
     },
-    {
-        id: "lava-ui",
-        sequence: 7,
-        title: "Lava UI",
-        text: ["This is a UI library that I'm building with Vue. I feel like I spend quite a lot of time building things with React and Vue doesn't get as much of my attention and time. I'm still working on this thing so, please check back later if you're interested. You won't be disappointed. "],
-        secondary: ["Vue", "Scss/Sass", "TypeScript", "UX/UI"],
-        phoneImgSrc: [LavaUILG1, LavaUILG2, LavaUILG3],
-        desktopImgSrc: [LavaUILaptopMain, LavaUILaptopSide],
-        tabletImgSrc: [LavaUITabletMain, LavaUITabletSide],
-        mobileFirst: false,
-        githubLink: "",
-        liveLink: "",
-        next: "xpensity-v2"
-    }
 ]
