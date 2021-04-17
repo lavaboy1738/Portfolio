@@ -106,13 +106,13 @@ export const ProjectData: ProjectDataType[] = [
         mobileFirst: true,
         githubLink: "https://github.com/lavaboy1738/xpensity-vue",
         liveLink: "https://xpensity-vue.netlify.app/",
-        next: "agency"
+        next: "lava-ui"
     },
     {
         id: "lava-ui",
         sequence: 4,
         title: "Lava UI",
-        text: ["This is a UI library built with Vue3 composition API. It's written in Typescript and easy to use. There are only four different components at the moment but I'll likely add more later. It's available on npm, therefore, you're just one command away. ", "The process of writing this library was a great learning experience. A few issues came up that I've never encountered previously, like opening the dialogue window with a function, where should the dialogue element fit in the DOM, how to scope and structure CSS to avoid creating more problems for the user, etc. Let's just say that there was a lot of...Googling. Problem solving...that's what I meant." ],
+        text: ["This is a UI library built with Vue3 composition API. It's written in Typescript and easy to use. There are only four different components at the moment but I'll likely add more later. It's available on npm, therefore, you're just one command away. ", "The process of writing this library was a great learning experience. A few issues came up that I've never encountered previously, like opening the dialogue window with a function, where the dialogue element should fit in the DOM, how to scope and structure CSS to avoid creating more problems for the user, etc. Let's just say that there was a lot of...Googling. Problem solving...that's what I meant." ],
         secondary: ["Vue", "Scss/Sass", "TypeScript", "UX/UI", "NPM"],
         phoneImgSrc: [LavaUILG1, LavaUILG2, LavaUILG3],
         desktopImgSrc: [LavaUILaptopMain, LavaUILaptopSide],
@@ -120,7 +120,7 @@ export const ProjectData: ProjectDataType[] = [
         mobileFirst: false,
         githubLink: "https://github.com/lavaboy1738/lava-UI",
         liveLink: "https://lava-ui.netlify.app/",
-        next: "xpensity-v2"
+        next: "agency"
     },
     {
         id: "agency",
@@ -162,6 +162,6 @@ export const ProjectData: ProjectDataType[] = [
         mobileFirst: false,
         githubLink: "https://github.com/lavaboy1738/new-england-clothing",
         liveLink: "https://new-england-clothing.netlify.app/",
-        next: "lava-ui"
+        next: "xpensity-v2"
     },
 ]
